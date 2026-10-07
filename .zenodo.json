@@ -1,0 +1,14 @@
+{
+  "title": "hydrostatic-ocean-core-benchmark: code and measurement data for \"Performance of a hydrostatic ocean core across computing devices and programming frameworks under verified double-precision agreement\"",
+  "upload_type": "software",
+  "description": "<p>One hydrostatic Boussinesq primitive-equation ocean core (partial-cell bathymetry, implicit vertical mixing, one-equation TKE closure, third-order TVD advection) implemented five times from a single discretization document: NumPy reference, Fortran serial/OpenMP, OpenACC, CUDA and JAX. Every timed binary is gated to reproduce the reference to a relative L2 error below 1e-12 per step on the node where it is timed. The archive contains the five implementations, the discretization specification, the TOML configurations, the verification/audit/figure scripts, the experiment ledger (expr/) and the promoted measurement data behind every figure and table of the paper (paper/cases/: raw timing CSV/JSON with node, date and reproduction command, plus verification-gate logs). Code: BSD-3-Clause. Data in paper/cases/: CC BY 4.0. Bench-node addresses have been redacted from the published copies.</p>",
+  "creators": [
+    {"name": "Park, Youngmin", "affiliation": "Geosystem Research Inc., Gunpo, Republic of Korea", "orcid": "0000-0003-0953-6349"},
+    {"name": "Kim, Changsin", "affiliation": "Department of Smart Fisheries Resource Management, Chonnam National University, Yeosu, Republic of Korea", "orcid": "0000-0003-3026-3285"}
+  ],
+  "license": "BSD-3-Clause",
+  "access_right": "open",
+  "keywords": ["ocean model", "GPU computing", "verification", "time-stepping scheme", "programming framework", "mixed precision", "CUDA", "OpenACC", "JAX", "Fortran"],
+  "language": "eng",
+  "version": "1.0.0"
+}

@@ -1,0 +1,17 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+geo85,fortran_omp,32,lock_exchange,fb,0,none,0.5,1000,30,50,1.962422e-01,2.113344e+01,9.580394e-03,0,0,nan,nan,nan,4.642930e-01
+geo85,fortran_omp,64,lock_exchange,fb,0,none,0.5,1000,30,50,1.962422e-01,1.252433e+01,3.512337e-03,0,0,nan,nan,nan,7.834438e-01
+geo85,fortran_omp,128,lock_exchange,fb,0,none,0.5,1000,30,50,1.962422e-01,8.555783e+00,1.690493e-03,0,0,nan,nan,nan,1.146839e+00
+geo85,fortran_omp,192,lock_exchange,fb,0,none,0.5,1000,30,50,1.962422e-01,7.051115e+00,1.039280e-01,0,0,nan,nan,nan,1.391568e+00
+geo85,fortran_omp,32,lock_exchange,theta0.5,0.5,multigrid,4,1000,30,50,1.569937e+00,2.722062e+01,6.328068e-03,2856,0,nan,nan,nan,2.883728e+00
+geo85,fortran_omp,64,lock_exchange,theta0.5,0.5,multigrid,4,1000,30,50,1.569937e+00,1.635728e+01,3.583787e-03,2856,0,nan,nan,nan,4.798894e+00
+geo85,fortran_omp,128,lock_exchange,theta0.5,0.5,multigrid,4,1000,30,50,1.569937e+00,1.152327e+01,8.665005e-02,2856,0,nan,nan,nan,6.812028e+00
+geo85,fortran_omp,192,lock_exchange,theta0.5,0.5,multigrid,4,1000,30,50,1.569937e+00,1.010362e+01,1.087111e-01,2856,0,nan,nan,nan,7.769180e+00
+geo85,fortran_omp,32,lock_exchange,theta0.5,0.5,pcg_jacobi,4,1000,30,50,1.569937e+00,2.437225e+01,1.202292e-02,4956,0,nan,nan,nan,3.220748e+00
+geo85,fortran_omp,64,lock_exchange,theta0.5,0.5,pcg_jacobi,4,1000,30,50,1.569937e+00,1.467675e+01,4.398808e-03,4956,0,nan,nan,nan,5.348383e+00
+geo85,fortran_omp,128,lock_exchange,theta0.5,0.5,pcg_jacobi,4,1000,30,50,1.569937e+00,1.043867e+01,2.791896e-02,4956,0,nan,nan,nan,7.519818e+00
+geo85,fortran_omp,192,lock_exchange,theta0.5,0.5,pcg_jacobi,4,1000,30,50,1.569937e+00,9.250974e+00,8.655797e-02,4956,0,nan,nan,nan,8.485255e+00
+geo85,fortran_omp,32,lock_exchange,split,0,none,4,1000,30,50,1.569937e+00,2.129039e+01,3.789294e-03,0,250,nan,nan,nan,3.686963e+00
+geo85,fortran_omp,64,lock_exchange,split,0,none,4,1000,30,50,1.569937e+00,1.279217e+01,1.035061e-03,0,250,nan,nan,nan,6.136323e+00
+geo85,fortran_omp,128,lock_exchange,split,0,none,4,1000,30,50,1.569937e+00,8.611963e+00,2.005806e-02,0,250,nan,nan,nan,9.114864e+00
+geo85,fortran_omp,192,lock_exchange,split,0,none,4,1000,30,50,1.569937e+00,7.213777e+00,1.471171e-01,0,250,nan,nan,nan,1.088152e+01

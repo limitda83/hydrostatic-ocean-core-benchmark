@@ -1,0 +1,11 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+gpgpu,cuda,0,lock_exchange_v06.mixed,fb,0,none,0.5,400,30,50,5.039626e-01,1.615612e+00,1.688350e-04,0,0,nan,nan,nan,1.559665e+01
+gpgpu,cuda_sp,0,lock_exchange_v06.mixed,fb,0,none,0.5,400,30,50,5.039626e-01,2.035399e-01,1.606345e-05,0,0,nan,nan,nan,1.237995e+02
+gpgpu,cuda_mixed,0,lock_exchange_v06.mixed,fb,0,none,0.5,400,30,50,5.039626e-01,8.267613e-01,1.097960e-04,0,0,nan,nan,nan,3.047812e+01
+gpgpu,cuda,0,lock_exchange_v06.mixed,theta0.5,0.5,multigrid,2,400,30,50,2.015850e+00,1.903671e+00,3.387730e-04,1000,0,nan,nan,nan,5.294640e+01
+gpgpu,cuda_mixed,0,lock_exchange_v06.mixed,theta0.5,0.5,multigrid,2,400,30,50,2.015850e+00,1.113161e+00,2.654710e-04,1000,0,nan,nan,nan,9.054624e+01
+gpgpu,cuda,0,lock_exchange_v06.mixed,fb,0,none,0.5,1000,30,50,1.962422e-01,9.923338e+00,1.751250e-04,0,0,nan,nan,nan,9.887912e-01
+gpgpu,cuda_sp,0,lock_exchange_v06.mixed,fb,0,none,0.5,1000,30,50,1.962422e-01,1.519935e+00,2.442598e-04,0,0,nan,nan,nan,6.455611e+00
+gpgpu,cuda_mixed,0,lock_exchange_v06.mixed,fb,0,none,0.5,1000,30,50,1.962422e-01,5.401199e+00,1.466067e-03,0,0,nan,nan,nan,1.816654e+00
+gpgpu,cuda,0,lock_exchange_v06.mixed,theta0.5,0.5,multigrid,2,1000,30,50,7.849687e-01,1.065073e+01,1.292385e-03,934,0,nan,nan,nan,3.685045e+00
+gpgpu,cuda_mixed,0,lock_exchange_v06.mixed,theta0.5,0.5,multigrid,2,1000,30,50,7.849687e-01,6.041915e+00,2.833267e-03,934,0,nan,nan,nan,6.496026e+00

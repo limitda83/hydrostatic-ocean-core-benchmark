@@ -1,0 +1,78 @@
+== output/e11_comm_20260914-043748
+[LOG_CAT_ML] You must specify a valid HCA device by setting:
+-x HCOLL_MAIN_IB=<dev_name:port> or -x UCX_NET_DEVICES=<dev_name:port>.
+If no device was specified for HCOLL (or the calling library), automatic device detection will be run.
+In case of unfounded HCA device please contact your system administrator.
+[LOG_CAT_ML] You must specify a valid HCA device by setting:
+-x HCOLL_MAIN_IB=<dev_name:port> or -x UCX_NET_DEVICES=<dev_name:port>.
+If no device was specified for HCOLL (or the calling library), automatic device detection will be run.
+In case of unfounded HCA device please contact your system administrator.
+[localhost.localdomain:987096] Error: ../../../../../ompi/mca/coll/hcoll/coll_hcoll_module.c:310 - mca_coll_hcoll_comm_query() Hcol library init failed
+[localhost.localdomain:987095] Error: ../../../../../ompi/mca/coll/hcoll/coll_hcoll_module.c:310 - mca_coll_hcoll_comm_query() Hcol library init failed
+matvec                 ranks=2 nx=512 ny=512       8.316 us
+halo                   ranks=2 nx=512 ny=512      25.413 us
+allreduce_1            ranks=2 nx=512 ny=512       0.658 us
+dot_local              ranks=2 nx=512 ny=512      14.353 us
+pcg_iteration          ranks=2 nx=512 ny=512      70.575 us
+barotropic_substep     ranks=2 nx=512 ny=512      43.781 us
+
+# summary ranks=2 nx=512 ny=512 staging=device-direct
+# matvec 8.316  halo 25.413  allreduce 0.658  dot 14.353  pcg_iter 70.575  substep 43.781  [us]
+CSV,2,512,512,device,8.3161,25.4127,0.6579,14.3534,70.5745,43.7805
+[LOG_CAT_ML] You must specify a valid HCA device by setting:
+-x HCOLL_MAIN_IB=<dev_name:port> or -x UCX_NET_DEVICES=<dev_name:port>.
+If no device was specified for HCOLL (or the calling library), automatic device detection will be run.
+In case of unfounded HCA device please contact your system administrator.
+[localhost.localdomain:987149] Error: ../../../../../ompi/mca/coll/hcoll/coll_hcoll_module.c:310 - mca_coll_hcoll_comm_query() Hcol library init failed
+[LOG_CAT_ML] You must specify a valid HCA device by setting:
+-x HCOLL_MAIN_IB=<dev_name:port> or -x UCX_NET_DEVICES=<dev_name:port>.
+If no device was specified for HCOLL (or the calling library), automatic device detection will be run.
+In case of unfounded HCA device please contact your system administrator.
+[localhost.localdomain:987148] Error: ../../../../../ompi/mca/coll/hcoll/coll_hcoll_module.c:310 - mca_coll_hcoll_comm_query() Hcol library init failed
+matvec                 ranks=2 nx=1024 ny=1024      22.542 us
+halo                   ranks=2 nx=1024 ny=1024      27.489 us
+allreduce_1            ranks=2 nx=1024 ny=1024       0.656 us
+dot_local              ranks=2 nx=1024 ny=1024      22.612 us
+pcg_iteration          ranks=2 nx=1024 ny=1024     107.141 us
+barotropic_substep     ranks=2 nx=1024 ny=1024      49.629 us
+
+# summary ranks=2 nx=1024 ny=1024 staging=device-direct
+# matvec 22.542  halo 27.489  allreduce 0.656  dot 22.612  pcg_iter 107.141  substep 49.629  [us]
+CSV,2,1024,1024,device,22.5421,27.4891,0.6558,22.6118,107.1406,49.6286
+[LOG_CAT_ML] You must specify a valid HCA device by setting:
+-x HCOLL_MAIN_IB=<dev_name:port> or -x UCX_NET_DEVICES=<dev_name:port>.
+If no device was specified for HCOLL (or the calling library), automatic device detection will be run.
+In case of unfounded HCA device please contact your system administrator.
+[LOG_CAT_ML] You must specify a valid HCA device by setting:
+-x HCOLL_MAIN_IB=<dev_name:port> or -x UCX_NET_DEVICES=<dev_name:port>.
+If no device was specified for HCOLL (or the calling library), automatic device detection will be run.
+In case of unfounded HCA device please contact your system administrator.
+[localhost.localdomain:987192] Error: ../../../../../ompi/mca/coll/hcoll/coll_hcoll_module.c:310 - mca_coll_hcoll_comm_query() Hcol library init failed
+[localhost.localdomain:987191] Error: ../../../../../ompi/mca/coll/hcoll/coll_hcoll_module.c:310 - mca_coll_hcoll_comm_query() Hcol library init failed
+matvec                 ranks=2 nx=2048 ny=2048      75.792 us
+halo                   ranks=2 nx=2048 ny=2048      52.625 us
+allreduce_1            ranks=2 nx=2048 ny=2048       0.396 us
+dot_local              ranks=2 nx=2048 ny=2048      22.153 us
+pcg_iteration          ranks=2 nx=2048 ny=2048     194.213 us
+barotropic_substep     ranks=2 nx=2048 ny=2048     103.991 us
+
+# summary ranks=2 nx=2048 ny=2048 staging=device-direct
+# matvec 75.792  halo 52.625  allreduce 0.396  dot 22.153  pcg_iter 194.213  substep 103.991  [us]
+CSV,2,2048,2048,device,75.7922,52.6252,0.3960,22.1535,194.2135,103.9907
+== 1rank
+matvec                 ranks=1 nx=1024 ny=1024      38.961 us
+halo                   ranks=1 nx=1024 ny=1024      13.449 us
+allreduce_1            ranks=1 nx=1024 ny=1024      10.739 us
+dot_local              ranks=1 nx=1024 ny=1024      22.568 us
+pcg_iteration          ranks=1 nx=1024 ny=1024     133.654 us
+barotropic_substep     ranks=1 nx=1024 ny=1024      29.221 us
+
+# summary ranks=1 nx=1024 ny=1024 staging=device-direct
+# matvec 38.961  halo 13.449  allreduce 10.739  dot 22.568  pcg_iter 133.654  substep 29.221  [us]
+CSV,1,1024,1024,device,38.9612,13.4487,10.7392,22.5685,133.6536,29.2206
+== gpu
+index, memory.total [MiB], memory.used [MiB], utilization.gpu [%]
+0, 32607 MiB, 29914 MiB, 0 %
+1, 32607 MiB, 29890 MiB, 0 %
+2, 32607 MiB, 15 MiB, 0 %
+3, 32607 MiB, 19730 MiB, 99 %

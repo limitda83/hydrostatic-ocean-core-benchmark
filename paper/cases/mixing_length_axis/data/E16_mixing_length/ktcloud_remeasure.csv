@@ -1,0 +1,17 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+ktcloud,cuda,0,lock_exchange_v06.mxl,fb,0,none,0.5,1000,30,50,1.962422e-01,2.471298e+00,3.540605e-03,0,0,nan,nan,nan,3.970428e+00
+ktcloud,cuda_sp,0,lock_exchange_v06.mxl,fb,0,none,0.5,1000,30,50,1.962422e-01,1.376724e+00,9.271622e-03,0,0,nan,nan,nan,7.127141e+00
+ktcloud,cuda,0,lock_exchange_v06.mxl,theta0.5,0.5,multigrid,4,1000,30,50,1.569937e+00,3.011954e+00,4.333730e-04,1330,0,nan,nan,nan,2.606177e+01
+ktcloud,cuda_sp,0,lock_exchange_v06.mxl,theta0.5,0.5,multigrid,4,1000,30,50,1.569937e+00,1.693996e+00,3.554344e-03,1340,0,nan,nan,nan,4.633829e+01
+ktcloud,cuda,0,lock_exchange_v06r.mxl,fb,0,none,0.5,1000,30,50,1.962422e-01,4.743174e+00,9.285360e-04,0,0,nan,nan,nan,2.068680e+00
+ktcloud,cuda_sp,0,lock_exchange_v06r.mxl,fb,0,none,0.5,1000,30,50,1.962422e-01,2.685899e+00,2.524853e-04,0,0,nan,nan,nan,3.653194e+00
+ktcloud,cuda,0,lock_exchange_v06r.mxl,theta0.5,0.5,multigrid,4,1000,30,50,1.569937e+00,2.692212e+00,4.286722e-03,1330,0,nan,nan,nan,2.915702e+01
+ktcloud,cuda_sp,0,lock_exchange_v06r.mxl,theta0.5,0.5,multigrid,4,1000,30,50,1.569937e+00,1.546039e+00,1.694083e-03,1340,0,nan,nan,nan,5.077288e+01
+ktcloud,cuda,0,lock_exchange_v06.mxl,fb,0,none,0.5,2000,30,50,9.861965e-02,9.273486e+00,1.253074e-02,0,0,nan,nan,nan,5.317291e-01
+ktcloud,cuda_sp,0,lock_exchange_v06.mxl,fb,0,none,0.5,2000,30,50,9.861965e-02,7.750581e+00,2.529715e+00,0,0,nan,nan,nan,6.362081e-01
+ktcloud,cuda,0,lock_exchange_v06.mxl,theta0.5,0.5,multigrid,2,2000,30,50,3.944786e-01,1.016236e+01,7.228990e-04,482,0,nan,nan,nan,1.940880e+00
+ktcloud,cuda_sp,0,lock_exchange_v06.mxl,theta0.5,0.5,multigrid,2,2000,30,50,3.944786e-01,5.721714e+00,7.128716e-04,484,0,nan,nan,nan,3.447206e+00
+ktcloud,cuda,0,lock_exchange_v06r.mxl,fb,0,none,0.5,2000,30,50,9.861965e-02,8.125141e+00,9.479770e-04,0,0,nan,nan,nan,6.068796e-01
+ktcloud,cuda_sp,0,lock_exchange_v06r.mxl,fb,0,none,0.5,2000,30,50,9.861965e-02,4.653389e+00,4.177094e-04,0,0,nan,nan,nan,1.059654e+00
+ktcloud,cuda,0,lock_exchange_v06r.mxl,theta0.5,0.5,multigrid,2,2000,30,50,3.944786e-01,8.987759e+00,3.155463e-03,482,0,nan,nan,nan,2.194532e+00
+ktcloud,cuda_sp,0,lock_exchange_v06r.mxl,theta0.5,0.5,multigrid,2,2000,30,50,3.944786e-01,5.133336e+00,4.024506e-04,484,0,nan,nan,nan,3.842322e+00

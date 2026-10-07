@@ -1,0 +1,89 @@
+# Global settings for the cfd_exp harness.
+# Every runtime parameter lives in config/*.toml (RULES.md R3).
+
+[project]
+name        = "cfd_exp"
+spec_version = "v0.1"          # must match docs/03_discretization_spec.md
+
+[paths]
+output_dir  = "output"
+config_dir  = "config"
+
+[logging]
+level       = "INFO"           # DEBUG | INFO | WARNING | ERROR
+to_file     = true
+filename    = "run.log"
+
+[physics]
+g           = 9.80616          # gravitational acceleration [m s-2]
+f0          = 1.0e-4           # Coriolis parameter, f-plane [s-1]
+H           = 1000.0           # resting depth [m]
+rho0        = 1025.0           # reference density [kg m-3]
+
+[run]
+precision   = "float64"        # float64 | float32   (axis G; float64 is the gate, R9)
+backend     = "ref"            # ref | fortran_cpu | openacc | cuda | py_gpu
+diag_every  = 0                # diagnostics every N steps; 0 = first/last only
+
+[netcdf]
+format             = "NETCDF4"
+compression_level  = 4
+write_state        = true
+
+[physics3d_v04]
+# Full-core parameters (spec v0.4). Defaults keep the linear v0.2/v0.3 cases valid.
+tracers  = "buoyancy"   # "buoyancy" (b prognostic) | "TS" (T,S prognostic, b diagnosed)
+alpha_T  = 2.0e-4       # thermal expansion [K-1]
+beta_S   = 7.4e-4       # haline contraction [psu-1]
+T0       = 10.0         # reference temperature [degC]
+S0       = 35.0         # reference salinity [psu]
+cp       = 3990.0       # heat capacity [J kg-1 K-1]
+A_h      = 0.0          # horizontal viscosity [m2 s-1]
+K_h      = 0.0          # horizontal tracer diffusivity [m2 s-1]
+q_heat   = 0.0          # surface heat flux [W m-2], positive downward
+q_salt   = 0.0          # surface virtual salt flux [psu m s-1]
+
+[domain]
+# spec v0.5 (docs/03 S10.2-S10.4). Defaults reproduce the v0.4 configuration
+# exactly, which is what verification case V5-1 checks.
+vcoord      = "zlevel"     # zlevel | zstar | sigma
+bc_x        = "periodic"   # periodic | closed | open
+bc_y        = "periodic"
+min_partial = 0.1          # thinnest partial bottom cell, fraction of dzr
+face_rule   = "min"        # min | mean | harmonic  (S10.2). "min" is the
+                           # production rule and is FIRST order on a smooth H
+                           # (V5-2 measures 1.04 against 2.00 for the others)
+
+[bathymetry]
+kind           = "flat"    # flat | slope | seamount | ridge | rough
+h_rel          = 0.9       # seamount/ridge relative height
+length         = 0.0       # [m] feature width; 0 => 0.1*Lx
+slope          = 0.5       # 'slope' fractional shoaling across the domain
+spectrum_slope = 1.5       # 'rough' amplitude spectrum exponent
+r_target       = 0.1       # 'rough' target std(H)/mean(H)
+seed           = 20260911  # 'rough' phase seed (fixed: R6 reproducibility)
+island         = false     # add a square island (closed-boundary tests)
+
+[physics3d_v05]
+eos       = "linear"       # linear | seos | teos10  (spec S10.6)
+pgf       = "remove"       # remove | keep           (spec S10.7)
+pgf_correction = true      # extrapolate Phi to the face depth before differencing
+eta_ext   = 0.0            # Flather reference elevation [m]
+u_ext     = 0.0            # Flather reference normal transport [m2 s-1]
+n_relax   = 0              # sponge width [cells]
+tau_relax = 3600.0         # innermost sponge time scale [s]
+
+[physics3d_v06]
+# spec v0.6 (docs/03 S11): vertical turbulence closure. 'none' reproduces v0.5 bitwise.
+closure   = "none"         # none | tke
+c_k       = 0.1            # K_m = c_k l sqrt(e)          (Gaspar et al. 1990)
+c_eps     = 0.7            # eps = c_eps e^{3/2} / l
+pr_t      = 1.0            # K_h = K_m / Pr_t
+kappa_vk  = 0.4            # von Karman constant for the boundary-limited mixing length
+z_0       = 0.1            # [m] roughness offset of the boundary mixing length
+e_min     = 1.0e-6         # [m2 s-2] floor of the turbulent kinetic energy
+n2_min    = 1.0e-8         # [s-2] floor of N^2 in the buoyancy mixing length
+l_min     = 0.01           # [m] floor of the mixing length
+e_bb      = 3.75           # surface TKE = e_bb u_*^2
+mxl       = "integral"     # integral | recursive  (S11.2: O(nz^2) energy budget
+                           # vs the two O(nz) sweeps of NEMO nn_mxl=2)

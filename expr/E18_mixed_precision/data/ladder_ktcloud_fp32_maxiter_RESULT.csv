@@ -1,0 +1,3 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+ktcloud,cuda_sp,0,lock_exchange_v06.mixed,theta0.5,0.5,multigrid,2,400,30,50,2.015850e+00,3.670725e+01,2.947617e-02,200000,0,nan,nan,nan,2.745847e+00
+ktcloud,cuda_sp,0,lock_exchange_v06.mixed,theta0.5,0.5,multigrid,2,1000,30,50,7.849687e-01,4.448629e+01,1.218414e-02,200000,0,nan,nan,nan,8.822592e-01

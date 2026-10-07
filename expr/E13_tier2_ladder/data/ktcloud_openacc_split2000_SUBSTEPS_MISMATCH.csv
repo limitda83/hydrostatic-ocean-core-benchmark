@@ -1,0 +1,3 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+ktcloud,openacc,0,lock_exchange.accr,split,0,none,4,2000,30,50,7.889572e-01,3.765057e+00,0.000000e+00,0,100,inf,inf,inf,1.047736e+01
+ktcloud,openacc,0,lock_exchange_v06.accr,split,0,none,4,2000,30,50,7.889572e-01,5.831205e+00,0.000000e+00,0,100,inf,inf,inf,6.764958e+00

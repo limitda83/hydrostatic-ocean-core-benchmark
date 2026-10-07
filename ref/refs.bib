@@ -1,0 +1,346 @@
+% ref/refs.bib - cfd_exp related work. PDFs of open-access items live in ref/pdf/.
+@article{hafner2021veros,
+  author = {H{\"a}fner, Dion and N{\o}rgaard Nuterman, Roman and Jochum, Markus},
+  title = {Fast, Cheap, and Turbulent---Global Ocean Modeling With {GPU} Acceleration in {Python}},
+  journal = {Journal of Advances in Modeling Earth Systems}, volume = {13}, number = {12}, year = {2021},
+  doi = {10.1029/2021MS002717}, note = {ref/pdf/veros_jax_2021_haefner.pdf}}
+@article{hafner2018veros,
+  author = {Häfner, Dion and Jacobsen, René Løwe and Eden, Carsten and Kristensen, Mads R. B. and Jochum, Markus and Nuterman, Roman and Vinter, Brian},
+  title = {Veros v0.1 -- a fast and versatile ocean simulator in pure {Python}},
+  journal = {Geoscientific Model Development}, volume = {11}, pages = {3299--3312}, year = {2018},
+  doi = {10.5194/gmd-11-3299-2018}, note = {ref/pdf/veros_v01_gmd_2018.pdf}}
+@article{ramadhan2020oceananigans,
+  author = {Ramadhan, Ali and Wagner, Gregory and Hill, Chris and Campin, Jean-Michel and Churavy, Valentin and Besard, Tim and Souza, Andre and Edelman, Alan and Ferrari, Raffaele and Marshall, John},
+  title = {Oceananigans.jl: Fast and friendly geophysical fluid dynamics on {GPUs}},
+  journal = {Journal of Open Source Software}, volume = {5}, number = {53}, pages = {2018}, year = {2020},
+  doi = {10.21105/joss.02018}, note = {ref/pdf/oceananigans_joss_2020.pdf}}
+@article{wagner2025oceananigans,
+  author = {Wagner, Gregory L. and Silvestri, Simone and Constantinou, Navid C. and Ramadhan, Ali and Campin, Jean-Michel and Hill, Chris and Chor, Tomas and Strong-Wright, Jago and Lee, Xin Kai and Poulin, Francis and Souza, Andre and Burns, Keaton J. and Bishnu, Siddhartha and Marshall, John and Ferrari, Raffaele},
+  title = {High-level, high-resolution ocean modeling at all scales with {Oceananigans}},
+  journal = {arXiv preprint}, eprint = {2502.14148}, year = {2025},
+  note = {ref/pdf/oceananigans_2025_allscales.pdf}}
+@article{silvestri2025gpudycore,
+  author = {Silvestri, Simone and Wagner, Gregory L. and Constantinou, Navid C. and Hill, Christopher N. and Campin, Jean‐Michel and Souza, Andre N. and Bishnu, Siddhartha and Churavy, Valentin and Marshall, John and Ferrari, Raffaele},
+  title = {A {GPU}-Based Ocean Dynamical Core for Routine Mesoscale-Resolving Climate Simulations},
+  journal = {Journal of Advances in Modeling Earth Systems}, volume = {17}, pages = {e2024MS004465}, year = {2025},
+  doi = {10.1029/2024MS004465}, note = {paywalled; not downloaded}}
+@article{jendersie2025nextsim,
+  author = {Jendersie, Robert and Lessig, Christian and Richter, Thomas},
+  title = {A {GPU} parallelization of the {neXtSIM-DG} dynamical core (v0.3.1)},
+  journal = {Geoscientific Model Development}, volume = {18}, pages = {3017--3034}, year = {2025},
+  doi = {10.5194/gmd-18-3017-2025}, note = {ref/pdf/nextsim_dg_gpu_2025.pdf}}
+@article{dahm2023pace,
+  author = {Dahm, Johann and Davis, Eddie and Deconinck, Florian and Elbert, Oliver and George, Rhea and McGibbon, Jeremy and Wicky, Tobias and Wu, Elynn and Kung, Christopher and Ben-Nun, Tal and Harris, Lucas and Groner, Linus and Fuhrer, Oliver},
+  title = {Pace v0.2: a {Python}-based performance-portable atmospheric model},
+  journal = {Geoscientific Model Development}, volume = {16}, pages = {2719--2736}, year = {2023},
+  doi = {10.5194/gmd-16-2719-2023}, note = {ref/pdf/pace_python_portable_atmos_2023.pdf}}
+@article{norman2015camse,
+  author = {Norman, Matthew and Larkin, Jeffrey and Vose, Aaron and Evans, Katherine},
+  title = {A case study of {CUDA FORTRAN} and {OpenACC} for an atmospheric climate kernel},
+  journal = {Journal of Computational Science}, volume = {9}, pages = {1--6}, year = {2015},
+  doi = {10.1016/j.jocs.2015.04.022}, note = {ref/pdf/camse_cuda_vs_openacc_2015.pdf}}
+@article{kang2021semiimplicit,
+  author = {Kang, Hyun‐Gyu and Evans, Katherine J. and Petersen, Mark R. and Jones, Philip W. and Bishnu, Siddhartha},
+  title = {A Scalable Semi-Implicit Barotropic Mode Solver for the {MPAS}-Ocean},
+  journal = {Journal of Advances in Modeling Earth Systems}, volume = {13}, pages = {e2020MS002238}, year = {2021},
+  doi = {10.1029/2020MS002238}, note = {ref/pdf/mpas_semiimplicit_barotropic_kang2021.pdf}}
+@article{shchepetkin2005roms,
+  author = {Shchepetkin, Alexander F. and McWilliams, James C.},
+  title = {The regional oceanic modeling system ({ROMS}): a split-explicit, free-surface, topography-following-coordinate oceanic model},
+  journal = {Ocean Modelling}, volume = {9}, pages = {347--404}, year = {2005},
+  doi = {10.1016/j.ocemod.2004.08.002}, note = {ref/pdf/roms_shchepetkin_mcwilliams_2005.pdf}}
+@article{demange2019stability,
+  author = {Demange, Jérémie and Debreu, Laurent and Marchesiello, Patrick and Lemarié, Florian and Blayo, Eric and Eldred, Christopher},
+  title = {Stability analysis of split-explicit free surface ocean models},
+  journal = {Journal of Computational Physics}, volume = {398}, pages = {108875}, year = {2019},
+  doi = {10.1016/j.jcp.2019.108875}, note = {paywalled}}
+@article{casulli1994semiimplicit,
+  author = {Casulli, Vincenzo and Cattani, Enrico},
+  title = {Stability, accuracy and efficiency of a semi-implicit method for three-dimensional shallow water flow},
+  journal = {Computers \& Mathematics with Applications}, volume = {27}, pages = {99--112}, year = {1994}}
+@article{gaspar1990tke,
+  author = {Gaspar, Philippe and Gr{\'e}goris, Yves and Lefevre, Jean-Michel},
+  title = {A simple eddy kinetic energy model for simulations of the oceanic vertical mixing},
+  journal = {Journal of Geophysical Research}, volume = {95}, pages = {16179--16193}, year = {1990}}
+@article{wagner2023catke,
+  author = {Wagner, Gregory LeClaire and Hillier, Adeline and Constantinou, Navid C. and Silvestri, Simone and Souza, Andre and Burns, Keaton and Hill, Chris and Campin, Jean-Michel and Marshall, John and Ferrari, Raffaele},
+  title = {Formulation and calibration of {CATKE}, a one-equation parameterization for microscale ocean mixing},
+  journal = {arXiv preprint}, eprint = {2306.13204}, year = {2023},
+  note = {ref/pdf/catke_2023_closure.pdf}}
+@article{roquet2015teos,
+  author = {Roquet, Fabien and Madec, Gurvan and McDougall, Trevor J. and Barker, Paul M.},
+  title = {Accurate polynomial expressions for the density and specific volume of seawater using the {TEOS-10} standard},
+  journal = {Ocean Modelling}, volume = {90}, pages = {29--43}, year = {2015},
+  doi = {10.1016/j.ocemod.2015.04.002}}
+@article{large1994kpp,
+  author = {Large, William G. and McWilliams, James C. and Doney, Scott C.},
+  title = {Oceanic vertical mixing: A review and a model with a nonlocal boundary layer parameterization},
+  journal = {Reviews of Geophysics}, volume = {32}, pages = {363--403}, year = {1994}}
+@article{leonard1979quick,
+  author = {Leonard, B. P.},
+  title = {A stable and accurate convective modelling procedure based on quadratic upstream interpolation},
+  journal = {Computer Methods in Applied Mechanics and Engineering}, volume = {19}, pages = {59--98}, year = {1979}}
+@article{sweby1984tvd,
+  author = {Sweby, P. K.},
+  title = {High resolution schemes using flux limiters for hyperbolic conservation laws},
+  journal = {SIAM Journal on Numerical Analysis}, volume = {21}, pages = {995--1011}, year = {1984}}
+@article{beckmann1993seamount,
+  author = {Beckmann, Aike and Haidvogel, Dale B.},
+  title = {Numerical simulation of flow around a tall isolated seamount. Part I},
+  journal = {Journal of Physical Oceanography}, volume = {23}, pages = {1736--1753}, year = {1993}}
+@article{adcroft1997partialcell,
+  author = {Adcroft, Alistair and Hill, Chris and Marshall, John},
+  title = {Representation of topography by shaved cells in a height coordinate ocean model},
+  journal = {Monthly Weather Review}, volume = {125}, pages = {2293--2315}, year = {1997}}
+@inproceedings{hoefler2015benchmarking,
+  author = {Hoefler, Torsten and Belli, Roberto},
+  title = {Scientific benchmarking of parallel computing systems},
+  booktitle = {SC15}, year = {2015}, doi = {10.1145/2807591.2807644}}
+@article{williams2009roofline,
+  author = {Williams, Samuel and Waterman, Andrew and Patterson, David},
+  title = {Roofline: an insightful visual performance model for multicore architectures},
+  journal = {Communications of the ACM}, volume = {52}, pages = {65--76}, year = {2009}}
+@article{balaji2017cpmip,
+  author = {Balaji, Venkatramani and Maisonnave, Eric and Zadeh, Niki and Lawrence, Bryan N. and Biercamp, Joachim and Fladrich, Uwe and Aloisio, Giovanni and Benson, Rusty and Caubel, Arnaud and Durachta, Jeffrey and Foujols, Marie-Alice and Lister, Grenville and Mocavero, Silvia and Underwood, Seth and Wright, Garrett},
+  title = {{CPMIP}: measurements of real computational performance of Earth system models in {CMIP6}},
+  journal = {Geoscientific Model Development}, volume = {10}, pages = {19--34}, year = {2017},
+  doi = {10.5194/gmd-10-19-2017}}
+@article{zhang2026swlicom,
+  title = {{swLICOM}: the multi-core version of an ocean general circulation model on the new generation {Sunway} supercomputer},
+  journal = {Geoscientific Model Development}, volume = {19}, pages = {3317}, year = {2026},
+  doi = {10.5194/gmd-19-3317-2026}, note = {ref/pdf/swlicom_2026_sunway.pdf}}
+@article{brodtkorb2021gpuocean,
+  author = {Brodtkorb, Andr{\'e} R. and Holm, H{\aa}vard H.},
+  title = {Coastal ocean forecasting on the {GPU} using a two-dimensional finite-volume scheme},
+  journal = {Tellus A}, volume = {73}, year = {2021}, doi = {10.1080/16000870.2021.1876341},
+  note = {ref/pdf/gpuocean_tellus_2021.pdf}}
+
+% ---- added 2026-09-16 (docs/02 L13/L14 sources; open-access PDFs in ref/pdf/) ----
+@article{tinto2019mixedprecision,
+  author = {Tintó Prims, Oriol and Acosta, Mario C. and Moore, Andrew M. and Castrillo, Miguel and Serradell, Kim and Cortés, Ana and Doblas-Reyes, Francisco J.},
+  title = {How to use mixed precision in ocean models: exploring a potential reduction of numerical precision in {NEMO} 4.0 and {ROMS} 3.6},
+  journal = {Geoscientific Model Development}, volume = {12}, pages = {3135--3148}, year = {2019},
+  doi = {10.5194/gmd-12-3135-2019}, note = {ref/pdf/tinto2019_mixed_precision_nemo_roms.pdf}}
+@article{bishnu2023juliampas,
+  author = {Bishnu, Siddhartha and Strauss, Robert R. and Petersen, Mark R.},
+  title = {Comparing the Performance of {Julia} on {CPUs} versus {GPUs} and {Julia-MPI} versus {Fortran-MPI}: a case study with {MPAS-Ocean} (Version 7.1)},
+  journal = {Geoscientific Model Development}, volume = {16}, pages = {5539--5559}, year = {2023},
+  doi = {10.5194/gmd-16-5539-2023}, note = {ref/pdf/bishnu2023_mpas_julia_vs_fortran.pdf}}
+@article{omega2026gmd,
+  author = {Petersen, Mark R. and Asay-Davis, Xylar S. and Barthel, Alice M. and Begeman, Carolyn Branecky and Bishnu, Siddhartha and Brus, Steven R. and Jones, Philip W. and Kang, Hyun-Gyu and Kim, Youngsung and Mametjanov, Azamat and O'Neill, Brian J. and Overfelt, James R. and Ringel, Kieran K. and Smith, Katherine M. and Sreepathi, Sarat and Van Roekel, Luke P. and Waruszewski, Maciej},
+  title = {The ocean model for {E3SM} global applications: {Omega} version 0.1.0 -- a new high-performance computing ocean model},
+  journal = {Geoscientific Model Development}, volume = {19}, pages = {3569--3594}, year = {2026},
+  doi = {10.5194/gmd-19-3569-2026}, note = {ref/pdf/omega_v010_gmd_2026.pdf}}
+@article{iconexclaim2026gmd,
+  author = {Dipankar, Anurag and Bianco, Mauro and Bukenberger, Mona and Ehrengruber, Till and Farabullini, Nicoletta and Fuhrer, Oliver and Gopal, Abishek and Hupp, Daniel and Jocksch, Andreas and Kellerhals, Samuel and Kroll, Clarissa A. and Lapillonne, Xavier and Leclair, Matthieu and Luz, Magdalena and Müller, Christoph and Ong, Chia Rui and Osuna, Carlos and Pothapakula, Praveen and Prein, Andreas and Röthlin, Matthias and Sawyer, William and Schär, Christoph and Schemm, Sebastian and Serafini, Giacomo and Vogt, Hannes and Weber, Ben and Wills, Robert C. Jnglin and Gruber, Nicolas and Schulthess, Thomas C.},
+  title = {Toward exascale climate modelling: a python {DSL} approach to {ICON}'s dynamical core},
+  journal = {Geoscientific Model Development}, volume = {19}, pages = {713--729}, year = {2026},
+  doi = {10.5194/gmd-19-713-2026}, note = {ref/pdf/icon_exclaim_dsl_gmd_2026.pdf}}
+@article{lapillonne2026icongpu,
+  author = {Lapillonne, Xavier and Hupp, Daniel and Gessler, Fabian and Walser, André and Pauling, Andreas and Lauber, Annika and Cumming, Benjamin and Osuna, Carlos and Müller, Christoph and Merker, Claire and Leuenberger, Daniel and Leutwyler, David and Alexeev, Dmitry and Vollenweider, Gabriel and Van Parys, Guillaume and Jucker, Jonas and Jansing, Lukas and Arpagaus, Marco and Induni, Marco and Jacob, Marek and Kraushaar, Matthias and Jähn, Michael and Stellio, Mikael and Fuhrer, Oliver and Baumann, Petra and Steiner, Philippe and Kaufmann, Pirmin and Dietlicher, Remo and Müller, Ralf and Kosukhin, Sergey and Schulthess, Thomas C. and Schättler, Ulrich and Cherkas, Victoria and Sawyer, William},
+  title = {Operational numerical weather prediction with {ICON} on {GPUs} (version 2024.10)},
+  journal = {Geoscientific Model Development}, volume = {19}, pages = {755--772}, year = {2026},
+  doi = {10.5194/gmd-19-755-2026}, note = {ref/pdf/icon_gpu_operational_gmd_2026.pdf}}
+@article{zanna2025hybrid,
+  author = {Zanna, Laure and Gregory, William and Perezhogin, Pavel and Sane, Aakash and Zhang, Cheng and Adcroft, Alistair and Bushuk, Mitch and Fernandez-Granda, Carlos and Reichl, Brandon and Balwada, Dhruv and Busecke, Julius and Chapman, William and Connolly, Alex and Du, Danni and Everard, Kelsey and Falasca, Fabrizio and Falga, Renaud and Kamm, David and Meunier, Etienne and Liu, Qi and Nasser, Antoine and Pudig, Matthew and Shao, Andrew and Simpson, Julia L. and Vogt, Linus and Wu, Jiarong},
+  title = {A Framework for Hybrid Physics-{AI} Coupled Ocean Models},
+  journal = {arXiv preprint}, eprint = {2510.22676}, year = {2025},
+  note = {ref/pdf/zanna2025_hybrid_physics_ai_ocean.pdf. Same CNN module: ~10x the core on CPU, ~0.1x on GPU}}
+@article{zhang2023mleddy,
+  author = {Zhang, Cheng and Perezhogin, Pavel and Gultekin, Cem and Adcroft, Alistair and Fernandez-Granda, Carlos and Zanna, Laure},
+  title = {Implementation and Evaluation of a Machine Learned Mesoscale Eddy Parameterization into a Numerical Ocean Circulation Model},
+  journal = {Journal of Advances in Modeling Earth Systems}, volume = {15}, year = {2023},
+  doi = {10.1029/2023MS003697}, note = {ref/pdf/zhang2023_ml_eddy_mom6.pdf (arXiv:2303.00962)}}
+@article{perezhogin2024stable,
+  author = {Perezhogin, Pavel and Zhang, Cheng and Adcroft, Alistair and Fernandez-Granda, Carlos and Zanna, Laure},
+  title = {A Stable Implementation of a Data-Driven Scale-Aware Mesoscale Parameterization},
+  journal = {Journal of Advances in Modeling Earth Systems}, volume = {16}, year = {2024},
+  doi = {10.1029/2023MS004104}, note = {paywalled -- bibliography only}}
+@article{sane2023osbl,
+  author = {Sane, Aakash and Reichl, Brandon G. and Adcroft, Alistair and Zanna, Laure},
+  title = {Parameterizing Vertical Mixing Coefficients in the Ocean Surface Boundary Layer Using Neural Networks},
+  journal = {Journal of Advances in Modeling Earth Systems}, volume = {15}, year = {2023},
+  doi = {10.1029/2023MS003890}, note = {paywalled -- bibliography only}}
+@article{sane2026equations,
+  author = {Sane, Aakash and Reichl, Brandon G. and Adcroft, Alistair and Zanna, Laure},
+  title = {Machine Learned Equations for Vertical Mixing Coefficients in the Ocean Surface Boundary Layer},
+  journal = {Geophysical Research Letters}, volume = {53}, pages = {e2026GL122106}, year = {2026},
+  doi = {10.1029/2026GL122106}, note = {paywalled -- bibliography only}}
+@article{christopoulos2024online,
+  author = {Christopoulos, Costa and Lopez‐Gomez, Ignacio and Beucler, Tom and Cohen, Yair and Kawczynski, Charles and Dunbar, Oliver R. A. and Schneider, Tapio},
+  title = {Online Learning of Entrainment Closures in a Hybrid Machine Learning Parameterization},
+  journal = {Journal of Advances in Modeling Earth Systems}, volume = {16}, pages = {e2024MS004485}, year = {2024},
+  doi = {10.1029/2024MS004485}, note = {paywalled -- bibliography only}}
+@article{han2025hybridgcm,
+  author = {Han, Yilun and Zhang, Guang J. and Wang, Yong and Wan, Hui},
+  title = {A Decadal Hybrid {GCM} Simulation Using Deep-Learning-Based Cloud and Convection Parameterization Generalized to a Warm Climate},
+  journal = {Journal of Advances in Modeling Earth Systems}, volume = {17}, pages = {e2025MS005231}, year = {2025},
+  doi = {10.1029/2025MS005231}, note = {paywalled -- bibliography only}}
+@article{bonev2025fcn3,
+  author = {Bonev, Boris and Kurth, Thorsten and Mahesh, Ankur and Bisson, Mauro and Kossaifi, Jean and Kashinath, Karthik and Anandkumar, Anima and Collins, William D. and Pritchard, Michael S. and Keller, Alexander},
+  title = {{FourCastNet} 3: A geometric approach to probabilistic machine-learning weather forecasting at scale},
+  journal = {arXiv preprint}, eprint = {2507.12144}, year = {2025}, note = {ref/pdf/fourcastnet3_2025.pdf}}
+@article{falasca2026forced,
+  author = {Falasca, Fabrizio},
+  title = {Probing forced responses and causality in data-driven climate emulators: conceptual limitations and the role of reduced-order models},
+  journal = {arXiv preprint}, eprint = {2506.22552}, year = {2026}, note = {ref/pdf/falasca2026_emulator_forced_response.pdf}}
+@article{rucker2026ace2,
+  author = {Rucker, K. and Baxter, I. and Hassanzadeh, P. and Shaw, T. A. and Pahlavan, H. A.},
+  title = {Benchmarking Regional Thermodynamic Trends in an {AI} emulator, {ACE2}, and a hybrid model, {NeuralGCM}},
+  journal = {arXiv preprint}, eprint = {2511.00274}, year = {2026}, note = {ref/pdf/rucker2026_ace2_neuralgcm_ood.pdf}}
+@article{stanleyclamp2026noepoch,
+  author = {Stanley-Clamp, Bradley and Lei, Anson and Christensen, Hannah M. and Posner, Ingmar},
+  title = {No Epoch Like the Present: Robust Climate Emulation Requires Out-of-Distribution Generalisation},
+  journal = {arXiv preprint}, eprint = {2605.22248}, year = {2026}, note = {ref/pdf/stanleyclamp2026_no_epoch_ood.pdf}}
+@article{yu2023climsimonline,
+  author = {Yu, Sungduk and Hu, Zeyuan and Subramaniam, Akshay and Hannah, Walter and Peng, Liran and Lin, Jerry and Bhouri, Mohamed Aziz and Gupta, Ritwik and Lütjens, Björn and Will, Justus C. and Behrens, Gunnar and Busecke, Julius J. M. and Loose, Nora and Stern, Charles I. and Beucler, Tom and Harrop, Bryce and Heuer, Helge and Hillman, Benjamin R. and Jenney, Andrea and Liu, Nana and White, Alistair and Zheng, Tian and Kuang, Zhiming and Ahmed, Fiaz and Barnes, Elizabeth and Brenowitz, Noah D. and Bretherton, Christopher and Eyring, Veronika and Ferretti, Savannah and Lutsko, Nicholas and Gentine, Pierre and Mandt, Stephan and Neelin, J. David and Yu, Rose and Zanna, Laure and Urban, Nathan and Yuval, Janni and Abernathey, Ryan and Baldi, Pierre and Chuang, Wayne and Huang, Yu and Iglesias-Suarez, Fernando and Jantre, Sanket and Ma, Po-Lun and Shamekh, Sara and Zhang, Guang and Pritchard, Michael},
+  title = {{ClimSim-Online}: A Large Multi-scale Dataset and Framework for Hybrid {ML}-physics Climate Emulation},
+  journal = {arXiv preprint}, eprint = {2306.08754}, year = {2023}, note = {ref/pdf/climsim_online_2023.pdf}}
+@inproceedings{partee2021smartsim,
+  author = {Partee, Sam and Ellis, Matthew and Rigazzi, Alessandro and Bachman, Scott and Marques, Gustavo and Shao, Andrew and Robbins, Benjamin},
+  title = {Using Machine Learning at Scale in {HPC} Simulations with {SmartSim}: An Application to Ocean Climate Modeling},
+  booktitle = {arXiv preprint}, eprint = {2104.09355}, year = {2021}, note = {ref/pdf/smartsim_ocean_ml_2021.pdf}}
+@article{atkinson2025ftorch,
+  author = {Atkinson, Jack and Elafrou, Athena and Kasoar, Elliott and Wallwork, Joseph G. and Meltzer, Thomas and Clifford, Simon and Orchard, Dominic and Edsall, Chris},
+  title = {{FTorch}: a library for coupling {PyTorch} models to {Fortran}},
+  journal = {Journal of Open Source Software}, year = {2025},
+  doi = {10.21105/joss.07602}, note = {ref/pdf/ftorch_joss_2025.pdf}}
+@article{meunier2025diffveros,
+  author = {Meunier, Etienne and Ouala, Said and Frezat, Hugo and Le Sommer, Julien and Fablet, Ronan},
+  title = {Towards fully differentiable neural ocean model with {Veros}},
+  journal = {arXiv preprint}, eprint = {2511.17427}, year = {2025}, note = {ref/pdf/veros_differentiable_2025.pdf}}
+@article{koldunov2026fesomllm,
+  author = {Koldunov, N. and Cheedela, S. K. and Danilov, S. and Sidorenko, D. and Beyer, S. and Jung, T.},
+  title = {An Ocean Model Ported by a Large Language Model: Experience and Lessons from {FESOM2} ({Fortran} to {C} to {C++/Kokkos})},
+  journal = {arXiv preprint}, eprint = {2606.11356}, year = {2026}, note = {ref/pdf/fesom2_llm_port_kokkos_2026.pdf}}
+@article{shan2024stencil,
+  author = {Shan, Baodi and Araya-Polo, Mauricio},
+  title = {Evaluation of Programming Models and Performance for Stencil Computation on Current {GPU} Architectures},
+  journal = {arXiv preprint}, eprint = {2404.04441}, year = {2024}, note = {ref/pdf/stencil_programming_models_gpu_2024.pdf}}
+@article{porter2024gpuforecasting,
+  author = {Porter, Andrew and Heimbach, Patrick},
+  title = {Unlocking the Power of Parallel Computing: {GPU} technologies for Ocean Forecasting},
+  journal = {State of the Planet (Copernicus), preprint sp-2024-32}, year = {2024}, note = {ref/pdf/porter_heimbach_gpu_ocean_forecasting_2024.pdf}}
+@article{laszlo2016tridiagonal,
+  author = {L{\'a}szl{\'o}, Endre and Giles, Mike and Appleyard, Jeremy},
+  title = {Manycore Algorithms for Batch Scalar and Block Tridiagonal Solvers},
+  journal = {ACM Transactions on Mathematical Software}, volume = {42}, number = {4}, year = {2016},
+  doi = {10.1145/2830568}, note = {ref/pdf/laszlo_giles_tridiagonal_toms.pdf}}
+@article{zhang2016schism,
+  author = {Zhang, Yinglong J. and Ye, Fei and Stanev, Emil V. and Grashorn, Sebastian},
+  title = {Seamless cross-scale modeling with {SCHISM}},
+  journal = {Ocean Modelling}, volume = {102}, pages = {64--81}, year = {2016},
+  doi = {10.1016/j.ocemod.2016.05.002}, note = {ref/pdf/schism_zhang2016.pdf}}
+@techreport{deltares_delft3d_spec,
+  author = {{Deltares}}, title = {{Delft3D} 3D/2D modelling suite for integral water solutions -- Functional Description},
+  institution = {Deltares}, year = {2024}, note = {ref/pdf/delft3d_functional_spec.pdf}}
+@article{wei2024licomkokkos,
+  author = {Luo, Yayu and Zhu, Tongzhijun and Liu, Zediao and Mao, Tenglong and Chen, Ziyi and Pi, Huan and Lin, Ying},
+  title = {Accelerating {LASG/IAP} climate system ocean model version 3 for performance portability using {Kokkos}},
+  journal = {Future Generation Computer Systems}, volume = {160}, pages = {711--723}, year = {2024},
+  doi = {10.1016/j.future.2024.06.030}, note = {paywalled -- bibliography only}}
+
+% ---- added 2026-09-16 (Computers & Geosciences related work + closure references) ----
+@article{rueda2016openacc,
+  author = {Rueda, Antonio J. and Noguera, Jos{\'e} M. and Luque, Adri{\'a}n},
+  title = {A comparison of native {GPU} computing versus {OpenACC} for implementing flow-routing algorithms in hydrological applications},
+  journal = {Computers \& Geosciences}, volume = {87}, pages = {91--100}, year = {2016},
+  doi = {10.1016/j.cageo.2015.12.004}, note = {paywalled -- bibliography only}}
+@article{kim2021wsm6,
+  author = {Kim, Jae Youp and Kang, Ji-Sun and Joh, Minsu},
+  title = {{GPU} acceleration of {MPAS} microphysics {WSM6} using {OpenACC} directives: Performance and verification},
+  journal = {Computers \& Geosciences}, volume = {146}, pages = {104627}, year = {2021},
+  doi = {10.1016/j.cageo.2020.104627}, note = {paywalled -- bibliography only}}
+@article{modave2016dg,
+  author = {Modave, Axel and St-Cyr, Amik and Warburton, Tim},
+  title = {{GPU} performance analysis of a nodal discontinuous {Galerkin} method for acoustic and elastic models},
+  journal = {Computers \& Geosciences}, volume = {91}, pages = {64--76}, year = {2016},
+  doi = {10.1016/j.cageo.2016.03.008}, note = {paywalled -- bibliography only}}
+@article{louboutin2017performance,
+  author = {Louboutin, Mathias and Lange, Michael and Herrmann, Felix J. and Kukreja, Navjot and Gorman, Gerard},
+  title = {Performance prediction of finite-difference solvers for different computer architectures},
+  journal = {Computers \& Geosciences}, volume = {105}, pages = {148--157}, year = {2017},
+  doi = {10.1016/j.cageo.2017.04.014}, note = {paywalled -- bibliography only}}
+@article{paronuzzi2025nemoprecision,
+  author = {Paronuzzi-Ticco, Stella V. and Utrera, Gladys and Acosta, Mario C.},
+  title = {Efficient variable precision reduction in chaotic climate models: Analysis of the {NEMO} case in the dynamical systems framework},
+  journal = {Computers \& Geosciences}, volume = {205}, pages = {105989}, year = {2025},
+  doi = {10.1016/j.cageo.2025.105989}, note = {paywalled -- bibliography only}}
+@article{blanke1993mixinglength,
+  author = {Blanke, Bruno and Delecluse, Pascale},
+  title = {Variability of the Tropical {Atlantic} Ocean Simulated by a General Circulation Model with Two Different Mixed-Layer Physics},
+  journal = {Journal of Physical Oceanography}, volume = {23}, number = {7}, pages = {1363--1388}, year = {1993},
+  doi = {10.1175/1520-0485(1993)023<1363:VOTTAO>2.0.CO;2}, note = {open access (AMS) -- not downloaded}}
+@article{kato1969entrainment,
+  author = {Kato, Hiroaki and Phillips, Owen M.},
+  title = {On the penetration of a turbulent layer into stratified fluid},
+  journal = {Journal of Fluid Mechanics}, volume = {37}, number = {4}, pages = {643--655}, year = {1969},
+  doi = {10.1017/S0022112069000758}, note = {paywalled -- bibliography only}}
+
+@article{witherden2015pyfr,
+  author = {Witherden, Freddie D. and Vermeire, Brian C. and Vincent, Peter E.},
+  title = {Heterogeneous computing on mixed unstructured grids with {PyFR}},
+  journal = {Computers \& Fluids}, volume = {120}, pages = {173--186}, year = {2015},
+  doi = {10.1016/j.compfluid.2015.07.016}, note = {ref/pdf/pyfr_cf_2015_arxiv1409.0405.pdf (arXiv:1409.0405)}}
+
+% ---- added 2026-09-16 (introduction: GPU CFD growth, ML forecasting speed, learned parameterisations) ----
+@article{niemeyer2014gpucfd,
+  author = {Niemeyer, Kyle E. and Sung, Chih-Jen},
+  title = {Recent progress and challenges in exploiting graphics processors in computational fluid dynamics},
+  journal = {The Journal of Supercomputing}, volume = {67}, pages = {528--564}, year = {2013},
+  doi = {10.1007/s11227-013-1015-7}, note = {bibliography only unless OA}}
+@article{reguly2020portability,
+  author = {Reguly, István Z. and Mudalige, Gihan R.},
+  title = {Productivity, performance, and portability for computational fluid dynamics applications},
+  journal = {Computers \& Fluids}, volume = {199}, pages = {104425}, year = {2020},
+  doi = {10.1016/j.compfluid.2020.104425}, note = {bibliography only unless OA}}
+@article{brodtkorb2012gpusw,
+  author = {Brodtkorb, André R. and Sætra, Martin L. and Altinakar, Mustafa},
+  title = {Efficient shallow water simulations on GPUs: Implementation, visualization, verification, and validation},
+  journal = {Computers \& Fluids}, volume = {55}, pages = {1--12}, year = {2012},
+  doi = {10.1016/j.compfluid.2011.10.012}, note = {bibliography only unless OA}}
+@article{afzal2017gpucfd,
+  author = {Afzal, Asif and Ansari, Zahid and Faizabadi, Ahmed Rimaz and Ramis, M. K.},
+  title = {Parallelization Strategies for Computational Fluid Dynamics Software: State of the Art Review},
+  journal = {Archives of Computational Methods in Engineering}, volume = {24}, pages = {337--363}, year = {2016},
+  doi = {10.1007/s11831-016-9165-4}, note = {bibliography only unless OA}}
+@article{lam2023graphcast,
+  author = {Lam, Remi and Sanchez-Gonzalez, Alvaro and Willson, Matthew and Wirnsberger, Peter and Fortunato, Meire and Alet, Ferran and Ravuri, Suman and Ewalds, Timo and Eaton-Rosen, Zach and Hu, Weihua and Merose, Alexander and Hoyer, Stephan and Holland, George and Vinyals, Oriol and Stott, Jacklynn and Pritzel, Alexander and Mohamed, Shakir and Battaglia, Peter},
+  title = {Learning skillful medium-range global weather forecasting},
+  journal = {Science}, volume = {382}, pages = {1416--1421}, year = {2023},
+  doi = {10.1126/science.adi2336}, note = {bibliography only unless OA}}
+@article{bi2023pangu,
+  author = {Bi, Kaifeng and Xie, Lingxi and Zhang, Hengheng and Chen, Xin and Gu, Xiaotao and Tian, Qi},
+  title = {Accurate medium-range global weather forecasting with 3D neural networks},
+  journal = {Nature}, volume = {619}, pages = {533--538}, year = {2023},
+  doi = {10.1038/s41586-023-06185-3}, note = {bibliography only unless OA}}
+@article{kochkov2024neuralgcm,
+  author = {Kochkov, Dmitrii and Yuval, Janni and Langmore, Ian and Norgaard, Peter and Smith, Jamie and Mooers, Griffin and Klöwer, Milan and Lottes, James and Rasp, Stephan and Düben, Peter and Hatfield, Sam and Battaglia, Peter and Sanchez-Gonzalez, Alvaro and Willson, Matthew and Brenner, Michael P. and Hoyer, Stephan},
+  title = {Neural general circulation models for weather and climate},
+  journal = {Nature}, volume = {632}, pages = {1060--1066}, year = {2024},
+  doi = {10.1038/s41586-024-07744-y}, note = {bibliography only unless OA}}
+@article{rasp2018pnas,
+  author = {Rasp, Stephan and Pritchard, Michael S. and Gentine, Pierre},
+  title = {Deep learning to represent subgrid processes in climate models},
+  journal = {Proceedings of the National Academy of Sciences}, volume = {115}, pages = {9684--9689}, year = {2018},
+  doi = {10.1073/pnas.1810286115}, note = {bibliography only unless OA}}
+@article{yuval2020natcomm,
+  author = {Yuval, Janni and O’Gorman, Paul A.},
+  title = {Stable machine-learning parameterization of subgrid processes for climate modeling at a range of resolutions},
+  journal = {Nature Communications}, volume = {11}, pages = {3295}, year = {2020},
+  doi = {10.1038/s41467-020-17142-3}, note = {bibliography only unless OA}}
+@article{bolton2019zanna,
+  author = {Bolton, Thomas and Zanna, Laure},
+  title = {Applications of Deep Learning to Ocean Data Inference and Subgrid Parameterization},
+  journal = {Journal of Advances in Modeling Earth Systems}, volume = {11}, pages = {376--399}, year = {2019},
+  doi = {10.1029/2018MS001472}, note = {bibliography only unless OA}}
+@article{pathak2022fourcastnet,
+  author = {Pathak, Jaideep and Subramanian, Shashank and Harrington, Peter and Raja, Sanjeev and Chattopadhyay, Ashesh and Mardani, Morteza and Kurth, Thorsten and Hall, David and Li, Zongyi and Azizzadenesheli, Kamyar and Hassanzadeh, Pedram and Kashinath, Karthik and Anandkumar, Anima},
+  title = {{FourCastNet}: A global data-driven high-resolution weather model using adaptive {Fourier} neural operators},
+  journal = {arXiv preprint}, eprint = {2202.11214}, year = {2022}, note = {open access arXiv}}
+
+@incollection{arakawa1977cgrid,
+  author = {Arakawa, Akio and Lamb, Vivian R.},
+  title = {Computational design of the basic dynamical processes of the {UCLA} general circulation model},
+  booktitle = {Methods in Computational Physics: Advances in Research and Applications}, volume = {17}, pages = {173--265},
+  publisher = {Academic Press}, year = {1977}, doi = {10.1016/B978-0-12-460817-7.50009-4}, note = {bibliography only}}

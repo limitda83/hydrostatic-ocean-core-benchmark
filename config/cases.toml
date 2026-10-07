@@ -1,0 +1,118 @@
+# Verification cases (docs/03_discretization_spec.md section 5).
+
+[case]
+name = "igw"
+
+[case.igw]
+# Inertia-gravity wave, doubly periodic, exact solution.
+mode_x   = 2            # wavenumber index m  (k = 2*pi*m/Lx)
+mode_y   = 2            # wavenumber index n  (l = 2*pi*n/Ly)
+eta0     = 1.0          # [m] surface amplitude
+n_periods = 1.0         # integrate this many wave periods
+
+[case.geo_balance]
+# Geostrophically balanced steady state, doubly periodic.
+mode_x   = 1
+mode_y   = 1
+eta0     = 1.0
+n_days   = 10.0         # integrate this many days; exact solution is "no change"
+
+[time]
+# dt is chosen as cfl_factor * dt_max(explicit stability limit) unless dt is given.
+cfl_factor = 0.5
+dt         = 0.0        # [s] 0 => derive from cfl_factor
+
+# dt sweep for the temporal convergence study and the error-vs-cost frontier (axis F).
+[time.sweep]
+cfl_list = [0.125, 0.25, 0.5, 1.0, 2.0, 4.0, 8.0, 16.0, 32.0]
+
+[case.igw_broadband]
+# V1b: superposition of n_modes^2 inertia-gravity waves. Still an exact
+# solution (the equations are linear) but with a broadband spectrum, so the
+# Helmholtz right-hand side is no longer an eigenvector of the preconditioned
+# operator and PCG has to do real work. See docs/11 section 5.1.
+n_modes   = 8            # modes per direction -> 64 modes total
+eta0      = 1.0          # [m] rms surface elevation (normalised)
+slope     = 1.0          # amplitude spectrum a ~ kappa^-slope
+n_periods = 1.0          # relative to the SLOWEST mode. The fastest mode
+                         # (n_modes, n_modes) then runs ~n_modes periods, so
+                         # phase error stays interpretable while CFL 32 still
+                         # takes a useful number of steps.
+
+# ---------------------------------------------------------------- 3D (spec v0.2)
+[case.barotropic3d]
+# V3D-1: the 2D inertia-gravity wave replicated over nz layers. With nu = 0 and
+# b = 0 the 3D algorithm must reproduce the 2D answer to round-off.
+mode_x    = 2
+mode_y    = 2
+eta0      = 1.0
+n_periods = 1.0
+
+[case.vdiffusion]
+# V3D-2: decay of a discrete vertical eigenmode. Spatially exact, so a dt
+# refinement measures the temporal order of the vertical implicit solve alone.
+mode_z    = 1
+u0        = 1.0
+n_efolds  = 1.0
+
+[case.baroclinic_igw]
+# V3D-3: exact internal gravity wave, vertical mode mode_z.
+mode_x    = 2
+mode_y    = 2
+mode_z    = 2
+eta0      = 1.0
+n_periods = 1.0
+
+[physics3d]
+# 3D-only physical parameters (spec S7.1).
+N2          = 1.0e-4     # buoyancy frequency squared [s-2]
+nu          = 1.0e-3     # vertical viscosity [m2 s-1]
+kappa       = 1.0e-3     # vertical diffusivity [m2 s-1]
+tau_x       = 0.0        # surface stress [N m-2]
+tau_y       = 0.0
+bottom_drag = 0.0        # linear drag [m s-1]
+
+[case.tracer_advect]
+# V3D-4: tracer sinusoid carried by a uniform flow. Isolates the advection
+# operator - uniform flow does not advect itself and is divergence free.
+# Requires tracers='TS' with alpha_T = beta_S = 0 (passive tracer) and f = 0.
+mode_x     = 2
+mode_y     = 1
+amp        = 1.0        # [degC] tracer amplitude about T0
+u0         = 0.5        # [m s-1]
+v0         = 0.25
+n_transits = 0.25       # domain transits at speed |u0|
+
+[case.ekman]
+# V3D-5: steady wind-driven Ekman spiral. Verifies the surface stress boundary
+# condition, implicit vertical viscosity and Coriolis together.
+n_inertial = 2.0        # integrate this many inertial periods
+
+# ---------------------------------------------------------------- 3D (spec v0.5)
+[case.seamount_rest]
+# V5-3: Beckmann & Haidvogel (1993). A resting stratification over a seamount
+# must stay at rest; max|u| is the pressure-gradient error of the coordinate.
+delta_rho = 3.0          # [kg m-3] density anomaly scale of the profile
+n_days    = 1.0
+
+[case.zstar_constancy]
+# V5-6: a uniform tracer must stay uniform under a moving free surface.
+eta0      = 1.0          # [m]
+n_periods = 0.25
+
+[case.flather_radiate]
+# V5-5: a surface bump leaving through an open boundary.
+eta0       = 1.0         # [m]
+width      = 4.0e4       # [m] Gaussian half width
+n_transits = 1.5         # domain crossings at the surface gravity speed
+
+[case.lock_exchange]
+# Gravity current; the metric is the spurious rise of reference potential energy.
+delta_T  = 2.0           # [degC] warm/cold contrast
+n_hours  = 6.0
+
+[case.basin_seiche]
+# Tier-2 case C2 (docs/04): free barotropic seiche in a closed basin over
+# topography. The barotropic mode is active, so schemes differ in accuracy.
+eta0      = 0.5          # [m] initial tilt amplitude
+n_periods = 2.0          # seiche periods, T = 2 Lx / sqrt(g H_mean)

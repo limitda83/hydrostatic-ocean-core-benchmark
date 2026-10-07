@@ -1,0 +1,52 @@
+=== 18:35:56 DC nx=400 devices=1
+cuda3d5-multi: case=lock_exchange nx=400 ny=400 nz=30 scheme=fb ndev=1 halo=16 devices=1 gpu=NVIDIA GeForce RTX 5090 steps=50
+  wall median= 5.40574E-01 s  mad= 6.39060E-05 s  solver_iters/run=0  substeps/run=0
+=== 18:36:02 DC nx=400 devices=1,0
+cuda3d5-multi: case=lock_exchange nx=400 ny=400 nz=30 scheme=fb ndev=2 halo=16 devices=1,0 gpu=NVIDIA GeForce RTX 5090 steps=50
+  wall median= 3.37560E-01 s  mad= 5.17014E-04 s  solver_iters/run=0  substeps/run=0
+=== 18:38:16 DC nx=1000 devices=1
+cuda3d5-multi: case=lock_exchange nx=1000 ny=1000 nz=30 scheme=fb ndev=1 halo=16 devices=1 gpu=NVIDIA GeForce RTX 5090 steps=50
+  wall median= 3.40002E+00 s  mad= 6.32950E-05 s  solver_iters/run=0  substeps/run=0
+=== 18:39:50 DC nx=1000 devices=1,0
+cuda3d5-multi: case=lock_exchange nx=1000 ny=1000 nz=30 scheme=fb ndev=2 halo=16 devices=1,0 gpu=NVIDIA GeForce RTX 5090 steps=50
+  wall median= 1.84352E+00 s  mad= 1.05329E-04 s  solver_iters/run=0  substeps/run=0
+=== 19:12:39 DC nx=2000 devices=1
+FATAL: out of memory at src/cfd_exp3d5_cuda.cu:287
+=== 19:12:50 DC nx=2000 devices=1,0
+cuda3d5-multi: case=lock_exchange nx=2000 ny=2000 nz=30 scheme=fb ndev=2 halo=16 devices=1,0 gpu=NVIDIA GeForce RTX 5090 steps=50
+  wall median= 7.06774E+00 s  mad= 1.89872E-03 s  solver_iters/run=0  substeps/run=0
+=== 19:26:40 TKE nx=400 devices=1
+cuda3d5-multi: case=lock_exchange nx=400 ny=400 nz=30 scheme=fb ndev=1 halo=16 devices=1 gpu=NVIDIA GeForce RTX 5090 steps=50
+  wall median= 1.87849E+00 s  mad= 3.36269E-04 s  solver_iters/run=0  substeps/run=0
+=== 19:26:53 TKE nx=400 devices=1,0
+cuda3d5-multi: case=lock_exchange nx=400 ny=400 nz=30 scheme=fb ndev=2 halo=16 devices=1,0 gpu=NVIDIA GeForce RTX 5090 steps=50
+  wall median= 1.16066E+00 s  mad= 3.17280E-04 s  solver_iters/run=0  substeps/run=0
+=== 19:27:08 TKE nx=1000 devices=1
+cuda3d5-multi: case=lock_exchange nx=1000 ny=1000 nz=30 scheme=fb ndev=1 halo=16 devices=1 gpu=NVIDIA GeForce RTX 5090 steps=50
+  wall median= 1.01611E+01 s  mad= 3.00426E-04 s  solver_iters/run=0  substeps/run=0
+=== 19:28:16 TKE nx=1000 devices=1,0
+cuda3d5-multi: case=lock_exchange nx=1000 ny=1000 nz=30 scheme=fb ndev=2 halo=16 devices=1,0 gpu=NVIDIA GeForce RTX 5090 steps=50
+  wall median= 5.44993E+00 s  mad= 8.15305E-04 s  solver_iters/run=0  substeps/run=0
+=== 19:51:37 TKE nx=2000 devices=1
+FATAL: out of memory at src/cfd_exp3d5_cuda.cu:287
+=== 19:51:47 TKE nx=2000 devices=1,0
+cuda3d5-multi: case=lock_exchange nx=2000 ny=2000 nz=30 scheme=fb ndev=2 halo=16 devices=1,0 gpu=NVIDIA GeForce RTX 5090 steps=50
+  wall median= 2.02203E+01 s  mad= 2.53090E-05 s  solver_iters/run=0  substeps/run=0
+DONE output/e19_20260923-183552/e19_gpgpu_20260923-183552.csv
+=== 20:05:32 DC nx=400 single-device binary on GPU 1
+cuda3d5: case=lock_exchange nx=400 nz=30 scheme=fb solver=fft eos=teos10 dt= 5.03963E-01 steps=50 gpu=NVIDIA GeForce RTX 5090
+  wall median= 4.78922E-01 s  mad= 1.34073E-04 s  solver_iters/run=0  substeps/run=0
+=== 20:05:37 DC nx=1000 single-device binary on GPU 1
+cuda3d5: case=lock_exchange nx=1000 nz=30 scheme=fb solver=fft eos=teos10 dt= 1.96242E-01 steps=50 gpu=NVIDIA GeForce RTX 5090
+  wall median= 3.28507E+00 s  mad= 1.99703E-04 s  solver_iters/run=0  substeps/run=0
+=== 20:06:00 DC nx=2000 single-device binary on GPU 1
+FATAL: out of memory at src/cfd_exp3d5_cuda.cu:287
+=== 20:06:09 TKE nx=400 single-device binary on GPU 1
+cuda3d5: case=lock_exchange nx=400 nz=30 scheme=fb solver=fft eos=teos10 dt= 5.03963E-01 steps=50 gpu=NVIDIA GeForce RTX 5090
+  wall median= 1.59331E+00 s  mad= 9.64760E-05 s  solver_iters/run=0  substeps/run=0
+=== 20:06:20 TKE nx=1000 single-device binary on GPU 1
+cuda3d5: case=lock_exchange nx=1000 nz=30 scheme=fb solver=fft eos=teos10 dt= 1.96242E-01 steps=50 gpu=NVIDIA GeForce RTX 5090
+  wall median= 9.79285E+00 s  mad= 1.17389E-04 s  solver_iters/run=0  substeps/run=0
+=== 20:07:23 TKE nx=2000 single-device binary on GPU 1
+FATAL: out of memory at src/cfd_exp3d5_cuda.cu:287
+DONE single

@@ -1,0 +1,84 @@
+=== 20:42:06 DC nx=400 devices=0
+cuda3d5-multi: case=lock_exchange nx=400 ny=400 nz=30 scheme=fb ndev=1 halo=16 devices=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 2.37586E-01 s  mad= 1.02670E-04 s  solver_iters/run=0  substeps/run=0
+=== 20:42:44 DC nx=1000 devices=0
+cuda3d5-multi: case=lock_exchange nx=1000 ny=1000 nz=30 scheme=fb ndev=1 halo=16 devices=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 1.50486E+00 s  mad= 2.55700E-04 s  solver_iters/run=0  substeps/run=0
+=== 20:45:46 DC nx=2000 devices=0
+cuda3d5-multi: case=lock_exchange nx=2000 ny=2000 nz=30 scheme=fb ndev=1 halo=16 devices=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 5.58729E+00 s  mad= 5.57888E-04 s  solver_iters/run=0  substeps/run=0
+=== 21:01:24 TKE nx=400 devices=0
+cuda3d5-multi: case=lock_exchange nx=400 ny=400 nz=30 scheme=fb ndev=1 halo=16 devices=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 4.41070E-01 s  mad= 1.72827E-04 s  solver_iters/run=0  substeps/run=0
+=== 21:02:02 TKE nx=1000 devices=0
+cuda3d5-multi: case=lock_exchange nx=1000 ny=1000 nz=30 scheme=fb ndev=1 halo=16 devices=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 2.53422E+00 s  mad= 2.01504E-04 s  solver_iters/run=0  substeps/run=0
+=== 21:05:20 TKE nx=2000 devices=0
+cuda3d5-multi: case=lock_exchange nx=2000 ny=2000 nz=30 scheme=fb ndev=1 halo=16 devices=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 9.44168E+00 s  mad= 2.84441E-03 s  solver_iters/run=0  substeps/run=0
+DONE output/e19_20260923-204200/e19_ktcloud_20260923-204200.csv
+=== 21:14:40 DC nx=400 single-device binary on GPU 0
+cuda3d5: case=lock_exchange nx=400 nz=30 scheme=fb solver=fft eos=teos10 dt= 5.03963E-01 steps=50 gpu=NVIDIA H100 80GB HBM3
+  wall median= 2.07196E-01 s  mad= 3.54570E-05 s  solver_iters/run=0  substeps/run=0
+=== 21:15:04 DC nx=1000 single-device binary on GPU 0
+cuda3d5: case=lock_exchange nx=1000 nz=30 scheme=fb solver=fft eos=teos10 dt= 1.96242E-01 steps=50 gpu=NVIDIA H100 80GB HBM3
+  wall median= 1.45062E+00 s  mad= 2.93270E-05 s  solver_iters/run=0  substeps/run=0
+=== 21:17:09 DC nx=2000 single-device binary on GPU 0
+cuda3d5: case=lock_exchange nx=2000 nz=30 scheme=fb solver=fft eos=teos10 dt= 9.86196E-02 steps=50 gpu=NVIDIA H100 80GB HBM3
+  wall median= 5.48414E+00 s  mad= 1.16450E-04 s  solver_iters/run=0  substeps/run=0
+=== 21:25:21 TKE nx=400 single-device binary on GPU 0
+cuda3d5: case=lock_exchange nx=400 nz=30 scheme=fb solver=fft eos=teos10 dt= 5.03963E-01 steps=50 gpu=NVIDIA H100 80GB HBM3
+  wall median= 3.78054E-01 s  mad= 3.43560E-05 s  solver_iters/run=0  substeps/run=0
+=== 21:25:46 TKE nx=1000 single-device binary on GPU 0
+cuda3d5: case=lock_exchange nx=1000 nz=30 scheme=fb solver=fft eos=teos10 dt= 1.96242E-01 steps=50 gpu=NVIDIA H100 80GB HBM3
+  wall median= 2.44550E+00 s  mad= 8.71460E-05 s  solver_iters/run=0  substeps/run=0
+=== 21:28:03 TKE nx=2000 single-device binary on GPU 0
+cuda3d5: case=lock_exchange nx=2000 nz=30 scheme=fb solver=fft eos=teos10 dt= 9.86196E-02 steps=50 gpu=NVIDIA H100 80GB HBM3
+  wall median= 9.26239E+00 s  mad= 1.23695E-04 s  solver_iters/run=0  substeps/run=0
+=== 21:32:44 DC nx=400 mpi np=2 hosts=main1,sub1 mode=host
+cuda3d5-mpi: case=lock_exchange nx=400 ny=400 nz=30 scheme=fb ranks=2 halo=16 device_mpi=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 2.62421E-01 s  mad= 8.04005E-04 s  solver_iters/run=0  substeps/run=0
+=== 21:33:23 DC nx=400 mpi np=2 hosts=main1,sub1 mode=device
+cuda3d5-mpi: case=lock_exchange nx=400 ny=400 nz=30 scheme=fb ranks=2 halo=16 device_mpi=1 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 1.69748E-01 s  mad= 1.60470E-03 s  solver_iters/run=0  substeps/run=0
+=== 21:33:47 DC nx=1000 mpi np=2 hosts=main1,sub1 mode=host
+cuda3d5-mpi: case=lock_exchange nx=1000 ny=1000 nz=30 scheme=fb ranks=2 halo=16 device_mpi=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 8.79760E-01 s  mad= 9.23352E-04 s  solver_iters/run=0  substeps/run=0
+DONE single
+=== 21:37:16 DC nx=1000 mpi np=2 hosts=main1,sub1 mode=device
+cuda3d5-mpi: case=lock_exchange nx=1000 ny=1000 nz=30 scheme=fb ranks=2 halo=16 device_mpi=1 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 8.43690E-01 s  mad= 1.04061E-03 s  solver_iters/run=0  substeps/run=0
+=== 21:39:20 DC nx=2000 mpi np=2 hosts=main1,sub1 mode=host
+cuda3d5-mpi: case=lock_exchange nx=2000 ny=2000 nz=30 scheme=fb ranks=2 halo=16 device_mpi=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 3.52277E+00 s  mad= 4.23424E-02 s  solver_iters/run=0  substeps/run=0
+=== 21:53:31 DC nx=2000 mpi np=2 hosts=main1,sub1 mode=device
+cuda3d5-mpi: case=lock_exchange nx=2000 ny=2000 nz=30 scheme=fb ranks=2 halo=16 device_mpi=1 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 2.96697E+00 s  mad= 6.14318E-03 s  solver_iters/run=0  substeps/run=0
+=== 22:01:51 TKE nx=400 mpi np=2 hosts=main1,sub1 mode=host
+cuda3d5-mpi: case=lock_exchange nx=400 ny=400 nz=30 scheme=fb ranks=2 halo=16 device_mpi=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 3.08904E-01 s  mad= 4.28853E-04 s  solver_iters/run=0  substeps/run=0
+=== 22:02:28 TKE nx=400 mpi np=2 hosts=main1,sub1 mode=device
+cuda3d5-mpi: case=lock_exchange nx=400 ny=400 nz=30 scheme=fb ranks=2 halo=16 device_mpi=1 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 3.07847E-01 s  mad= 9.09472E-04 s  solver_iters/run=0  substeps/run=0
+=== 22:02:53 TKE nx=1000 mpi np=2 hosts=main1,sub1 mode=host
+cuda3d5-mpi: case=lock_exchange nx=1000 ny=1000 nz=30 scheme=fb ranks=2 halo=16 device_mpi=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 1.80925E+00 s  mad= 1.09693E-03 s  solver_iters/run=0  substeps/run=0
+[sub1:02871] *** Process received signal ***
+[sub1:02871] Signal: Segmentation fault (11)
+[sub1:02871] Signal code: Address not mapped (1)
+[sub1:02871] Failing at address: 0x74ddd7519c77
+=== 22:06:36 TKE nx=1000 mpi np=2 hosts=main1,sub1 mode=device
+cuda3d5-mpi: case=lock_exchange nx=1000 ny=1000 nz=30 scheme=fb ranks=2 halo=16 device_mpi=1 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 1.42079E+00 s  mad= 8.16851E-04 s  solver_iters/run=0  substeps/run=0
+=== 22:08:53 TKE nx=2000 mpi np=2 hosts=main1,sub1 mode=host
+cuda3d5-mpi: case=lock_exchange nx=2000 ny=2000 nz=30 scheme=fb ranks=2 halo=16 device_mpi=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 5.14680E+00 s  mad= 3.29877E-04 s  solver_iters/run=0  substeps/run=0
+=== 22:24:07 TKE nx=2000 mpi np=2 hosts=main1,sub1 mode=device
+cuda3d5-mpi: case=lock_exchange nx=2000 ny=2000 nz=30 scheme=fb ranks=2 halo=16 device_mpi=1 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 5.00233E+00 s  mad= 8.32614E-04 s  solver_iters/run=0  substeps/run=0
+DONE mpi
+=== RERUN Thu Sep 24 22:28:43 KST 2026
+=== 22:28:44 TKE nx=1000 mpi np=2 hosts=main1,sub1 mode=host
+cuda3d5-mpi: case=lock_exchange nx=1000 ny=1000 nz=30 scheme=fb ranks=2 halo=16 device_mpi=0 gpu=NVIDIA H100 80GB HBM3 steps=50
+  wall median= 1.49414E+00 s  mad= 2.02622E-03 s  solver_iters/run=0  substeps/run=0
+DONE mpi

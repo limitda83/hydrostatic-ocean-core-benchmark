@@ -1,0 +1,27 @@
+# Kept for comparison; NOT the result of the current numerical core (docs/90 N35).
+verify3d_baroclinic_igw_20260910-095515_manifest.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260910-095515_metrics.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260910-234155_manifest.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260910-234155_metrics.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-012818_manifest.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-012818_metrics.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-015116_manifest.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-015116_metrics.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-015132_manifest.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-015132_metrics.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-015150_manifest.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-015150_metrics.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-015212_manifest.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-015212_metrics.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-051222_manifest.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-051222_metrics.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-135549_manifest.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-135549_metrics.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-135633_manifest.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-135633_metrics.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-140226_manifest.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260911-140226_metrics.json  # predates the 2026-09-14 core edits
+verify3d_baroclinic_igw_20260914-130717_manifest.json  # superseded by the 2026-09-14 16:0x run (core changed at 15:21)
+verify3d_baroclinic_igw_20260914-130717_metrics.json  # superseded by the 2026-09-14 16:0x run (core changed at 15:21)
+verify3d_baroclinic_igw_20260914-160138_manifest.json  # superseded 2026-09-23 by the post-N44 re-run (N35); kept for comparison
+verify3d_baroclinic_igw_20260914-160138_metrics.json  # superseded 2026-09-23 by the post-N44 re-run (N35); kept for comparison

@@ -1,0 +1,64 @@
+# Backend registry (axis D). Compiler flags are pinned here for reproducibility (T3).
+
+[backends.ref]
+kind     = "python"
+module   = "libs.core.schemes"
+notes    = "NumPy fp64 oracle. Defines correctness (RULES.md R2)."
+
+[backends.fortran_cpu]
+kind      = "fortran"
+compiler  = "gfortran"           # also verified with nvfortran -mp on gpgpu
+flags     = ["-O3", "-march=native", "-fopenmp", "-std=f2008"]
+build     = "make -C libs/fortran"
+binary    = "libs/fortran/build/cfd_exp"
+solver    = "pcg_jacobi"          # the fft solver is reference-only
+status    = "P3: R2 gate passed"
+# Below omp_min_points grid cells every parallel region falls back to serial.
+# Naive per-loop parallel regions at 64x64 = 4096 points ran 22x SLOWER than
+# serial on a 12-core M4 Pro. This threshold is machine dependent - recalibrate
+# on each bench node before reporting timings (docs/09).
+omp_min_points = 65536
+
+[backends.openacc]
+kind      = "fortran"
+compiler  = "nvfortran"          # NVHPC 25.11, ~/opt/nvhpc (user-home install)
+flags     = ["-O3", "-tp=native", "-acc=gpu", "-gpu=cc120,mem:managed", "-Minfo=accel"]
+build     = "make -C libs/fortran acc"
+binary    = "libs/fortran/build/cfd_exp_acc"
+status    = "P4: R2 gate passed"
+# Same source as fortran_cpu: !$omp and !$acc coexist and the compiler flags
+# select which set is live. mem:managed avoids explicit data clauses;
+# MEM=separate builds the explicit-data-movement variant for comparison.
+mem_mode  = "managed"
+gpu_arch  = "cc120"
+
+[backends.cuda]
+kind     = "cuda"
+compiler = "nvcc"
+flags    = ["-O3", "-arch=sm_120", "-lineinfo"]
+status   = "planned:P5"
+
+[backends.py_gpu]
+kind     = "python"
+variants = ["cupy", "jax", "numba_cuda"]
+status   = "planned:P6"
+
+# RULES.md R7-1: two bench nodes with strictly separate roles.
+[bench_node.gpgpu]
+role     = "all CPU<->GPU comparison (same-node only)"
+ssh      = "ssh <gpgpu-node>"
+cpu      = "AMD Ryzen Threadripper PRO 9955WX (16C/32T)"
+gpu      = "NVIDIA GeForce RTX 5090 32GB x4"
+os       = "RHEL 9.7"
+cuda     = "13.2"
+nvhpc    = "25.11 at ~/opt/nvhpc (user-home install, no root)"
+shared   = true                  # GPUs 0/1 were occupied by another user
+gpu_pin  = "CUDA_VISIBLE_DEVICES must be set explicitly; record it in the manifest"
+
+[bench_node.geo85]
+role     = "large-scale CPU scalability only (no GPU)"
+ssh      = "ssh <geo85-node>"
+scheduler = "PBS (workq); use -l place=excl"
+nodes    = "node01-05, 192 cores / 754 GB each"
+cpu      = "AMD EPYC 9115 (login: 2x16C)"
+omp_env  = ["OMP_WAIT_POLICY=active", "OMP_PROC_BIND=close", "OMP_PLACES=cores"]

@@ -1,0 +1,4 @@
+cuda3d: case=baroclinic_igw nx=128 nz=30 scheme=split_explicit dt= 7.14061E+02 steps=10 pcg_sync=device check_every=5 gpu=NVIDIA GeForce RTX 5090
+  L2(u)= 1.23061E-02  L2(b)= 3.40395E-02  L2(eta)= 3.01778E-16
+  wall median= 1.70101E-02 s  mad= 9.11000E-07 s  solver_iters/run=0
+  device memory=126.0 MiB  (269 B/cell)  free after=30.7 GiB

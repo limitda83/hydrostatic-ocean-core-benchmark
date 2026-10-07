@@ -1,0 +1,13 @@
+# Files kept for comparison but NOT sources for the manuscript.
+# Each line: <filename>   # why
+gpgpu_helm_r7_rough010.csv   # 5-repeat pass; 69/288 rows MAD>2%, 8 of 16 "best CPU"
+                             # cells sat on one. Replaced by *_stable.csv (9 repeats,
+                             # retry-until-stable). Kept to document N28/N29.
+geo85_helm.txt               # pre-2026-09-13 min-of-3 (R7-2 violation)
+gpgpu_helm.csv               # pre-2026-09-13 min-of-3
+gpgpu_helm_1024.csv          # pre-2026-09-13 min-of-3
+gpgpu_helm_1024_check.csv    # pre-2026-09-13 min-of-3
+gpgpu_helm_2048.csv          # pre-2026-09-13 min-of-3
+h100_helm.csv                # pre-2026-09-13 min-of-3
+h100_helm_2048.csv           # pre-2026-09-13 min-of-3
+h100_helm_big.csv            # pre-2026-09-13 min-of-3

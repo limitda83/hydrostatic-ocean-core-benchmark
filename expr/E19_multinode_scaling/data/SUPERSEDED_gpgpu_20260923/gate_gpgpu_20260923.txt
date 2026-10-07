@@ -1,0 +1,14 @@
+  wall median= 4.78684E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 3.37070E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 3.01526E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 3.38300E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  DC_400_nd1_h16.bin           n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  DC_400_nd2_h16.bin           n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  DC_400_nd2_h8.bin            n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  wall median= 1.59388E+00 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 1.16477E+00 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 1.09463E+00 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 1.15946E+00 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  TKE_400_nd1_h16.bin          n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  TKE_400_nd2_h16.bin          n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  TKE_400_nd2_h8.bin           n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True

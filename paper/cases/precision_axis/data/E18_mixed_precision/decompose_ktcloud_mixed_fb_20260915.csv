@@ -1,0 +1,16 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+ktcloud,cuda_mixed,0,lock_exchange.v05,fb,0,none,0.5,100,30,50,2.014907e+00,3.170758e-02,1.418000e-05,0,0,nan,nan,nan,3.177328e+03
+ktcloud,cuda_mixed,0,lock_exchange.up3,fb,0,none,0.5,100,30,50,2.014907e+00,3.224687e-02,2.402900e-05,0,0,nan,nan,nan,3.124190e+03
+ktcloud,cuda_mixed,0,lock_exchange.up3tvd,fb,0,none,0.5,100,30,50,2.014907e+00,3.482823e-02,1.668700e-05,0,0,nan,nan,nan,2.892636e+03
+ktcloud,cuda_mixed,0,lock_exchange.tke,fb,0,none,0.5,100,30,50,2.014907e+00,6.332684e-02,3.743000e-06,0,0,nan,nan,nan,1.590879e+03
+ktcloud,cuda_mixed,0,lock_exchange.tke_up3tvd,fb,0,none,0.5,100,30,50,2.014907e+00,6.631509e-02,1.680880e-04,0,0,nan,nan,nan,1.519192e+03
+ktcloud,cuda_mixed,0,lock_exchange.v05,fb,0,none,0.5,400,30,50,5.039626e-01,2.072399e-01,3.063500e-05,0,0,nan,nan,nan,1.215892e+02
+ktcloud,cuda_mixed,0,lock_exchange.up3,fb,0,none,0.5,400,30,50,5.039626e-01,2.274408e-01,1.324800e-05,0,0,nan,nan,nan,1.107898e+02
+ktcloud,cuda_mixed,0,lock_exchange.up3tvd,fb,0,none,0.5,400,30,50,5.039626e-01,2.433067e-01,1.427700e-05,0,0,nan,nan,nan,1.035653e+02
+ktcloud,cuda_mixed,0,lock_exchange.tke,fb,0,none,0.5,400,30,50,5.039626e-01,2.964115e-01,3.631600e-05,0,0,nan,nan,nan,8.501063e+01
+ktcloud,cuda_mixed,0,lock_exchange.tke_up3tvd,fb,0,none,0.5,400,30,50,5.039626e-01,3.338939e-01,2.666500e-05,0,0,nan,nan,nan,7.546748e+01
+ktcloud,cuda_mixed,0,lock_exchange.v05,fb,0,none,0.5,1000,30,50,1.962422e-01,1.450717e+00,7.125700e-05,0,0,nan,nan,nan,6.763626e+00
+ktcloud,cuda_mixed,0,lock_exchange.up3,fb,0,none,0.5,1000,30,50,1.962422e-01,1.610211e+00,2.953590e-04,0,0,nan,nan,nan,6.093678e+00
+ktcloud,cuda_mixed,0,lock_exchange.up3tvd,fb,0,none,0.5,1000,30,50,1.962422e-01,1.675618e+00,6.690970e-04,0,0,nan,nan,nan,5.855817e+00
+ktcloud,cuda_mixed,0,lock_exchange.tke,fb,0,none,0.5,1000,30,50,1.962422e-01,1.953017e+00,3.828640e-04,0,0,nan,nan,nan,5.024078e+00
+ktcloud,cuda_mixed,0,lock_exchange.tke_up3tvd,fb,0,none,0.5,1000,30,50,1.962422e-01,2.193829e+00,5.332520e-04,0,0,nan,nan,nan,4.472595e+00

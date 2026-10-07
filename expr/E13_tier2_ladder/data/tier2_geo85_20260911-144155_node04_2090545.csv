@@ -1,0 +1,13 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+geo85,fortran_omp,64,baroclinic_igw,fb,0,none,0.5,2000,30,50,7.140613e-01,3.541342e+01,1.671340e-03,0,0,nan,nan,nan,1.008179e+00
+geo85,fortran_omp,128,baroclinic_igw,fb,0,none,0.5,2000,30,50,7.140613e-01,2.308242e+01,1.170535e-01,0,0,nan,nan,nan,1.546764e+00
+geo85,fortran_omp,192,baroclinic_igw,fb,0,none,0.5,2000,30,50,7.140613e-01,1.774525e+01,2.659452e-01,0,0,nan,nan,nan,2.011979e+00
+geo85,fortran_omp,64,baroclinic_igw,theta0.5,0.5,multigrid,4,2000,30,50,5.712491e+00,4.181437e+01,3.419139e-03,902,0,nan,nan,nan,6.830775e+00
+geo85,fortran_omp,128,baroclinic_igw,theta0.5,0.5,multigrid,4,2000,30,50,5.712491e+00,2.698879e+01,1.268836e-01,902,0,nan,nan,nan,1.058308e+01
+geo85,fortran_omp,192,baroclinic_igw,theta0.5,0.5,multigrid,4,2000,30,50,5.712491e+00,2.071085e+01,5.925098e-02,902,0,nan,nan,nan,1.379106e+01
+geo85,fortran_omp,64,baroclinic_igw,theta0.5,0.5,pcg_jacobi,4,2000,30,50,5.712491e+00,4.346847e+01,5.573518e-03,5604,0,nan,nan,nan,6.570844e+00
+geo85,fortran_omp,128,baroclinic_igw,theta0.5,0.5,pcg_jacobi,4,2000,30,50,5.712491e+00,2.807428e+01,7.455022e-02,5604,0,nan,nan,nan,1.017389e+01
+geo85,fortran_omp,192,baroclinic_igw,theta0.5,0.5,pcg_jacobi,4,2000,30,50,5.712491e+00,2.249599e+01,8.918145e-02,5604,0,nan,nan,nan,1.269669e+01
+geo85,fortran_omp,64,baroclinic_igw,split,0,none,4,2000,30,50,5.712491e+00,3.689820e+01,1.002887e-03,0,250,nan,nan,nan,7.740880e+00
+geo85,fortran_omp,128,baroclinic_igw,split,0,none,4,2000,30,50,5.712491e+00,2.345371e+01,9.603955e-02,0,250,nan,nan,nan,1.217823e+01
+geo85,fortran_omp,192,baroclinic_igw,split,0,none,4,2000,30,50,5.712491e+00,1.825583e+01,1.406671e-01,0,250,nan,nan,nan,1.564566e+01

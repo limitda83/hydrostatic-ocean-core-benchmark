@@ -1,0 +1,10 @@
+# Kept for comparison; NOT the result of the current numerical core (docs/90 N35).
+v06_verification.json          # predates the 2026-09-14 core edits
+decompose_ktcloud_theta_20260915_CONTAMINATED.csv   # 2026-09-15 H100 theta0.5/multigrid decomposition.
+                         # 100^2: .up3 FASTER than .v05; 400^2: .up3tvd FASTER than .up3.
+                         # Adding physics cannot speed a step up - shared-host contention
+                         # (N26). Discarded for every use. The fb decomposition on the
+                         # same node is monotone and is what E17 uses.
+decompose_gpgpu_theta_localhost_SUPERSEDED.csv  # first theta run before BENCH_HOST was set; host column says localhost. Duplicates of the labelled 400^2 rows, which are the record.
+decompose_gpgpu_theta_fp32_maxiter_RESULT.csv  # fp32 multigrid cannot reach rtol 1e-6 at CFL 4 (N41): 200000 iterations = max_iter every step. A RESULT, not a cost.
+v06_verification_20260914.json  # superseded 2026-09-23 by the post-N44 re-run (N35); kept for comparison

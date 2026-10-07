@@ -1,0 +1,255 @@
+{
+  "created_utc": "2026-09-10T00:55:30.980059+00:00",
+  "spec_version": "v0.1",
+  "git": {
+    "commit": "9ddd41734472024fe2d2f4dc124b33f5506f3a88",
+    "branch": "main",
+    "dirty": true,
+    "dirty_files": [
+      "M config/cases.toml",
+      " M docs/03_discretization_spec.md",
+      " M libs/core/grid.py",
+      " M libs/core/operators.py",
+      " M libs/core/schemes.py",
+      " M main.py",
+      "?? libs/core/cases3d.py",
+      "?? libs/core/driver3d.py",
+      "?? libs/core/model3d.py",
+      "?? libs/core/vertical.py"
+    ]
+  },
+  "host": {
+    "node": "ympark-mini.local",
+    "system": "Darwin",
+    "release": "25.3.0",
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.13.12",
+    "numpy": "2.4.4"
+  },
+  "config_sha256": "771e9ca61b283e51731ea07745bd8016a94578f99c8e87ead3b9afc29c4bc32d",
+  "config": {
+    "project": {
+      "name": "cfd_exp",
+      "spec_version": "v0.1"
+    },
+    "paths": {
+      "output_dir": "output",
+      "config_dir": "config"
+    },
+    "logging": {
+      "level": "INFO",
+      "to_file": true,
+      "filename": "run.log"
+    },
+    "physics": {
+      "g": 9.80616,
+      "f0": 0.0001,
+      "H": 1000.0,
+      "rho0": 1025.0
+    },
+    "run": {
+      "precision": "float64",
+      "backend": "ref",
+      "diag_every": 0
+    },
+    "netcdf": {
+      "format": "NETCDF4",
+      "compression_level": 4,
+      "write_state": true
+    },
+    "grid": {
+      "nx": 100,
+      "ny": 100,
+      "nz": 30,
+      "Lx": 400000.0,
+      "Ly": 400000.0,
+      "bc_x": "periodic",
+      "bc_y": "periodic",
+      "sweep": {
+        "nx_list": [
+          32,
+          64,
+          128,
+          256
+        ]
+      }
+    },
+    "scheme": {
+      "name": "theta",
+      "theta": 0.5,
+      "theta_cor": 0.5,
+      "n_picard": 2
+    },
+    "solver": {
+      "kind": "fft",
+      "rtol": 1e-12,
+      "max_iter": 2000
+    },
+    "presets": {
+      "fb": {
+        "name": "fb"
+      },
+      "cn": {
+        "name": "theta",
+        "theta": 0.5
+      },
+      "schism": {
+        "name": "theta",
+        "theta": 0.6
+      },
+      "backward_euler": {
+        "name": "theta",
+        "theta": 1.0
+      }
+    },
+    "case": {
+      "name": "igw",
+      "igw": {
+        "mode_x": 2,
+        "mode_y": 2,
+        "eta0": 1.0,
+        "n_periods": 1.0
+      },
+      "geo_balance": {
+        "mode_x": 1,
+        "mode_y": 1,
+        "eta0": 1.0,
+        "n_days": 10.0
+      },
+      "igw_broadband": {
+        "n_modes": 8,
+        "eta0": 1.0,
+        "slope": 1.0,
+        "n_periods": 1.0
+      },
+      "barotropic3d": {
+        "mode_x": 2,
+        "mode_y": 2,
+        "eta0": 1.0,
+        "n_periods": 1.0
+      },
+      "vdiffusion": {
+        "mode_z": 1,
+        "u0": 1.0,
+        "n_efolds": 1.0
+      },
+      "baroclinic_igw": {
+        "mode_x": 2,
+        "mode_y": 2,
+        "mode_z": 2,
+        "eta0": 1.0,
+        "n_periods": 1.0
+      }
+    },
+    "time": {
+      "cfl_factor": 0.5,
+      "dt": 0.0,
+      "sweep": {
+        "cfl_list": [
+          0.125,
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0
+        ]
+      }
+    },
+    "physics3d": {
+      "N2": 0.0001,
+      "nu": 0,
+      "kappa": 0.001,
+      "tau_x": 0.0,
+      "tau_y": 0.0,
+      "bottom_drag": 0.0
+    },
+    "backends": {
+      "ref": {
+        "kind": "python",
+        "module": "libs.core.schemes",
+        "notes": "NumPy fp64 oracle. Defines correctness (RULES.md R2)."
+      },
+      "fortran_cpu": {
+        "kind": "fortran",
+        "compiler": "gfortran",
+        "flags": [
+          "-O3",
+          "-march=native",
+          "-fopenmp",
+          "-std=f2008"
+        ],
+        "build": "make -C libs/fortran",
+        "binary": "libs/fortran/build/cfd_exp",
+        "solver": "pcg_jacobi",
+        "status": "P3: R2 gate passed",
+        "omp_min_points": 65536
+      },
+      "openacc": {
+        "kind": "fortran",
+        "compiler": "nvfortran",
+        "flags": [
+          "-O3",
+          "-tp=native",
+          "-acc=gpu",
+          "-gpu=cc120,mem:managed",
+          "-Minfo=accel"
+        ],
+        "build": "make -C libs/fortran acc",
+        "binary": "libs/fortran/build/cfd_exp_acc",
+        "status": "P4: R2 gate passed",
+        "mem_mode": "managed",
+        "gpu_arch": "cc120"
+      },
+      "cuda": {
+        "kind": "cuda",
+        "compiler": "nvcc",
+        "flags": [
+          "-O3",
+          "-arch=sm_120",
+          "-lineinfo"
+        ],
+        "status": "planned:P5"
+      },
+      "py_gpu": {
+        "kind": "python",
+        "variants": [
+          "cupy",
+          "jax",
+          "numba_cuda"
+        ],
+        "status": "planned:P6"
+      }
+    },
+    "bench_node": {
+      "gpgpu": {
+        "role": "all CPU<->GPU comparison (same-node only)",
+        "ssh": "ssh <gpgpu-node>",
+        "cpu": "AMD Ryzen Threadripper PRO 9955WX (16C/32T)",
+        "gpu": "NVIDIA GeForce RTX 5090 32GB x4",
+        "os": "RHEL 9.7",
+        "cuda": "13.2",
+        "nvhpc": "25.11 at ~/opt/nvhpc (user-home install, no root)",
+        "shared": true,
+        "gpu_pin": "CUDA_VISIBLE_DEVICES must be set explicitly; record it in the manifest"
+      },
+      "geo85": {
+        "role": "large-scale CPU scalability only (no GPU)",
+        "ssh": "ssh <geo85-node>",
+        "scheduler": "PBS (workq); use -l place=excl",
+        "nodes": "node01-05, 192 cores / 754 GB each",
+        "cpu": "AMD EPYC 9115 (login: 2x16C)",
+        "omp_env": [
+          "OMP_WAIT_POLICY=active",
+          "OMP_PROC_BIND=close",
+          "OMP_PLACES=cores"
+        ]
+      }
+    }
+  },
+  "mode": "verify3d",
+  "case": "baroclinic_igw"
+}

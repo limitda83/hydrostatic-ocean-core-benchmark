@@ -1,0 +1,4 @@
+config,cfl,n_steps,work_per_step,l2_rel_b,cuda_s,bytes_per_cell
+theta + pcg_jacobi,32.0,10,510.50,3.403945e-02,1.590876e-01,273.1
+theta + multigrid,32.0,10,26.70,3.403945e-02,8.477290e-02,273.1
+split_explicit + pcg_jacobi,32.0,10,39.00,3.403945e-02,1.701014e-02,268.8

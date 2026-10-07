@@ -1,0 +1,52 @@
+=== GATE Thu Sep 24 10:26:18 AM KST 2026
+  wall median= 4.77459E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 2.94108E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 2.37088E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 2.93269E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 2.37054E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 2.93914E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  DC_400_nd1_h16.bin           n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  DC_400_nd2_h16.bin           n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  DC_400_nd2_h8.bin            n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  DC_400_nd4_h16.bin           n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  DC_400_nd4_h8.bin            n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  wall median= 1.58819E+00 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 9.33137E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 8.41327E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 9.38365E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 8.47149E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 9.36846E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  TKE_400_nd1_h16.bin          n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  TKE_400_nd2_h16.bin          n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  TKE_400_nd2_h8.bin           n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  TKE_400_nd4_h16.bin          n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  TKE_400_nd4_h8.bin           n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+=== RUN Thu Sep 24 10:26:45 AM KST 2026
+=== 10:26:46 DC nx=400 devices=1
+=== 10:26:51 DC nx=400 devices=1,0
+=== 10:26:55 DC nx=400 devices=1,0,2,3
+=== 10:27:13 DC nx=1000 devices=1
+=== 10:27:43 DC nx=1000 devices=1,0
+=== 10:28:04 DC nx=1000 devices=1,0,2,3
+=== 10:29:02 DC nx=2000 devices=1
+=== 10:29:11 DC nx=2000 devices=1,0
+=== 10:30:21 DC nx=2000 devices=1,0,2,3
+=== 10:31:17 TKE nx=400 devices=1
+=== 10:31:30 TKE nx=400 devices=1,0
+=== 10:31:39 TKE nx=400 devices=1,0,2,3
+=== 10:31:50 TKE nx=1000 devices=1
+=== 10:32:56 TKE nx=1000 devices=1,0
+=== 10:33:34 TKE nx=1000 devices=1,0,2,3
+=== 10:34:29 TKE nx=2000 devices=1
+=== 10:34:37 TKE nx=2000 devices=1,0
+=== 10:37:08 TKE nx=2000 devices=1,0,2,3
+DONE output/e19_20260924-102645/e19_gpgpu_20260924-102645.csv
+=== SINGLE Thu Sep 24 10:38:46 AM KST 2026
+=== 10:38:46 DC nx=400 single-device binary on GPU 1
+=== 10:38:50 DC nx=1000 single-device binary on GPU 1
+=== 10:39:13 DC nx=2000 single-device binary on GPU 1
+=== 10:39:19 TKE nx=400 single-device binary on GPU 1
+=== 10:39:29 TKE nx=1000 single-device binary on GPU 1
+=== 10:40:31 TKE nx=2000 single-device binary on GPU 1
+DONE single
+=== CHAIN DONE Thu Sep 24 10:40:37 AM KST 2026

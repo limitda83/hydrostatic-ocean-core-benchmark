@@ -1,0 +1,17 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+geo85,fortran_omp,32,baroclinic_igw,fb,0,none,0.5,1000,30,50,1.428123e+00,1.410802e+01,7.495845e-03,0,0,nan,nan,nan,5.061386e+00
+geo85,fortran_omp,64,baroclinic_igw,fb,0,none,0.5,1000,30,50,1.428123e+00,8.492986e+00,1.158112e-03,0,0,nan,nan,nan,8.407659e+00
+geo85,fortran_omp,128,baroclinic_igw,fb,0,none,0.5,1000,30,50,1.428123e+00,5.843658e+00,1.098745e-02,0,0,nan,nan,nan,1.221942e+01
+geo85,fortran_omp,192,baroclinic_igw,fb,0,none,0.5,1000,30,50,1.428123e+00,7.230508e+00,7.755429e-01,0,0,nan,nan,nan,9.875673e+00
+geo85,fortran_omp,32,baroclinic_igw,theta0.5,0.5,multigrid,4,1000,30,50,1.142498e+01,1.692417e+01,2.337699e-03,900,0,nan,nan,nan,3.375345e+01
+geo85,fortran_omp,64,baroclinic_igw,theta0.5,0.5,multigrid,4,1000,30,50,1.142498e+01,1.018299e+01,3.018016e-03,900,0,nan,nan,nan,5.609834e+01
+geo85,fortran_omp,128,baroclinic_igw,theta0.5,0.5,multigrid,4,1000,30,50,1.142498e+01,7.200471e+00,1.244780e-02,900,0,nan,nan,nan,7.933496e+01
+geo85,fortran_omp,192,baroclinic_igw,theta0.5,0.5,multigrid,4,1000,30,50,1.142498e+01,8.304287e+00,1.504689e+00,900,0,nan,nan,nan,6.878966e+01
+geo85,fortran_omp,32,baroclinic_igw,theta0.5,0.5,pcg_jacobi,4,1000,30,50,1.142498e+01,1.765590e+01,2.827370e-03,5604,0,nan,nan,nan,3.235458e+01
+geo85,fortran_omp,64,baroclinic_igw,theta0.5,0.5,pcg_jacobi,4,1000,30,50,1.142498e+01,1.080820e+01,1.406261e-03,5604,0,nan,nan,nan,5.285329e+01
+geo85,fortran_omp,128,baroclinic_igw,theta0.5,0.5,pcg_jacobi,4,1000,30,50,1.142498e+01,7.913184e+00,4.299506e-02,5604,0,nan,nan,nan,7.218954e+01
+geo85,fortran_omp,192,baroclinic_igw,theta0.5,0.5,pcg_jacobi,4,1000,30,50,1.142498e+01,8.744282e+00,1.360206e+00,5604,0,nan,nan,nan,6.532830e+01
+geo85,fortran_omp,32,baroclinic_igw,split,0,none,4,1000,30,50,1.142498e+01,1.439573e+01,2.126835e-03,0,250,nan,nan,nan,3.968183e+01
+geo85,fortran_omp,64,baroclinic_igw,split,0,none,4,1000,30,50,1.142498e+01,8.750701e+00,6.000497e-03,0,250,nan,nan,nan,6.528038e+01
+geo85,fortran_omp,128,baroclinic_igw,split,0,none,4,1000,30,50,1.142498e+01,6.176285e+00,2.725557e-02,0,250,nan,nan,nan,9.249072e+01
+geo85,fortran_omp,192,baroclinic_igw,split,0,none,4,1000,30,50,1.142498e+01,7.187867e+00,1.061165e+00,0,250,nan,nan,nan,7.947407e+01

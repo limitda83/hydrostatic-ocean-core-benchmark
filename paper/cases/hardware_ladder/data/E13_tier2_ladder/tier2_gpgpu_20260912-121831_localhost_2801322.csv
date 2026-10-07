@@ -1,0 +1,5 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+gpgpu,jax,0,baroclinic_igw,fb,0,none,0.5,200,30,50,7.140613e+00,1.534387e-01,2.381802e-04,0,0,nan,nan,nan,2.326861e+03
+gpgpu,jax,0,baroclinic_igw,theta0.5,0.5,multigrid,4,200,30,50,5.712491e+01,2.312084e-01,4.618892e-04,900,0,nan,nan,nan,1.235356e+04
+gpgpu,jax,0,baroclinic_igw,theta0.5,0.5,pcg_jacobi,4,200,30,50,5.712491e+01,3.404913e-01,1.840382e-04,5586,0,nan,nan,nan,8.388599e+03
+gpgpu,jax,0,baroclinic_igw,split,0,none,4,200,30,50,5.712491e+01,1.595471e-01,1.097268e-04,0,250,nan,nan,nan,1.790221e+04

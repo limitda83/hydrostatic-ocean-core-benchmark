@@ -1,0 +1,16 @@
+output/
+*.nc
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+libs/fortran/build/
+libs/cuda/build/
+libs/jax/build/
+*.mod
+*.o
+cfd_exp_omp.o*
+cfd_exp_omp.e*
+ref/pdf/

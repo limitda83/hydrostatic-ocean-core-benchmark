@@ -1,0 +1,14 @@
+# Horizontal/vertical grid definition (axis E).
+
+[grid]
+nx = 100
+ny = 100
+nz = 30                 # unused in Phase 0 (2D barotropic); reserved for Phase 2
+Lx = 1.0e7              # [m] 10000 km
+Ly = 1.0e7              # [m]
+bc_x = "periodic"       # periodic | wall  (Phase 0 supports periodic only)
+bc_y = "periodic"
+
+# Refinement sweep used by `main.py verify` (spatial convergence).
+[grid.sweep]
+nx_list = [32, 64, 128, 256]

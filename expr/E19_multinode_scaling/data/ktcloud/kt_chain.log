@@ -1,0 +1,12 @@
+=== RERUN Thu Sep 24 22:28:43 KST 2026
+=== 22:28:44 TKE nx=1000 mpi np=2 hosts=main1,sub1 mode=host
+DONE mpi
+=== GATE-MPI-TKE Thu Sep 24 22:30:22 KST 2026
+  wall median= 2.95800E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 2.67422E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  wall median= 2.66398E-01 s  mad= 0.00000E+00 s  solver_iters/run=0  substeps/run=0
+  TKE_400_mpi2_h16--device-mpi.bin     n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  TKE_400_mpi2_h16.bin                 n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  TKE_400_mpi2_h8--device-mpi.bin      n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  TKE_400_mpi2_h8.bin                  n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+=== KT CHAIN DONE Thu Sep 24 22:31:20 KST 2026

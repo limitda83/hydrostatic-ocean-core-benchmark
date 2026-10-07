@@ -1,0 +1,528 @@
+{
+  "created_utc": "2026-09-23T13:42:04.220538+00:00",
+  "spec_version": "v0.1",
+  "git": {
+    "commit": "08757f5476e070dc136c579e034f314d6a544c63",
+    "branch": "main",
+    "dirty": true,
+    "dirty_files": [
+      "M RULES.md",
+      " M config/settings.toml",
+      " M docs/01_experiment_design.md",
+      " M docs/02_literature_review.md",
+      " M docs/03_discretization_spec.md",
+      " M docs/24_v05_physics_results.md",
+      " M docs/25_kernel_matrix.md",
+      " M docs/26_performance_index.md",
+      " M docs/27_lock_exchange_rpe.md",
+      " M docs/33_contribution.md",
+      " M docs/34_precision_axis.md",
+      " M docs/90_negative_results.md",
+      " M expr/E01_phase0_2d_schemes/README.md",
+      " M expr/E02_fortran_cpu/README.md",
+      " M expr/E03_gpu_microbench/README.md",
+      " M expr/E04_openacc/README.md",
+      " M expr/E05_3d_reference/README.md",
+      " M expr/E06_performance_matrix_v02/README.md",
+      " M expr/E07_v05_physics/README.md",
+      " M expr/E08_kernel_matrix/README.md",
+      " M expr/E09_performance_index/README.md",
+      " M expr/E10_lock_exchange_rpe/README.md",
+      " M expr/E11_multigpu_comm/README.md",
+      " M expr/E13_tier2_ladder/README.md",
+      " M expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-141703_main1_2389861.csv",
+      " M expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-141755_main1_2390682.csv",
+      " M expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-141857_main1_2391466.csv",
+      " M expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-142026_main1_2392284.csv",
+      " M expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-142448_main1_2393346.csv",
+      " M expr/E14_v06_representative/README.md",
+      " M expr/README.md",
+      " M expr/paper/PAPER_PLAN.md",
+      " M libs/core/cases3d.py",
+      " M libs/core/cases3d_v05.py",
+      " M libs/core/closure.py",
+      " M libs/core/driver3d_v05.py",
+      " M libs/core/model3d_v05.py",
+      " M libs/cuda/Makefile",
+      " M libs/cuda/src/cfd_exp3d5_cuda.cu",
+      " M libs/cuda/src/cfd_exp3d5_cuda_sp.cu",
+      " M libs/fortran/Makefile",
+      " M libs/fortran/src/cfd_exp3d5.f90",
+      " M libs/fortran/src/mod_model3d_v05.f90",
+      " M libs/jax/cfd_exp3d5_jax.py",
+      " M libs/jax/model3d_v05_jax.py",
+      " M ref/README.md",
+      " M ref/refs.bib",
+      " M tools/compare_backends3d5.py",
+      " M tools/eos_matrix.sh",
+      " M tools/gate3d5.sh",
+      " M tools/helm_matrix.sh",
+      " M tools/pbs_helm_sweep.sh",
+      " M tools/pbs_tier2.sh",
+      " M tools/run_tier2_gpgpu.sh",
+      " M tools/run_tier2_ktcloud.sh",
+      " M tools/tier2_collect.py",
+      " M tools/tier2_sweep.sh",
+      " M tools/toml2nml.py",
+      " M tools/verify_v05.py",
+      " M tools/verify_v06.py",
+      " M tools/write_helmholtz_case.py",
+      "?? .context/",
+      "?? docs/31_physics_cost.md",
+      "?? docs/32_hardware_ladder.md",
+      "?? docs/35_kernel_profile.md",
+      "?? docs/36_mixing_length_axis.md",
+      "?? docs/37_ai_module_motivation.md",
+      "?? docs/38_module_boundary.md",
+      "?? docs/39_speedup_generation_framework.md",
+      "?? docs/40_verification_summary.md",
+      "?? docs/41_multinode_design.md",
+      "?? docs/42_multigpu_scaling.md",
+      "?? expr/CHECKLIST.md",
+      "?? expr/E01_phase0_2d_schemes/data/",
+      "?? expr/E02_fortran_cpu/data/",
+      "?? expr/E03_gpu_microbench/data/",
+      "?? expr/E04_openacc/data/",
+      "?? expr/E05_3d_reference/data/",
+      "?? expr/E06_performance_matrix_v02/data/",
+      "?? expr/E07_v05_physics/data/SUPERSEDED",
+      "?? expr/E07_v05_physics/data/v05_verification_20260914.json",
+      "?? expr/E08_kernel_matrix/data/SUPERSEDED",
+      "?? expr/E08_kernel_matrix/data/geo85_helm_r7.csv",
+      "?? expr/E08_kernel_matrix/data/gpgpu_eos_r7.csv",
+      "?? expr/E08_kernel_matrix/data/gpgpu_helm_r7.csv",
+      "?? expr/E08_kernel_matrix/data/gpgpu_helm_r7_rough010.csv",
+      "?? expr/E08_kernel_matrix/data/gpgpu_helm_r7_rough010_stable.csv",
+      "?? expr/E08_kernel_matrix/data/ktcloud_eos_r7.csv",
+      "?? expr/E08_kernel_matrix/data/ktcloud_helm_r7.csv",
+      "?? expr/E09_performance_index/data/performance_index_stable.json",
+      "?? expr/E10_lock_exchange_rpe/data/",
+      "?? expr/E11_multigpu_comm/data/",
+      "?? expr/E13_tier2_ladder/data/SUPERSEDED",
+      "?? expr/E13_tier2_ladder/data/diverged_cfl4_2000_RESULT.csv",
+      "?? expr/E13_tier2_ladder/data/diverged_l2inf_RESULT.csv",
+      "?? expr/E13_tier2_ladder/data/geo85_r2.csv",
+      "?? expr/E13_tier2_ladder/data/geo85_stab_INVALID.csv",
+      "?? expr/E13_tier2_ladder/data/gpgpu_dev_20step_SUPERSEDED.csv",
+      "?? expr/E13_tier2_ladder/data/ktcloud_jax_stab.csv",
+      "?? expr/E13_tier2_ladder/data/ktcloud_openacc_UNGATED.csv",
+      "?? expr/E13_tier2_ladder/data/ktcloud_openacc_r4_20260915.csv",
+      "?? expr/E13_tier2_ladder/data/ktcloud_openacc_r4b_20260915.csv",
+      "?? expr/E13_tier2_ladder/data/ktcloud_openacc_split2000_SUBSTEPS_MISMATCH.csv",
+      "?? expr/E13_tier2_ladder/data/split2000_lock_exchange_IRREPRODUCIBLE.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_geo85_20260911-185226_node02_903797.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_geo85_20260911-185226_node03_1774516.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_geo85_20260911-185226_node04_2106654.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_geo85_20260911-185831_node02_909049.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_geo85_20260911-190540_node03_1778122.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_geo85_20260911-193356_node02_914433.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_geo85_20260911-194448_node02_917900.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_geo85_20260911-194454_node04_2113614.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_geo85_20260911-201225_node02_922705.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_geo85_20260911-211100_node02_929023.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_geo85_20260915-004338_node01_1528903.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260911-141315_localhost_3904676.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260911-213658_localhost_2164066.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260911-234805_localhost_2256997.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-061425_localhost_2532216.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-061610_localhost_2533913.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-062150_localhost_2537908.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-063937_localhost_2549188.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-065956_localhost_2567586.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-070012_localhost_2569048.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-070031_localhost_2570568.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-070056_localhost_2572187.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-070212_localhost_2574469.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-070609_localhost_2578368.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-093146_localhost_2695496.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-095417_localhost_2710799.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-121812_localhost_2799802.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-121831_localhost_2801322.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-121853_localhost_2802931.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-122011_localhost_2805164.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-122555_localhost_2811445.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-124359_localhost_2825544.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-135159_localhost_2869887.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_gpgpu_20260912-145945_localhost_2912132.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-185711_main1_2441320.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-190015_main1_2443308.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-190530_main1_2445045.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-191740_main1_2447311.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-200707_main1_2452913.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-235346_main1_2482222.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-235624_main1_2486517.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260911-235912_main1_2490987.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-000258_main1_2495507.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-001414_main1_2500903.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-004236_main1_2507222.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-004344_main1_2507672.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-004504_main1_2508140.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-004701_main1_2508644.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-005221_main1_2509686.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-014203_main1_2514991.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-020950_main1_2514972.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-025056_main1_2525072.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-045540_main1_2536923.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-045700_main1_2538471.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-045819_main1_2540040.csv",
+      "?? expr/E13_tier2_ladder/data/tier2_ktcloud_20260912-050106_main1_2541698.csv",
+      "?? expr/E14_v06_representative/data/",
+      "?? expr/E15_precision/data/",
+      "?? expr/E16_mixing_length/",
+      "?? expr/E17_module_boundary/",
+      "?? expr/E18_mixed_precision/",
+      "?? expr/E19_multinode_scaling/",
+      "?? libs/cuda/src/cfd_exp3d5_cuda_mixed.cu",
+      "?? libs/cuda/src/cfd_exp3d5_cuda_mpi.cu",
+      "?? libs/cuda/src/cfd_exp3d5_cuda_multi.cu",
+      "?? libs/cuda/src/module_boundary.cu",
+      "?? libs/utils/axes.py",
+      "?? paper/",
+      "?? tools/audit_crossdevice.py",
+      "?? tools/audit_data.py",
+      "?? tools/checklist.py",
+      "?? tools/domain_fingerprint.py",
+      "?? tools/e19_cmp.py",
+      "?? tools/e19_gate.sh",
+      "?? tools/e19_run.sh",
+      "?? tools/e19_run_mpi.sh",
+      "?? tools/e19_single.sh",
+      "?? tools/e19_table.py",
+      "?? tools/expr_audit.py",
+      "?? tools/make_mixed_cuda.py",
+      "?? tools/mixed_report.py",
+      "?? tools/module_boundary.sh",
+      "?? tools/module_boundary_report.py",
+      "?? tools/mutation_check.py",
+      "?? tools/mxl_axis.sh",
+      "?? tools/promote_cases.py",
+      "?? tools/shared_node_min.py",
+      "?? tools/verify_advection.py",
+      "?? tools/verify_mixing_length.py",
+      "?? tools/verify_rpe.py"
+    ]
+  },
+  "host": {
+    "node": "ympark-mini.local",
+    "system": "Darwin",
+    "release": "25.3.0",
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.13.12",
+    "numpy": "2.4.4"
+  },
+  "config_sha256": "c3ea9df0529d7c4b592015452a49ab956d5e1ec5318ae65c0fc9b18ee73ae8c5",
+  "config": {
+    "project": {
+      "name": "cfd_exp",
+      "spec_version": "v0.1"
+    },
+    "paths": {
+      "output_dir": "output",
+      "config_dir": "config"
+    },
+    "logging": {
+      "level": "INFO",
+      "to_file": true,
+      "filename": "run.log"
+    },
+    "physics": {
+      "g": 9.80616,
+      "f0": 0.0001,
+      "H": 1000.0,
+      "rho0": 1025.0
+    },
+    "run": {
+      "precision": "float64",
+      "backend": "ref",
+      "diag_every": 0
+    },
+    "netcdf": {
+      "format": "NETCDF4",
+      "compression_level": 4,
+      "write_state": true
+    },
+    "physics3d_v04": {
+      "tracers": "buoyancy",
+      "alpha_T": 0.0002,
+      "beta_S": 0.00074,
+      "T0": 10.0,
+      "S0": 35.0,
+      "cp": 3990.0,
+      "A_h": 0.0,
+      "K_h": 0.0,
+      "q_heat": 0.0,
+      "q_salt": 0.0
+    },
+    "domain": {
+      "vcoord": "zlevel",
+      "bc_x": "periodic",
+      "bc_y": "periodic",
+      "min_partial": 0.1,
+      "face_rule": "min"
+    },
+    "bathymetry": {
+      "kind": "flat",
+      "h_rel": 0.9,
+      "length": 0.0,
+      "slope": 0.5,
+      "spectrum_slope": 1.5,
+      "r_target": 0.1,
+      "seed": 20260911,
+      "island": false
+    },
+    "physics3d_v05": {
+      "eos": "linear",
+      "pgf": "remove",
+      "pgf_correction": true,
+      "eta_ext": 0.0,
+      "u_ext": 0.0,
+      "n_relax": 0,
+      "tau_relax": 3600.0
+    },
+    "physics3d_v06": {
+      "closure": "none",
+      "c_k": 0.1,
+      "c_eps": 0.7,
+      "pr_t": 1.0,
+      "kappa_vk": 0.4,
+      "z_0": 0.1,
+      "e_min": 1e-06,
+      "n2_min": 1e-08,
+      "l_min": 0.01,
+      "e_bb": 3.75,
+      "mxl": "integral"
+    },
+    "grid": {
+      "nx": 100,
+      "ny": 100,
+      "nz": 30,
+      "Lx": 10000000.0,
+      "Ly": 10000000.0,
+      "bc_x": "periodic",
+      "bc_y": "periodic",
+      "sweep": {
+        "nx_list": [
+          32,
+          64,
+          128,
+          256
+        ]
+      }
+    },
+    "scheme": {
+      "name": "theta",
+      "theta": 0.5,
+      "theta_cor": 0.5,
+      "n_picard": 2
+    },
+    "solver": {
+      "kind": "fft",
+      "rtol": 1e-12,
+      "max_iter": 2000
+    },
+    "presets": {
+      "fb": {
+        "name": "fb"
+      },
+      "cn": {
+        "name": "theta",
+        "theta": 0.5
+      },
+      "schism": {
+        "name": "theta",
+        "theta": 0.6
+      },
+      "backward_euler": {
+        "name": "theta",
+        "theta": 1.0,
+        "advection": "none",
+        "n_split": 0,
+        "barotropic_average": "none"
+      },
+      "split": {
+        "name": "split_explicit"
+      }
+    },
+    "case": {
+      "name": "igw",
+      "igw": {
+        "mode_x": 2,
+        "mode_y": 2,
+        "eta0": 1.0,
+        "n_periods": 1.0
+      },
+      "geo_balance": {
+        "mode_x": 1,
+        "mode_y": 1,
+        "eta0": 1.0,
+        "n_days": 10.0
+      },
+      "igw_broadband": {
+        "n_modes": 8,
+        "eta0": 1.0,
+        "slope": 1.0,
+        "n_periods": 1.0
+      },
+      "barotropic3d": {
+        "mode_x": 2,
+        "mode_y": 2,
+        "eta0": 1.0,
+        "n_periods": 1.0
+      },
+      "vdiffusion": {
+        "mode_z": 1,
+        "u0": 1.0,
+        "n_efolds": 1.0
+      },
+      "baroclinic_igw": {
+        "mode_x": 2,
+        "mode_y": 2,
+        "mode_z": 2,
+        "eta0": 1.0,
+        "n_periods": 1.0
+      },
+      "tracer_advect": {
+        "mode_x": 2,
+        "mode_y": 1,
+        "amp": 1.0,
+        "u0": 0.5,
+        "v0": 0.25,
+        "n_transits": 0.25
+      },
+      "ekman": {
+        "n_inertial": 2.0
+      },
+      "seamount_rest": {
+        "delta_rho": 3.0,
+        "n_days": 1.0
+      },
+      "zstar_constancy": {
+        "eta0": 1.0,
+        "n_periods": 0.25
+      },
+      "flather_radiate": {
+        "eta0": 1.0,
+        "width": 40000.0,
+        "n_transits": 1.5
+      },
+      "lock_exchange": {
+        "delta_T": 2.0,
+        "n_hours": 6.0
+      },
+      "basin_seiche": {
+        "eta0": 0.5,
+        "n_periods": 2.0
+      }
+    },
+    "time": {
+      "cfl_factor": 0.5,
+      "dt": 0.0,
+      "sweep": {
+        "cfl_list": [
+          0.125,
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0
+        ]
+      }
+    },
+    "physics3d": {
+      "N2": 0.0001,
+      "nu": 0.001,
+      "kappa": 0.001,
+      "tau_x": 0.0,
+      "tau_y": 0.0,
+      "bottom_drag": 0.0
+    },
+    "backends": {
+      "ref": {
+        "kind": "python",
+        "module": "libs.core.schemes",
+        "notes": "NumPy fp64 oracle. Defines correctness (RULES.md R2)."
+      },
+      "fortran_cpu": {
+        "kind": "fortran",
+        "compiler": "gfortran",
+        "flags": [
+          "-O3",
+          "-march=native",
+          "-fopenmp",
+          "-std=f2008"
+        ],
+        "build": "make -C libs/fortran",
+        "binary": "libs/fortran/build/cfd_exp",
+        "solver": "pcg_jacobi",
+        "status": "P3: R2 gate passed",
+        "omp_min_points": 65536
+      },
+      "openacc": {
+        "kind": "fortran",
+        "compiler": "nvfortran",
+        "flags": [
+          "-O3",
+          "-tp=native",
+          "-acc=gpu",
+          "-gpu=cc120,mem:managed",
+          "-Minfo=accel"
+        ],
+        "build": "make -C libs/fortran acc",
+        "binary": "libs/fortran/build/cfd_exp_acc",
+        "status": "P4: R2 gate passed",
+        "mem_mode": "managed",
+        "gpu_arch": "cc120"
+      },
+      "cuda": {
+        "kind": "cuda",
+        "compiler": "nvcc",
+        "flags": [
+          "-O3",
+          "-arch=sm_120",
+          "-lineinfo"
+        ],
+        "status": "planned:P5"
+      },
+      "py_gpu": {
+        "kind": "python",
+        "variants": [
+          "cupy",
+          "jax",
+          "numba_cuda"
+        ],
+        "status": "planned:P6"
+      }
+    },
+    "bench_node": {
+      "gpgpu": {
+        "role": "all CPU<->GPU comparison (same-node only)",
+        "ssh": "ssh <gpgpu-node>",
+        "cpu": "AMD Ryzen Threadripper PRO 9955WX (16C/32T)",
+        "gpu": "NVIDIA GeForce RTX 5090 32GB x4",
+        "os": "RHEL 9.7",
+        "cuda": "13.2",
+        "nvhpc": "25.11 at ~/opt/nvhpc (user-home install, no root)",
+        "shared": true,
+        "gpu_pin": "CUDA_VISIBLE_DEVICES must be set explicitly; record it in the manifest"
+      },
+      "geo85": {
+        "role": "large-scale CPU scalability only (no GPU)",
+        "ssh": "ssh <geo85-node>",
+        "scheduler": "PBS (workq); use -l place=excl",
+        "nodes": "node01-05, 192 cores / 754 GB each",
+        "cpu": "AMD EPYC 9115 (login: 2x16C)",
+        "omp_env": [
+          "OMP_WAIT_POLICY=active",
+          "OMP_PROC_BIND=close",
+          "OMP_PLACES=cores"
+        ]
+      }
+    }
+  },
+  "mode": "verify3d",
+  "case": "baroclinic_igw"
+}

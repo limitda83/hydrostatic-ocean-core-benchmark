@@ -1,0 +1,13 @@
+# Reference backend (Phase 0-2).
+# Python >= 3.11 uses the stdlib tomllib; 3.9/3.10 (the RHEL cluster nodes)
+# need the tomli backport.
+tomli>=2.0; python_version < "3.11"
+numpy>=1.26
+scipy>=1.11
+netCDF4>=1.6
+matplotlib>=3.8      # plotting of convergence / Pareto curves
+
+# Phase 6 (Python-GPU axis) - install on the bench node only:
+#   cupy-cuda13x
+#   jax[cuda13]
+#   numba

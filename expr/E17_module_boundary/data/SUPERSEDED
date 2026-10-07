@@ -1,0 +1,6 @@
+# Files kept for the record but NOT sources for any table.
+gpgpu_boundary_DISCARDED_DE.csv          # first-version tool. Contain cases D ("device-to-device")
+gpgpu_boundary_static_DISCARDED_DE.csv   # and E ("two-stream"), discarded 2026-09-15 (docs/90 N44):
+ktcloud_boundary_DISCARDED_DE.csv        # D measured a copy an in-place module never pays; E had
+                                         # nothing to overlap. Their B/C rows agree with the
+                                         # re-measurement within noise; the re-measurement is the record.

@@ -1,0 +1,6 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+localhost.localdomain,cuda,0,lock_exchange.v05,theta0.5,0.5,multigrid,4,400,30,50,4.031701e+00,1.305121e+00,6.661100e-05,3012,0,nan,nan,nan,1.544569e+02
+localhost.localdomain,cuda,0,lock_exchange.up3,theta0.5,0.5,multigrid,4,400,30,50,4.031701e+00,1.393221e+00,1.523700e-04,3012,0,nan,nan,nan,1.446899e+02
+localhost.localdomain,cuda,0,lock_exchange.up3tvd,theta0.5,0.5,multigrid,4,400,30,50,4.031701e+00,1.528441e+00,4.915500e-05,3012,0,nan,nan,nan,1.318893e+02
+localhost.localdomain,cuda,0,lock_exchange.tke,theta0.5,0.5,multigrid,4,400,30,50,4.031701e+00,2.167336e+00,1.891260e-04,3012,0,nan,nan,nan,9.301052e+01
+localhost.localdomain,cuda,0,lock_exchange.tke_up3tvd,theta0.5,0.5,multigrid,4,400,30,50,4.031701e+00,2.448061e+00,6.151200e-05,3012,0,nan,nan,nan,8.234478e+01

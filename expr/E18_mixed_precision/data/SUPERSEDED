@@ -1,0 +1,2 @@
+ladder_gpgpu_fp32_maxiter_RESULT.csv  # whole-fp32 multigrid at CFL 2 (400^2, 1000^2) hits max_iter every step: 200000 iterations. A RESULT (N41 extended), not a cost. Mixed precision converges with fp64's iteration count.
+ladder_ktcloud_fp32_maxiter_RESULT.csv  # H100: whole-fp32 multigrid at CFL 2 hits max_iter (N41). A RESULT, not a cost.

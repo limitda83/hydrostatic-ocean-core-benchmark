@@ -1,0 +1,39 @@
+# Time-integration schemes (axis A) and elliptic solvers (axis B).
+
+[scheme]
+name        = "theta"     # fb | theta
+theta       = 0.5         # implicitness factor; 0.5=Crank-Nicolson, 1.0=backward Euler
+theta_cor   = 0.5         # Coriolis weighting in the Picard iteration
+n_picard    = 2           # 1 => explicit Coriolis (1st order); 2 => trapezoidal (2nd order)
+
+[solver]
+kind        = "fft"       # fft (periodic only, exact) | pcg_jacobi
+rtol        = 1.0e-12
+max_iter    = 2000
+
+# Named scheme presets referenced by the experiment driver (axis A levels).
+[presets.fb]
+name = "fb"
+
+[presets.cn]
+name = "theta"
+theta = 0.5
+
+[presets.schism]
+name = "theta"
+theta = 0.6
+
+[presets.backward_euler]
+name = "theta"
+theta = 1.0
+
+# split-explicit barotropic mode splitting (spec v0.3, 3D only).
+# n_split = 0 picks the substep count from the barotropic CFL.
+# Advection scheme (axis C, spec v0.4). "none" keeps the linear analytic
+# solutions of spec S7.6 valid and is therefore the default.
+advection          = "none"    # none | centered2 | upwind1
+n_split            = 0
+barotropic_average = "none"    # "none" | "mean" — see spec S8.5
+
+[presets.split]
+name = "split_explicit"

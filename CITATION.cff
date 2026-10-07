@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper and the archived release."
+title: "hydrostatic-ocean-core-benchmark: one hydrostatic ocean core implemented five times, gated to double-precision agreement, timed across CPU and GPU devices"
+type: software
+authors:
+  - family-names: Park
+    given-names: Youngmin
+    orcid: "https://orcid.org/0000-0003-0953-6349"
+    affiliation: "Geosystem Research Inc., Gunpo, Republic of Korea"
+  - family-names: Kim
+    given-names: Changsin
+    orcid: "https://orcid.org/0000-0003-3026-3285"
+    affiliation: "Department of Smart Fisheries Resource Management, Chonnam National University, Yeosu, Republic of Korea"
+version: 1.0.0
+date-released: 2026-10-01
+license: BSD-3-Clause
+repository-code: "https://github.com/limitda83/hydrostatic-ocean-core-benchmark"
+keywords:
+  - ocean model
+  - GPU computing
+  - verification
+  - time-stepping scheme
+  - programming framework
+  - mixed precision
+preferred-citation:
+  type: article
+  title: "Performance of a hydrostatic ocean core across computing devices and programming frameworks under verified double-precision agreement"
+  authors:
+    - family-names: Park
+      given-names: Youngmin
+    - family-names: Kim
+      given-names: Changsin
+  journal: "Computers & Fluids"
+  year: 2026
+  notes: "submitted"

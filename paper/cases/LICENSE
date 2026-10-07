@@ -1,0 +1,11 @@
+The measurement data in this directory (paper/cases/**: timing CSV/JSON files,
+run manifests, verification-gate logs and the per-case README files) are
+released under the Creative Commons Attribution 4.0 International licence
+(CC BY 4.0), https://creativecommons.org/licenses/by/4.0/.
+
+Attribution: Park, Y. and Kim, C. (2026), "Performance of a hydrostatic ocean
+core across computing devices and programming frameworks under verified
+double-precision agreement", data archive (Zenodo DOI in the repository README).
+
+The source code elsewhere in this repository is under the BSD 3-Clause licence
+(see /LICENSE).

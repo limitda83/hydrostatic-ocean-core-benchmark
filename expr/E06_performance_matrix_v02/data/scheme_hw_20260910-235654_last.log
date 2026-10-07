@@ -1,0 +1,3 @@
+cuda3d: case=baroclinic_igw nx=100 nz=30 scheme=split_explicit dt= 9.13999E+02 steps=20 pcg_sync=device check_every=5 gpu=NVIDIA GeForce RTX 5090
+  L2(u)= 3.67316E-02  L2(b)= 6.80404E-02  L2(eta)= 4.66314E-16
+  wall median= 3.30146E-02 s  mad= 1.90590E-05 s  pcg_iters/run=0

@@ -1,0 +1,9 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+gpgpu-dev,openacc,0,lock_exchange,fb,0,none,0.5,400,30,20,5.039626e-01,3.323175e-01,6.040000e-05,0,0,nan,nan,nan,3.033019e+01
+gpgpu-dev,cuda,0,lock_exchange,fb,0,none,0.5,400,30,20,5.039626e-01,2.082904e-01,2.312839e-03,0,0,nan,nan,nan,4.839038e+01
+gpgpu-dev,openacc,0,lock_exchange,theta0.5,0.5,multigrid,4,400,30,20,4.031701e+00,1.838041e+00,6.685500e-04,1222,0,nan,nan,nan,4.386955e+01
+gpgpu-dev,cuda,0,lock_exchange,theta0.5,0.5,multigrid,4,400,30,20,4.031701e+00,5.731693e-01,1.340075e-04,1222,0,nan,nan,nan,1.406810e+02
+gpgpu-dev,openacc,0,lock_exchange_v06,fb,0,none,0.5,400,30,20,5.039626e-01,8.384848e-01,6.150000e-04,0,0,nan,nan,nan,1.202079e+01
+gpgpu-dev,cuda,0,lock_exchange_v06,fb,0,none,0.5,400,30,20,5.039626e-01,6.390499e-01,5.493800e-05,0,0,nan,nan,nan,1.577224e+01
+gpgpu-dev,openacc,0,lock_exchange_v06,theta0.5,0.5,multigrid,4,400,30,20,4.031701e+00,2.349744e+00,9.155000e-05,1222,0,nan,nan,nan,3.431609e+01
+gpgpu-dev,cuda,0,lock_exchange_v06,theta0.5,0.5,multigrid,4,400,30,20,4.031701e+00,1.084008e+00,7.615000e-05,1222,0,nan,nan,nan,7.438504e+01

@@ -1,0 +1,4 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+gpgpu,cuda_sp,0,lock_exchange.v05,theta0.5,0.5,multigrid,4,100,30,50,1.611926e+01,1.572878e+01,4.188538e-03,200000,0,nan,nan,nan,5.124129e+01
+gpgpu,cuda_sp,0,lock_exchange.up3,theta0.5,0.5,multigrid,4,100,30,50,1.611926e+01,1.573267e+01,5.628586e-03,200000,0,nan,nan,nan,5.122862e+01
+gpgpu,cuda_sp,0,lock_exchange.up3tvd,theta0.5,0.5,multigrid,4,100,30,50,1.611926e+01,1.575475e+01,5.412102e-03,200000,0,nan,nan,nan,5.115682e+01

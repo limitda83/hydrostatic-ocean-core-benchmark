@@ -1,0 +1,17 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+node01,fortran_omp,64,lock_exchange,theta0.5,0.5,pcg_jacobi,2,2000,30,50,3.944786e-01,5.817132e+01,1.793139e-02,2474,0,nan,nan,nan,3.390662e-01
+node01,fortran_omp,96,lock_exchange,theta0.5,0.5,pcg_jacobi,2,2000,30,50,3.944786e-01,4.835961e+01,6.395216e-02,2474,0,nan,nan,nan,4.078596e-01
+node01,fortran_omp,128,lock_exchange,theta0.5,0.5,pcg_jacobi,2,2000,30,50,3.944786e-01,3.672118e+01,1.043711e-01,2474,0,nan,nan,nan,5.371268e-01
+node01,fortran_omp,192,lock_exchange,theta0.5,0.5,pcg_jacobi,2,2000,30,50,3.944786e-01,2.798600e+01,7.352344e-02,2474,0,nan,nan,nan,7.047783e-01
+node01,fortran_omp,64,lock_exchange,theta0.5,0.5,multigrid,2,2000,30,50,3.944786e-01,5.877987e+01,9.514755e-03,928,0,nan,nan,nan,3.355558e-01
+node01,fortran_omp,96,lock_exchange,theta0.5,0.5,multigrid,2,2000,30,50,3.944786e-01,4.928459e+01,2.236879e-02,928,0,nan,nan,nan,4.002048e-01
+node01,fortran_omp,128,lock_exchange,theta0.5,0.5,multigrid,2,2000,30,50,3.944786e-01,3.794039e+01,1.499830e-01,928,0,nan,nan,nan,5.198662e-01
+node01,fortran_omp,192,lock_exchange,theta0.5,0.5,multigrid,2,2000,30,50,3.944786e-01,2.830927e+01,2.391628e-01,928,0,nan,nan,nan,6.967305e-01
+node01,fortran_omp,64,lock_exchange_v06,theta0.5,0.5,pcg_jacobi,2,2000,30,50,3.944786e-01,1.154441e+02,4.465020e-01,2474,0,nan,nan,nan,1.708527e-01
+node01,fortran_omp,96,lock_exchange_v06,theta0.5,0.5,pcg_jacobi,2,2000,30,50,3.944786e-01,9.733988e+01,6.341552e-01,2474,0,nan,nan,nan,2.026295e-01
+node01,fortran_omp,128,lock_exchange_v06,theta0.5,0.5,pcg_jacobi,2,2000,30,50,3.944786e-01,8.175163e+01,3.467880e-01,2474,0,nan,nan,nan,2.412665e-01
+node01,fortran_omp,192,lock_exchange_v06,theta0.5,0.5,pcg_jacobi,2,2000,30,50,3.944786e-01,7.086403e+01,1.475398e-01,2474,0,nan,nan,nan,2.783348e-01
+node01,fortran_omp,64,lock_exchange_v06,theta0.5,0.5,multigrid,2,2000,30,50,3.944786e-01,1.165742e+02,9.126831e-02,928,0,nan,nan,nan,1.691964e-01
+node01,fortran_omp,96,lock_exchange_v06,theta0.5,0.5,multigrid,2,2000,30,50,3.944786e-01,9.876014e+01,2.862171e-01,928,0,nan,nan,nan,1.997155e-01
+node01,fortran_omp,128,lock_exchange_v06,theta0.5,0.5,multigrid,2,2000,30,50,3.944786e-01,8.238575e+01,1.698567e-01,928,0,nan,nan,nan,2.394095e-01
+node01,fortran_omp,192,lock_exchange_v06,theta0.5,0.5,multigrid,2,2000,30,50,3.944786e-01,7.245095e+01,1.096135e-01,928,0,nan,nan,nan,2.722384e-01

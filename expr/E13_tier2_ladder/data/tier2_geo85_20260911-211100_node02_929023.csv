@@ -1,0 +1,2 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+geo85,fortran_omp,64,lock_exchange_v06,fb,0,none,0.5,2000,30,50,9.861965e-02,1.508442e+02,2.686119e-01,0,0,nan,nan,nan,3.268924e-02

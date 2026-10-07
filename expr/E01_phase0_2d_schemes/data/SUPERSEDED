@@ -1,0 +1,25 @@
+# Kept for comparison; NOT the result of the current numerical core (docs/90 N35).
+verify_space_igw_20260909-235356_manifest.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260909-235356_metrics.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260909-235410_manifest.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260909-235410_metrics.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260909-235415_manifest.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260909-235415_metrics.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260909-235421_manifest.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260909-235421_metrics.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260909-235423_manifest.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260909-235423_metrics.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260910-094540_manifest.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260910-094540_metrics.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260911-051212_manifest.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260911-051212_metrics.json  # predates the 2026-09-14 core edits
+verify_space_igw_broadband_20260910-030747_manifest.json  # predates the 2026-09-14 core edits
+verify_space_igw_broadband_20260910-030747_metrics.json  # predates the 2026-09-14 core edits
+verify_time_igw_20260909-235507_manifest.json  # predates the 2026-09-14 core edits
+verify_time_igw_20260909-235507_metrics.json  # predates the 2026-09-14 core edits
+verify_time_igw_20260909-235627_manifest.json  # predates the 2026-09-14 core edits
+verify_time_igw_20260909-235627_metrics.json  # predates the 2026-09-14 core edits
+verify_space_igw_20260914-130721_manifest.json  # superseded by the 2026-09-14 16:0x run (core changed at 15:21)
+verify_space_igw_20260914-130721_metrics.json  # superseded by the 2026-09-14 16:0x run (core changed at 15:21)
+verify_space_igw_20260914-160205_manifest.json  # superseded 2026-09-23 by the post-N44 re-run (N35); kept for comparison
+verify_space_igw_20260914-160205_metrics.json  # superseded 2026-09-23 by the post-N44 re-run (N35); kept for comparison

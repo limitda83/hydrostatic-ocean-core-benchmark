@@ -1,0 +1,14 @@
+case                           backend                verdict
+flat.theta.pcg                 cfd_exp3d5_jax         PASS u=0.000e+00 v=0.000e+00 b=0.000e+00 eta=0.000e+00
+seamount.theta.mg.closed       cfd_exp3d5_jax         PASS u=5.020e-17 v=5.115e-17 b=0.000e+00 eta=1.349e-16
+seamount.split.closed          cfd_exp3d5_jax         PASS u=6.465e-17 v=7.692e-17 b=0.000e+00 eta=1.260e-16
+seamount.theta1.rbgs           cfd_exp3d5_jax         PASS u=5.948e-17 v=6.076e-17 b=0.000e+00 eta=1.967e-16
+rough.TS.teos10.mg             cfd_exp3d5_jax         PASS u=1.654e-15 v=3.537e-14 b=8.087e-17 eta=1.194e-15 T=1.712e-18 S=0.000e+00
+rough.TS.fb.upwind             cfd_exp3d5_jax         PASS u=2.772e-16 v=5.303e-15 b=8.982e-17 eta=3.371e-16 T=1.712e-18 S=0.000e+00
+v06.rough.TS.up3.mg            cfd_exp3d5_jax         PASS u=2.052e-15 v=4.150e-14 b=8.070e-17 eta=1.620e-15 T=1.712e-18 S=0.000e+00
+v06.seamount.tvd.tke.theta     cfd_exp3d5_jax         PASS u=1.015e-14 v=1.115e-13 b=1.092e-14 eta=1.477e-14 T=1.143e-16 S=1.243e-16
+v06.seamount.tke.split         cfd_exp3d5_jax         PASS u=1.017e-14 v=3.029e-13 b=8.748e-15 eta=1.935e-14 T=8.955e-17 S=9.919e-17
+v06.mxl_rec.tke.theta          cfd_exp3d5_jax         PASS u=2.696e-16 v=2.004e-15 b=1.009e-16 eta=3.440e-16 T=0.000e+00 S=0.000e+00
+v06.mxl_rec.tke.fb             cfd_exp3d5_jax         PASS u=2.724e-16 v=5.950e-15 b=1.206e-16 eta=3.118e-16 T=1.712e-18 S=0.000e+00
+seamount.split.seos.forcing    cfd_exp3d5_jax         PASS u=2.913e-16 v=1.708e-15 b=8.749e-17 eta=4.004e-16 T=2.785e-18 S=0.000e+00
+gate3d5: 12 pass, 0 fail, 0 backend(s) not built on this node

@@ -1,0 +1,26 @@
+case                           backend                verdict
+flat.theta.pcg                 cfd_exp3d5_cuda        PASS u=0.000e+00 v=0.000e+00 b=0.000e+00 eta=0.000e+00
+seamount.theta.mg.closed       cfd_exp3d5_cuda        PASS u=4.544e-14 v=4.547e-14 b=0.000e+00 eta=8.069e-14
+seamount.split.closed          cfd_exp3d5_cuda        PASS u=4.579e-14 v=4.579e-14 b=0.000e+00 eta=8.304e-14
+seamount.theta1.rbgs           cfd_exp3d5_cuda        PASS u=4.482e-14 v=4.477e-14 b=0.000e+00 eta=4.476e-14
+rough.TS.teos10.mg             cfd_exp3d5_cuda        PASS u=5.364e-13 v=1.111e-11 b=4.173e-14 eta=3.736e-13 T=1.110e-17 S=0.000e+00
+rough.TS.fb.upwind             cfd_exp3d5_cuda        PASS u=2.445e-16 v=4.490e-15 b=1.860e-17 eta=2.389e-16 T=2.421e-18 S=0.000e+00
+v06.rough.TS.up3.mg            cfd_exp3d5_cuda        PASS u=6.575e-13 v=1.340e-11 b=4.119e-14 eta=5.550e-13 T=9.060e-18 S=0.000e+00
+v06.seamount.tvd.tke.theta     cfd_exp3d5_cuda        PASS u=2.627e-16 v=2.380e-15 b=2.624e-16 eta=2.521e-16 T=3.595e-18 S=2.870e-18
+v06.seamount.tke.split         cfd_exp3d5_cuda        PASS u=3.277e-16 v=2.457e-15 b=4.397e-16 eta=3.791e-16 T=7.877e-18 S=5.370e-18
+v06.mxl_rec.tke.theta          cfd_exp3d5_cuda        PASS u=2.534e-16 v=1.779e-15 b=0.000e+00 eta=2.410e-16 T=0.000e+00 S=0.000e+00
+v06.mxl_rec.tke.fb             cfd_exp3d5_cuda        PASS u=2.621e-16 v=4.780e-15 b=1.318e-17 eta=2.443e-16 T=1.712e-18 S=0.000e+00
+seamount.split.seos.forcing    cfd_exp3d5_cuda        PASS u=3.098e-16 v=2.091e-15 b=7.557e-17 eta=4.395e-16 T=1.608e-18 S=0.000e+00
+flat.theta.pcg                 cfd_exp3d5_acc         FAIL: FAIL: backend exited 1
+seamount.theta.mg.closed       cfd_exp3d5_acc         FAIL: FAIL: backend exited 1
+seamount.split.closed          cfd_exp3d5_acc         FAIL: FAIL: backend exited 1
+seamount.theta1.rbgs           cfd_exp3d5_acc         FAIL: FAIL: backend exited 1
+rough.TS.teos10.mg             cfd_exp3d5_acc         FAIL: FAIL: backend exited 1
+rough.TS.fb.upwind             cfd_exp3d5_acc         FAIL: FAIL: backend exited 1
+v06.rough.TS.up3.mg            cfd_exp3d5_acc         FAIL: FAIL: backend exited 1
+v06.seamount.tvd.tke.theta     cfd_exp3d5_acc         FAIL: FAIL: backend exited 1
+v06.seamount.tke.split         cfd_exp3d5_acc         FAIL: FAIL: backend exited 1
+v06.mxl_rec.tke.theta          cfd_exp3d5_acc         FAIL: FAIL: backend exited 1
+v06.mxl_rec.tke.fb             cfd_exp3d5_acc         FAIL: FAIL: backend exited 1
+seamount.split.seos.forcing    cfd_exp3d5_acc         FAIL: FAIL: backend exited 1
+gate3d5: 12 pass, 12 fail, 0 backend(s) not built on this node

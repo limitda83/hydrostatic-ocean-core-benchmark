@@ -1,0 +1,15 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+ktcloud,openacc,0,lock_exchange,fb,0,none,0.5,1000,30,50,1.962422e-01,2.463024e+00,5.878700e-03,0,0,nan,nan,nan,3.983765e+00
+ktcloud,cuda,0,lock_exchange,fb,0,none,0.5,1000,30,50,1.962422e-01,1.450976e+00,9.660000e-06,0,0,nan,nan,nan,6.762419e+00
+ktcloud,openacc,0,lock_exchange,theta0.5,0.5,multigrid,4,1000,30,50,1.569937e+00,8.900998e+00,3.205780e-02,2856,0,nan,nan,nan,8.818885e+00
+ktcloud,cuda,0,lock_exchange,theta0.5,0.5,multigrid,4,1000,30,50,1.569937e+00,2.555502e+00,1.869334e-03,2856,0,nan,nan,nan,3.071682e+01
+ktcloud,openacc,0,lock_exchange,theta0.5,0.5,pcg_jacobi,4,1000,30,50,1.569937e+00,4.363641e+00,3.348410e-02,4956,0,nan,nan,nan,1.798885e+01
+ktcloud,cuda,0,lock_exchange,theta0.5,0.5,pcg_jacobi,4,1000,30,50,1.569937e+00,2.089544e+00,2.004724e-03,4956,0,nan,nan,nan,3.756652e+01
+ktcloud,cuda,0,lock_exchange,split,0,none,4,1000,30,50,1.569937e+00,1.527063e+00,2.199000e-05,0,250,nan,nan,nan,5.140381e+01
+ktcloud,openacc,0,lock_exchange_v06,fb,0,none,0.5,1000,30,50,1.962422e-01,9.300671e+01,7.763500e-02,0,0,nan,nan,nan,1.054989e-01
+ktcloud,cuda,0,lock_exchange_v06,fb,0,none,0.5,1000,30,50,1.962422e-01,2.445605e+00,1.393498e-03,0,0,nan,nan,nan,4.012139e+00
+ktcloud,openacc,0,lock_exchange_v06,theta0.5,0.5,multigrid,4,1000,30,50,1.569937e+00,1.042780e+02,2.817008e-01,2856,0,nan,nan,nan,7.527657e-01
+ktcloud,cuda,0,lock_exchange_v06,theta0.5,0.5,multigrid,4,1000,30,50,1.569937e+00,3.569366e+00,1.203280e-03,2856,0,nan,nan,nan,2.199183e+01
+ktcloud,openacc,0,lock_exchange_v06,theta0.5,0.5,pcg_jacobi,4,1000,30,50,1.569937e+00,9.484421e+01,2.260471e-01,4956,0,nan,nan,nan,8.276401e-01
+ktcloud,cuda,0,lock_exchange_v06,theta0.5,0.5,pcg_jacobi,4,1000,30,50,1.569937e+00,3.120608e+00,3.462638e-03,4956,0,nan,nan,nan,2.515435e+01
+ktcloud,cuda,0,lock_exchange_v06,split,0,none,4,1000,30,50,1.569937e+00,2.529191e+00,2.937140e-04,0,250,nan,nan,nan,3.103636e+01

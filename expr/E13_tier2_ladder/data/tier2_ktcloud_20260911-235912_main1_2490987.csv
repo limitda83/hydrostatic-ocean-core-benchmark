@@ -1,0 +1,8 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+ktcloud,jax,0,lock_exchange,fb,0,none,0.5,400,30,50,5.039626e-01,5.138271e-01,4.031360e-04,0,0,nan,nan,nan,4.904010e+01
+ktcloud,jax,0,lock_exchange,theta0.5,0.5,multigrid,4,400,30,50,4.031701e+00,8.097295e-01,4.157292e-03,3012,0,nan,nan,nan,2.489536e+02
+ktcloud,jax,0,lock_exchange,theta0.5,0.5,pcg_jacobi,4,400,30,50,4.031701e+00,6.591866e-01,4.112238e-03,5076,0,nan,nan,nan,3.058087e+02
+ktcloud,jax,0,lock_exchange,split,0,none,4,400,30,50,4.031701e+00,4.982216e-01,1.269756e-03,0,250,nan,nan,nan,4.046092e+02
+ktcloud,jax,0,lock_exchange_v06,fb,0,none,0.5,400,30,50,5.039626e-01,8.217808e-01,5.852170e-04,0,0,nan,nan,nan,3.066283e+01
+ktcloud,jax,0,lock_exchange_v06,theta0.5,0.5,pcg_jacobi,4,400,30,50,4.031701e+00,1.030248e+00,1.231190e-03,5076,0,nan,nan,nan,1.956664e+02
+ktcloud,jax,0,lock_exchange_v06,split,0,none,4,400,30,50,4.031701e+00,8.907351e-01,2.494145e-03,0,250,nan,nan,nan,2.263131e+02

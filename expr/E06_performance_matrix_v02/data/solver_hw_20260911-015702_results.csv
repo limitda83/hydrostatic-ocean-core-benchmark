@@ -1,0 +1,13 @@
+config,cfl,n_steps,work_per_step,l2_rel_b,cuda_s,bytes_per_cell
+theta + pcg_jacobi,0.5,20,20.00,1.148872e-04,2.116747e-02,273.1
+theta + pcg_jacobi,2.0,20,60.00,5.422248e-04,4.518090e-02,273.1
+theta + pcg_jacobi,8.0,20,202.25,4.718945e-03,1.308834e-01,273.1
+theta + pcg_jacobi,32.0,20,506.50,5.125037e-02,3.150406e-01,273.1
+theta + multigrid,0.5,20,6.00,1.148872e-04,4.537707e-02,273.1
+theta + multigrid,2.0,20,16.95,5.422248e-04,1.110915e-01,273.1
+theta + multigrid,8.0,20,26.00,4.718945e-03,1.664039e-01,273.1
+theta + multigrid,32.0,20,26.35,5.125037e-02,1.675539e-01,273.1
+split_explicit + pcg_jacobi,0.5,20,1.00,1.148872e-04,9.098603e-03,268.8
+split_explicit + pcg_jacobi,2.0,20,3.00,5.422248e-04,1.038573e-02,268.8
+split_explicit + pcg_jacobi,8.0,20,10.00,4.718945e-03,1.498193e-02,268.8
+split_explicit + pcg_jacobi,32.0,20,39.00,5.125037e-02,3.399238e-02,268.8

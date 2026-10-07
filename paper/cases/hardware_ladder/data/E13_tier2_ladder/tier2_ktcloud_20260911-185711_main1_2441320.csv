@@ -1,0 +1,15 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+ktcloud,openacc,0,lock_exchange,fb,0,none,0.5,100,30,50,2.014907e+00,4.967818e-01,3.538000e-04,0,0,nan,nan,nan,2.027960e+02
+ktcloud,cuda,0,lock_exchange,fb,0,none,0.5,100,30,50,2.014907e+00,3.192022e-02,7.229000e-06,0,0,nan,nan,nan,3.156162e+03
+ktcloud,openacc,0,lock_exchange,theta0.5,0.5,multigrid,4,100,30,50,1.611926e+01,4.549703e+00,2.772400e-02,2950,0,nan,nan,nan,1.771463e+02
+ktcloud,cuda,0,lock_exchange,theta0.5,0.5,multigrid,4,100,30,50,1.611926e+01,3.579489e-01,9.165800e-05,2950,0,nan,nan,nan,2.251615e+03
+ktcloud,openacc,0,lock_exchange,theta0.5,0.5,pcg_jacobi,4,100,30,50,1.611926e+01,1.936367e+00,1.246000e-03,5078,0,nan,nan,nan,4.162243e+02
+ktcloud,cuda,0,lock_exchange,theta0.5,0.5,pcg_jacobi,4,100,30,50,1.611926e+01,3.473366e-01,1.985088e-03,5078,0,nan,nan,nan,2.320409e+03
+ktcloud,cuda,0,lock_exchange,split,0,none,4,100,30,50,1.611926e+01,4.150582e-02,1.498900e-05,0,250,nan,nan,nan,1.941807e+04
+ktcloud,openacc,0,lock_exchange_v06,fb,0,none,0.5,100,30,50,2.014907e+00,2.275034e+00,9.285190e-02,0,0,nan,nan,nan,4.428302e+01
+ktcloud,cuda,0,lock_exchange_v06,fb,0,none,0.5,100,30,50,2.014907e+00,8.246579e-02,5.144400e-05,0,0,nan,nan,nan,1.221663e+03
+ktcloud,openacc,0,lock_exchange_v06,theta0.5,0.5,multigrid,4,100,30,50,1.611926e+01,6.439747e+00,1.877110e-02,2950,0,nan,nan,nan,1.251544e+02
+ktcloud,cuda,0,lock_exchange_v06,theta0.5,0.5,multigrid,4,100,30,50,1.611926e+01,4.053592e-01,2.893770e-04,2950,0,nan,nan,nan,1.988268e+03
+ktcloud,openacc,0,lock_exchange_v06,theta0.5,0.5,pcg_jacobi,4,100,30,50,1.611926e+01,3.723428e+00,3.834820e-02,5078,0,nan,nan,nan,2.164572e+02
+ktcloud,cuda,0,lock_exchange_v06,theta0.5,0.5,pcg_jacobi,4,100,30,50,1.611926e+01,3.741595e-01,3.915209e-03,5078,0,nan,nan,nan,2.154063e+03
+ktcloud,cuda,0,lock_exchange_v06,split,0,none,4,100,30,50,1.611926e+01,9.258817e-02,4.025000e-05,0,250,nan,nan,nan,8.704816e+03

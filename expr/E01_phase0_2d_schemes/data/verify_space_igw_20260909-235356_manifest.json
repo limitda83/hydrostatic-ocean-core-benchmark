@@ -1,0 +1,190 @@
+{
+  "created_utc": "2026-09-09T14:54:00.674226+00:00",
+  "spec_version": "v0.1",
+  "git": {
+    "commit": "7ec034722718f69cac5ff7de2916de5e4cbb59be",
+    "branch": "main",
+    "dirty": true,
+    "dirty_files": [
+      "?? RULES.md",
+      "?? config/",
+      "?? docs/",
+      "?? libs/",
+      "?? main.py"
+    ]
+  },
+  "host": {
+    "node": "ympark-mini.local",
+    "system": "Darwin",
+    "release": "25.3.0",
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.13.12",
+    "numpy": "2.4.4"
+  },
+  "config_sha256": "f6f998550435c949425e4291f4e0f8e2644f2a7a4575d2046132ffcebed2ed2c",
+  "config": {
+    "project": {
+      "name": "cfd_exp",
+      "spec_version": "v0.1"
+    },
+    "paths": {
+      "output_dir": "output",
+      "config_dir": "config"
+    },
+    "logging": {
+      "level": "INFO",
+      "to_file": true,
+      "filename": "run.log"
+    },
+    "physics": {
+      "g": 9.80616,
+      "f0": 0.0001,
+      "H": 1000.0,
+      "rho0": 1025.0
+    },
+    "run": {
+      "precision": "float64",
+      "backend": "ref",
+      "diag_every": 0
+    },
+    "netcdf": {
+      "format": "NETCDF4",
+      "compression_level": 4,
+      "write_state": true
+    },
+    "grid": {
+      "nx": 100,
+      "ny": 100,
+      "nz": 30,
+      "Lx": 10000000.0,
+      "Ly": 10000000.0,
+      "bc_x": "periodic",
+      "bc_y": "periodic",
+      "sweep": {
+        "nx_list": [
+          32,
+          64,
+          128,
+          256
+        ]
+      }
+    },
+    "scheme": {
+      "name": "theta",
+      "theta": 0.5,
+      "theta_cor": 0.5,
+      "n_picard": 2
+    },
+    "solver": {
+      "kind": "fft",
+      "rtol": 1e-12,
+      "max_iter": 2000
+    },
+    "presets": {
+      "fb": {
+        "name": "fb"
+      },
+      "cn": {
+        "name": "theta",
+        "theta": 0.5
+      },
+      "schism": {
+        "name": "theta",
+        "theta": 0.6
+      },
+      "backward_euler": {
+        "name": "theta",
+        "theta": 1.0
+      }
+    },
+    "case": {
+      "name": "igw",
+      "igw": {
+        "mode_x": 2,
+        "mode_y": 2,
+        "eta0": 1.0,
+        "n_periods": 1.0
+      },
+      "geo_balance": {
+        "mode_x": 1,
+        "mode_y": 1,
+        "eta0": 1.0,
+        "n_days": 10.0
+      }
+    },
+    "time": {
+      "cfl_factor": 0.5,
+      "dt": 0.0,
+      "sweep": {
+        "cfl_list": [
+          0.125,
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0,
+          8.0
+        ]
+      }
+    },
+    "backends": {
+      "ref": {
+        "kind": "python",
+        "module": "libs.core.schemes",
+        "notes": "NumPy fp64 oracle. Defines correctness (RULES.md R2)."
+      },
+      "fortran_cpu": {
+        "kind": "fortran",
+        "compiler": "gfortran",
+        "flags": [
+          "-O3",
+          "-march=native",
+          "-ffast-math=false",
+          "-fopenmp"
+        ],
+        "status": "planned:P3"
+      },
+      "openacc": {
+        "kind": "fortran",
+        "compiler": "nvfortran",
+        "flags": [
+          "-O3",
+          "-acc=gpu",
+          "-gpu=cc120",
+          "-Minfo=accel"
+        ],
+        "status": "blocked:NVHPC-SDK-not-installed-on-gpgpu"
+      },
+      "cuda": {
+        "kind": "cuda",
+        "compiler": "nvcc",
+        "flags": [
+          "-O3",
+          "-arch=sm_120",
+          "-lineinfo"
+        ],
+        "status": "planned:P5"
+      },
+      "py_gpu": {
+        "kind": "python",
+        "variants": [
+          "cupy",
+          "jax",
+          "numba_cuda"
+        ],
+        "status": "planned:P6"
+      }
+    },
+    "bench_node": {
+      "host": "gpgpu",
+      "ssh": "ssh <gpgpu-node>",
+      "cpu": "AMD Ryzen Threadripper PRO 9955WX (16C/32T)",
+      "gpu": "NVIDIA GeForce RTX 5090 32GB x4",
+      "os": "RHEL 9.7",
+      "cuda": "13.2"
+    }
+  },
+  "mode": "verify:space",
+  "case": "igw"
+}

@@ -1,0 +1,233 @@
+### output/g3d_openacc3d/1_step_metrics.json
+{
+  "backend": "fortran3d",
+  "host": "unknown",
+  "nx": 32,
+  "ny": 32,
+  "nz": 30,
+  "cells": 30720,
+  "n_steps": 1,
+  "scheme": "theta",
+  "theta":   5.0000000000000000E-01,
+  "theta_v":   5.0000000000000000E-01,
+  "dt":   4.4628833141580934E+01,
+  "h_eff":   1.0000000000000001E+03,
+  "solver_iterations": 20,
+  "tridiagonal_solves": 6,
+  "l2_rel_u":   1.7656441382298715E-04,
+  "l2_rel_b":   5.7162937751142234E-05,
+  "l2_rel_eta":   3.6780141285352827E-14,
+  "wall_s":   2.1201800000000000E-02,
+  "wall_mad_s":   0.0000000000000000E+00,
+  "n_repeat": 1,
+  "omp_num_threads": 1
+}
+### output/g3d_openacc3d/full_run_metrics.json
+{
+  "backend": "fortran3d",
+  "host": "unknown",
+  "nx": 32,
+  "ny": 32,
+  "nz": 30,
+  "cells": 30720,
+  "n_steps": 20,
+  "scheme": "theta",
+  "theta":   5.0000000000000000E-01,
+  "theta_v":   5.0000000000000000E-01,
+  "dt":   4.4628833141580934E+01,
+  "h_eff":   1.0000000000000001E+03,
+  "solver_iterations": 400,
+  "tridiagonal_solves": 101,
+  "l2_rel_u":   3.5116671165452435E-03,
+  "l2_rel_b":   1.1031523116046269E-03,
+  "l2_rel_eta":   3.6139317963204907E-13,
+  "wall_s":   1.7580599999999999E-01,
+  "wall_mad_s":   0.0000000000000000E+00,
+  "n_repeat": 1,
+  "omp_num_threads": 1
+}
+### output/g3d_openacc3d/r2_gate3d.json
+{
+  "case": "baroclinic_igw",
+  "nx": 32,
+  "nz": 30,
+  "binary": "libs/fortran/build/cfd_exp3d_acc",
+  "checks": [
+    {
+      "label": "1 step",
+      "u": 1.5229751080584896e-16,
+      "v": 1.0137567040194565e-15,
+      "b": 8.353236399392896e-17,
+      "eta": 2.9848473309831637e-17,
+      "passed": true
+    },
+    {
+      "label": "full run",
+      "u": 2.3497635372886833e-16,
+      "v": 1.0112873473332808e-15,
+      "b": 3.125375146240543e-16,
+      "eta": 1.5906431861760816e-16,
+      "passed": true
+    }
+  ]
+}### output/gate_openacc/1_step_metrics.json
+{
+  "backend": "fortran_cpu",
+  "host": "unknown",
+  "nx": 64,
+  "ny": 64,
+  "dx":   1.5625000000000000E+05,
+  "dt":   2.2325581395348836E+03,
+  "n_steps": 1,
+  "scheme": "theta",
+  "theta":   5.0000000000000000E-01,
+  "n_picard": 2,
+  "solver": "pcg_jacobi",
+  "solver_iterations": 2,
+  "solver_failures": 0,
+  "l2_rel_eta":   8.7447657174926946E-16,
+  "l2_rel_u":   8.6389742745264672E-16,
+  "l2_rel_v":   8.9969555364106267E-16,
+  "linf_rel_eta":   2.0539125955565396E-15,
+  "mass":  -2.6020070338854964E-04,
+  "energy":   4.3573193202722306E+14,
+  "mass_drift":   4.9971415305445170E-18,
+  "energy_drift":   2.8687362759585508E-16,
+  "wall_s":   1.1460000000000001E-03,
+  "wall_mad_s":   0.0000000000000000E+00,
+  "wall_min_s":   1.1460000000000001E-03,
+  "wall_max_s":   1.1460000000000001E-03,
+  "n_repeat": 1,
+  "n_warmup": 1,
+  "omp_num_threads": 1
+}
+### output/gate_openacc/full_run_metrics.json
+{
+  "backend": "fortran_cpu",
+  "host": "unknown",
+  "nx": 64,
+  "ny": 64,
+  "dx":   1.5625000000000000E+05,
+  "dt":   2.2325581395348836E+03,
+  "n_steps": 387,
+  "scheme": "theta",
+  "theta":   5.0000000000000000E-01,
+  "n_picard": 2,
+  "solver": "pcg_jacobi",
+  "solver_iterations": 2264,
+  "solver_failures": 0,
+  "l2_rel_eta":   4.6564316266967275E-12,
+  "l2_rel_u":   4.0974107418693328E-12,
+  "l2_rel_v":   5.7257404194451938E-12,
+  "linf_rel_eta":   1.3188894421034547E-11,
+  "mass":  -9.9798027789158267E-04,
+  "energy":   4.3573193202722163E+14,
+  "mass_drift":  -5.4366372724958894E-18,
+  "energy_drift":  -3.0121730897564787E-15,
+  "wall_s":   6.2723799999999996E-01,
+  "wall_mad_s":   0.0000000000000000E+00,
+  "wall_min_s":   6.2723799999999996E-01,
+  "wall_max_s":   6.2723799999999996E-01,
+  "n_repeat": 1,
+  "n_warmup": 1,
+  "omp_num_threads": 1
+}
+### output/gate_openacc/r2_gate.json
+{
+  "case": "geo_balance",
+  "nx": 64,
+  "cfl": 2.0,
+  "binary": "libs/fortran/build/cfd_exp_acc",
+  "checks": [
+    {
+      "label": "1 step",
+      "l2_eta": 7.67243823644352e-16,
+      "l2_uv": 1.6304439675197748e-15,
+      "passed": true
+    },
+    {
+      "label": "full run",
+      "l2_eta": 6.016210705557955e-12,
+      "l2_uv": 6.709293769075673e-12,
+      "passed": true
+    }
+  ]
+}### output/gs_openacc3d/1_step_metrics.json
+{
+  "backend": "fortran3d",
+  "host": "unknown",
+  "nx": 32,
+  "ny": 32,
+  "nz": 30,
+  "cells": 30720,
+  "n_steps": 1,
+  "scheme": "split_explicit",
+  "theta": 5.0000000000000000E-01,
+  "theta_v": 5.0000000000000000E-01,
+  "dt": 1.7851533256632374E+02,
+  "h_eff": 1.0000000000000000E+03,
+  "solver_iterations": 0,
+  "tridiagonal_solves": 6,
+  "n_split": 3,
+  "barotropic_substeps": 3,
+  "tridiag_kernel": "plane",
+  "l2_rel_u": 6.7243079953702698E-04,
+  "l2_rel_b": 3.1741785471326882E-04,
+  "l2_rel_eta": 9.6389901352865440E-14,
+  "wall_s": 1.8226099999999999E-02,
+  "wall_mad_s": 0.0000000000000000E+00,
+  "n_repeat": 1,
+  "omp_num_threads": 1
+}
+### output/gs_openacc3d/full_run_metrics.json
+{
+  "backend": "fortran3d",
+  "host": "unknown",
+  "nx": 32,
+  "ny": 32,
+  "nz": 30,
+  "cells": 30720,
+  "n_steps": 20,
+  "scheme": "split_explicit",
+  "theta": 5.0000000000000000E-01,
+  "theta_v": 5.0000000000000000E-01,
+  "dt": 1.7851533256632374E+02,
+  "h_eff": 1.0000000000000000E+03,
+  "solver_iterations": 0,
+  "tridiagonal_solves": 101,
+  "n_split": 3,
+  "barotropic_substeps": 60,
+  "tridiag_kernel": "plane",
+  "l2_rel_u": 1.3386248799624571E-02,
+  "l2_rel_b": 4.3129145257981265E-03,
+  "l2_rel_eta": 4.4655134163978750E-13,
+  "wall_s": 1.2058610000000000E-01,
+  "wall_mad_s": 0.0000000000000000E+00,
+  "n_repeat": 1,
+  "omp_num_threads": 1
+}
+### output/gs_openacc3d/r2_gate3d.json
+{
+  "case": "baroclinic_igw",
+  "nx": 32,
+  "nz": 30,
+  "binary": "libs/fortran/build/cfd_exp3d_acc",
+  "checks": [
+    {
+      "label": "1 step",
+      "u": 1.724778178364125e-16,
+      "v": 1.015173615197133e-15,
+      "b": 1.0782426126246117e-16,
+      "eta": 8.050432208910232e-17,
+      "passed": true
+    },
+    {
+      "label": "full run",
+      "u": 5.478623472267163e-16,
+      "v": 9.355969164499972e-16,
+      "b": 9.549465363866267e-16,
+      "eta": 6.50783614808457e-16,
+      "passed": true
+    }
+  ]
+}

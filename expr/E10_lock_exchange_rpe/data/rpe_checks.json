@@ -1,0 +1,93 @@
+{
+ "vertical_flux_scheme_dependent_only_for_up3": true,
+ "runs": [
+  {
+   "advection": "centered2",
+   "scheme": "theta",
+   "nx": 64,
+   "nz": 20,
+   "steps": 200,
+   "rpe_drift_dz_ref": 5.992979117391063e-05,
+   "rpe_drift_dz_live": 0.00010103989129333867,
+   "tracer_rel_change": -5.6186186200916795e-06,
+   "eta_max_abs": 0.002615120415779685
+  },
+  {
+   "advection": "centered2",
+   "scheme": "split_explicit",
+   "nx": 64,
+   "nz": 20,
+   "steps": 200,
+   "rpe_drift_dz_ref": 5.992690655554477e-05,
+   "rpe_drift_dz_live": 0.00010114771547897291,
+   "tracer_rel_change": -5.619025404774386e-06,
+   "eta_max_abs": 0.002616344496291597
+  },
+  {
+   "advection": "upwind1",
+   "scheme": "theta",
+   "nx": 64,
+   "nz": 20,
+   "steps": 200,
+   "rpe_drift_dz_ref": -4.352781497276722e-05,
+   "rpe_drift_dz_live": -2.4744172954045575e-06,
+   "tracer_rel_change": -5.61707169620976e-06,
+   "eta_max_abs": 0.002615229648827386
+  },
+  {
+   "advection": "upwind1",
+   "scheme": "split_explicit",
+   "nx": 64,
+   "nz": 20,
+   "steps": 200,
+   "rpe_drift_dz_ref": -4.353075851312646e-05,
+   "rpe_drift_dz_live": -2.3669413587646374e-06,
+   "tracer_rel_change": -5.617468948509503e-06,
+   "eta_max_abs": 0.002616453727084143
+  },
+  {
+   "advection": "up3",
+   "scheme": "theta",
+   "nx": 64,
+   "nz": 20,
+   "steps": 200,
+   "rpe_drift_dz_ref": 2.800606588722218e-05,
+   "rpe_drift_dz_live": 6.909717959887686e-05,
+   "tracer_rel_change": -5.61806360508399e-06,
+   "eta_max_abs": 0.0026151345570869728
+  },
+  {
+   "advection": "up3",
+   "scheme": "split_explicit",
+   "nx": 64,
+   "nz": 20,
+   "steps": 200,
+   "rpe_drift_dz_ref": 2.8002756585469073e-05,
+   "rpe_drift_dz_live": 6.920446706677966e-05,
+   "tracer_rel_change": -5.618466682800648e-06,
+   "eta_max_abs": 0.0026163550715134418
+  },
+  {
+   "advection": "up3_tvd",
+   "scheme": "theta",
+   "nx": 64,
+   "nz": 20,
+   "steps": 200,
+   "rpe_drift_dz_ref": -4.352222854426649e-05,
+   "rpe_drift_dz_live": -2.4694972179424374e-06,
+   "tracer_rel_change": -5.616972978052879e-06,
+   "eta_max_abs": 0.002615128335169213
+  },
+  {
+   "advection": "up3_tvd",
+   "scheme": "split_explicit",
+   "nx": 64,
+   "nz": 20,
+   "steps": 200,
+   "rpe_drift_dz_ref": -4.352517603439123e-05,
+   "rpe_drift_dz_live": -2.3620192711760843e-06,
+   "tracer_rel_change": -5.617370369102239e-06,
+   "eta_max_abs": 0.002616344994760952
+  }
+ ]
+}

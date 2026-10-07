@@ -1,0 +1,4 @@
+  TKE_400_mpi2_h16--device-mpi.bin     n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  TKE_400_mpi2_h16.bin                 n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  TKE_400_mpi2_h8--device-mpi.bin      n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True
+  TKE_400_mpi2_h8.bin                  n=24160000 max|diff|=0.000e+00 n_diff=0 finite=True

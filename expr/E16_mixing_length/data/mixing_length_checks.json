@@ -1,0 +1,17 @@
+{
+ "nz": 60,
+ "analytic": {
+  "integral": 0.0,
+  "recursive": 0.0
+ },
+ "difference": {
+  "median": 0.0,
+  "max": 0.6244088865188708,
+  "n_over_10pct": 9
+ },
+ "bounds": {
+  "integral": true,
+  "recursive": true
+ },
+ "passed": true
+}

@@ -1,0 +1,4 @@
+host,backend,threads,case,scheme,theta,solver,cfl,nx,nz,n_steps,dt,wall_s,wall_mad_s,solver_iters,substeps,l2_eta,l2_u,l2_max,sim_s_per_wall_s
+ktcloud,openacc,0,lock_exchange_v06,fb,0,none,0.5,100,30,50,2.014907e+00,5.827569e-01,4.839000e-04,0,0,nan,nan,nan,1.728772e+02
+ktcloud,openacc,0,lock_exchange_v06,theta0.5,0.5,multigrid,4,100,30,50,1.611926e+01,4.943768e+00,1.866320e-02,2950,0,nan,nan,nan,1.630261e+02
+ktcloud,openacc,0,lock_exchange_v06,theta0.5,0.5,pcg_jacobi,4,100,30,50,1.611926e+01,2.008429e+00,4.535100e-03,5078,0,nan,nan,nan,4.012903e+02

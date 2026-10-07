@@ -1,0 +1,19 @@
+# Files kept for the record but NOT sources for the manuscript.
+geo85_stab_INVALID.csv   # 2026-09-13 re-measurement that ran on a node that never
+                         # became exclusive: the PBS guard waited 20 min at load 90
+                         # then measured anyway. 96 threads came out SLOWER than 1
+                         # thread (100.7 s vs 27.8 s at 400^2). Guard now fails
+                         # instead of proceeding; see docs/90 N30.
+ktcloud_openacc_UNGATED.csv  # 29 H100 OpenACC rows (baroclinic_igw all schemes; split scheme
+                         # for lock_exchange/_v06) produced by a binary that never passed
+                         # the R2 gate on that node (N42) and was NOT re-measured. Unusable
+                         # in any table until re-measured with the gated build.
+gpgpu_dev_20step_SUPERSEDED.csv  # 8 rows labelled gpgpu-dev, 20 steps: a dev-container run, not the bench node. No table uses them.
+diverged_cfl4_2000_RESULT.csv  # theta0.5 at 2000^2 CFL 4 hits max_iter every step (both solvers). A DIVERGENCE RESULT (R12, docs/32 S2-2), not a timing; never a table source.
+diverged_cfl4_2000_RESULT.csv  # theta0.5 at 2000^2 CFL 4 hits max_iter every step (both solvers). A DIVERGENCE RESULT (R12, docs/32 S2-2), not a timing; never a table source.
+diverged_cfl4_2000_RESULT.csv  # theta0.5 at 2000^2 CFL 4 hits max_iter every step (both solvers). A DIVERGENCE RESULT (R12, docs/32 S2-2), not a timing; never a table source.
+diverged_cfl4_2000_RESULT.csv  # theta0.5 at 2000^2 CFL 4 hits max_iter every step (both solvers). A DIVERGENCE RESULT (R12, docs/32 S2-2), not a timing; never a table source.
+diverged_cfl4_2000_RESULT.csv  # theta0.5 at 2000^2 CFL 4 hits max_iter every step (both solvers). A DIVERGENCE RESULT (R12, docs/32 S2-2), not a timing; never a table source.
+ktcloud_openacc_split2000_SUBSTEPS_MISMATCH.csv  # 2026-09-16: split at 2000^2 CFL 4 ran 100 barotropic substeps/50 steps; every other host and backend (incl. ktcloud CUDA) runs 250. Different work = different problem (R5-1). Held out until the cause is found.
+split2000_lock_exchange_IRREPRODUCIBLE.csv  # 2026-09-16 (N45): lock_exchange/_v06 split CFL 4 at 2000^2 DIVERGES for every current backend (CUDA and OpenACC, same bundle, |eta|>1e6 after 20 steps). These Sep-11 rows completed 250 substeps with an earlier binary and cannot be reproduced by the current code; not a table source.
+diverged_l2inf_RESULT.csv  # rows whose run diverged (record() wrote l2 = inf). RESULTS (R12), never timings; moved out of the timing CSVs by checklist C7 (N45).

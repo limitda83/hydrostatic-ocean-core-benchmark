@@ -1,0 +1,752 @@
+{
+  "algorithmic": {
+    "multigrid|rough0.10|128|1024": {
+      "iterations": 11,
+      "backend_spread": 0,
+      "rx0": 0.023585
+    },
+    "multigrid|rough0.10|128|128": {
+      "iterations": 40,
+      "backend_spread": 0,
+      "rx0": 0.054414
+    },
+    "multigrid|rough0.10|128|256": {
+      "iterations": 11,
+      "backend_spread": 0,
+      "rx0": 0.039471
+    },
+    "multigrid|rough0.10|128|512": {
+      "iterations": 10,
+      "backend_spread": 0,
+      "rx0": 0.025982
+    },
+    "multigrid|rough0.10|2|1024": {
+      "iterations": 5,
+      "backend_spread": 0,
+      "rx0": 0.023585
+    },
+    "multigrid|rough0.10|2|128": {
+      "iterations": 5,
+      "backend_spread": 0,
+      "rx0": 0.054414
+    },
+    "multigrid|rough0.10|2|256": {
+      "iterations": 5,
+      "backend_spread": 0,
+      "rx0": 0.039471
+    },
+    "multigrid|rough0.10|2|512": {
+      "iterations": 5,
+      "backend_spread": 0,
+      "rx0": 0.025982
+    },
+    "multigrid|rough0.10|32|1024": {
+      "iterations": 10,
+      "backend_spread": 0,
+      "rx0": 0.023585
+    },
+    "multigrid|rough0.10|32|128": {
+      "iterations": 10,
+      "backend_spread": 0,
+      "rx0": 0.054414
+    },
+    "multigrid|rough0.10|32|256": {
+      "iterations": 10,
+      "backend_spread": 0,
+      "rx0": 0.039471
+    },
+    "multigrid|rough0.10|32|512": {
+      "iterations": 10,
+      "backend_spread": 0,
+      "rx0": 0.025982
+    },
+    "multigrid|rough0.10|8|1024": {
+      "iterations": 9,
+      "backend_spread": 0,
+      "rx0": 0.023585
+    },
+    "multigrid|rough0.10|8|128": {
+      "iterations": 9,
+      "backend_spread": 0,
+      "rx0": 0.054414
+    },
+    "multigrid|rough0.10|8|256": {
+      "iterations": 9,
+      "backend_spread": 0,
+      "rx0": 0.039471
+    },
+    "multigrid|rough0.10|8|512": {
+      "iterations": 9,
+      "backend_spread": 0,
+      "rx0": 0.025982
+    },
+    "pcg_jacobi|rough0.10|128|1024": {
+      "iterations": 1196,
+      "backend_spread": 0,
+      "rx0": 0.023585
+    },
+    "pcg_jacobi|rough0.10|128|128": {
+      "iterations": 533,
+      "backend_spread": 0,
+      "rx0": 0.054414
+    },
+    "pcg_jacobi|rough0.10|128|256": {
+      "iterations": 869,
+      "backend_spread": 0,
+      "rx0": 0.039471
+    },
+    "pcg_jacobi|rough0.10|128|512": {
+      "iterations": 1105,
+      "backend_spread": 0,
+      "rx0": 0.025982
+    },
+    "pcg_jacobi|rough0.10|2|1024": {
+      "iterations": 23,
+      "backend_spread": 0,
+      "rx0": 0.023585
+    },
+    "pcg_jacobi|rough0.10|2|128": {
+      "iterations": 23,
+      "backend_spread": 0,
+      "rx0": 0.054414
+    },
+    "pcg_jacobi|rough0.10|2|256": {
+      "iterations": 23,
+      "backend_spread": 0,
+      "rx0": 0.039471
+    },
+    "pcg_jacobi|rough0.10|2|512": {
+      "iterations": 23,
+      "backend_spread": 0,
+      "rx0": 0.025982
+    },
+    "pcg_jacobi|rough0.10|32|1024": {
+      "iterations": 324,
+      "backend_spread": 0,
+      "rx0": 0.023585
+    },
+    "pcg_jacobi|rough0.10|32|128": {
+      "iterations": 296,
+      "backend_spread": 0,
+      "rx0": 0.054414
+    },
+    "pcg_jacobi|rough0.10|32|256": {
+      "iterations": 314,
+      "backend_spread": 0,
+      "rx0": 0.039471
+    },
+    "pcg_jacobi|rough0.10|32|512": {
+      "iterations": 325,
+      "backend_spread": 0,
+      "rx0": 0.025982
+    },
+    "pcg_jacobi|rough0.10|8|1024": {
+      "iterations": 85,
+      "backend_spread": 0,
+      "rx0": 0.023585
+    },
+    "pcg_jacobi|rough0.10|8|128": {
+      "iterations": 84,
+      "backend_spread": 0,
+      "rx0": 0.054414
+    },
+    "pcg_jacobi|rough0.10|8|256": {
+      "iterations": 84,
+      "backend_spread": 0,
+      "rx0": 0.039471
+    },
+    "pcg_jacobi|rough0.10|8|512": {
+      "iterations": 85,
+      "backend_spread": 0,
+      "rx0": 0.025982
+    },
+    "pcg_rbgs|rough0.10|128|1024": {
+      "iterations": 598,
+      "backend_spread": 0,
+      "rx0": 0.023585
+    },
+    "pcg_rbgs|rough0.10|128|128": {
+      "iterations": 266,
+      "backend_spread": 0,
+      "rx0": 0.054414
+    },
+    "pcg_rbgs|rough0.10|128|256": {
+      "iterations": 435,
+      "backend_spread": 0,
+      "rx0": 0.039471
+    },
+    "pcg_rbgs|rough0.10|128|512": {
+      "iterations": 553,
+      "backend_spread": 0,
+      "rx0": 0.025982
+    },
+    "pcg_rbgs|rough0.10|2|1024": {
+      "iterations": 12,
+      "backend_spread": 0,
+      "rx0": 0.023585
+    },
+    "pcg_rbgs|rough0.10|2|128": {
+      "iterations": 12,
+      "backend_spread": 0,
+      "rx0": 0.054414
+    },
+    "pcg_rbgs|rough0.10|2|256": {
+      "iterations": 12,
+      "backend_spread": 0,
+      "rx0": 0.039471
+    },
+    "pcg_rbgs|rough0.10|2|512": {
+      "iterations": 12,
+      "backend_spread": 0,
+      "rx0": 0.025982
+    },
+    "pcg_rbgs|rough0.10|32|1024": {
+      "iterations": 162,
+      "backend_spread": 0,
+      "rx0": 0.023585
+    },
+    "pcg_rbgs|rough0.10|32|128": {
+      "iterations": 148,
+      "backend_spread": 0,
+      "rx0": 0.054414
+    },
+    "pcg_rbgs|rough0.10|32|256": {
+      "iterations": 157,
+      "backend_spread": 0,
+      "rx0": 0.039471
+    },
+    "pcg_rbgs|rough0.10|32|512": {
+      "iterations": 162,
+      "backend_spread": 0,
+      "rx0": 0.025982
+    },
+    "pcg_rbgs|rough0.10|8|1024": {
+      "iterations": 43,
+      "backend_spread": 0,
+      "rx0": 0.023585
+    },
+    "pcg_rbgs|rough0.10|8|128": {
+      "iterations": 42,
+      "backend_spread": 0,
+      "rx0": 0.054414
+    },
+    "pcg_rbgs|rough0.10|8|256": {
+      "iterations": 42,
+      "backend_spread": 0,
+      "rx0": 0.039471
+    },
+    "pcg_rbgs|rough0.10|8|512": {
+      "iterations": 43,
+      "backend_spread": 0,
+      "rx0": 0.025982
+    }
+  },
+  "implementation": {
+    "data": {
+      "cuda|0|multigrid|1024": {
+        "ns_per_iteration": 781885.3909090909,
+        "ns_per_cell_per_iteration": 0.7456640156832608,
+        "achieved_gb_s": 257.48862216995695,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "cuda|0|multigrid|128": {
+        "ns_per_iteration": 224114.71666666667,
+        "ns_per_cell_per_iteration": 13.67887674967448,
+        "achieved_gb_s": 14.036240220131312,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "cuda|0|multigrid|256": {
+        "ns_per_iteration": 273251.8181818182,
+        "ns_per_cell_per_iteration": 4.169491854580966,
+        "achieved_gb_s": 46.04877685252032,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "cuda|0|multigrid|512": {
+        "ns_per_iteration": 399976.44444444444,
+        "ns_per_cell_per_iteration": 1.525789048936632,
+        "achieved_gb_s": 125.8365303734553,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "cuda|0|pcg_jacobi|1024": {
+        "ns_per_iteration": 123708.86297947893,
+        "ns_per_cell_per_iteration": 0.11797796533534902,
+        "achieved_gb_s": 1491.8039949216363,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "cuda|0|pcg_jacobi|128": {
+        "ns_per_iteration": 43615.17461806486,
+        "ns_per_cell_per_iteration": 2.662058997684623,
+        "achieved_gb_s": 66.11423719499808,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "cuda|0|pcg_jacobi|256": {
+        "ns_per_iteration": 46004.3186229906,
+        "ns_per_cell_per_iteration": 0.701970193832254,
+        "achieved_gb_s": 250.72289613774933,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "cuda|0|pcg_jacobi|512": {
+        "ns_per_iteration": 62853.05203619909,
+        "ns_per_cell_per_iteration": 0.23976536573867452,
+        "achieved_gb_s": 734.0509729492215,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "cuda|0|pcg_rbgs|1024": {
+        "ns_per_iteration": 268816.0429827821,
+        "ns_per_cell_per_iteration": 0.25636295603063786,
+        "achieved_gb_s": 1497.8763154615376,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "cuda|0|pcg_rbgs|128": {
+        "ns_per_iteration": 60980.84523809524,
+        "ns_per_cell_per_iteration": 3.7219754173642112,
+        "achieved_gb_s": 103.17101993971174,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "cuda|0|pcg_rbgs|256": {
+        "ns_per_iteration": 63922.80611161662,
+        "ns_per_cell_per_iteration": 0.9753846147402438,
+        "achieved_gb_s": 393.690851995101,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "cuda|0|pcg_rbgs|512": {
+        "ns_per_iteration": 109566.11642262418,
+        "ns_per_cell_per_iteration": 0.4179615647225349,
+        "achieved_gb_s": 918.7447660526384,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|1|multigrid|1024": {
+        "ns_per_iteration": 39433268.88888888,
+        "ns_per_cell_per_iteration": 37.60649575127495,
+        "achieved_gb_s": 5.105500955735573,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|1|multigrid|128": {
+        "ns_per_iteration": 593275.5555555555,
+        "ns_per_cell_per_iteration": 36.210666232638886,
+        "achieved_gb_s": 5.30230509337988,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|1|multigrid|256": {
+        "ns_per_iteration": 2355550.0,
+        "ns_per_cell_per_iteration": 35.942840576171875,
+        "achieved_gb_s": 5.341814862770903,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|1|multigrid|512": {
+        "ns_per_iteration": 9474150.0,
+        "ns_per_cell_per_iteration": 36.141014099121094,
+        "achieved_gb_s": 5.312523867576511,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|1|pcg_jacobi|1024": {
+        "ns_per_iteration": 8804619.052287582,
+        "ns_per_cell_per_iteration": 8.396739055907805,
+        "achieved_gb_s": 20.960517985392116,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|1|pcg_jacobi|128": {
+        "ns_per_iteration": 135300.97263069823,
+        "ns_per_cell_per_iteration": 8.25811600529164,
+        "achieved_gb_s": 21.31236711705462,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|1|pcg_jacobi|256": {
+        "ns_per_iteration": 546915.9538974825,
+        "ns_per_cell_per_iteration": 8.34527517543766,
+        "achieved_gb_s": 21.089777904270225,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|1|pcg_jacobi|512": {
+        "ns_per_iteration": 2171271.447963801,
+        "ns_per_cell_per_iteration": 8.282743255477147,
+        "achieved_gb_s": 21.24899861934222,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|1|pcg_rbgs|1024": {
+        "ns_per_iteration": 19150803.14225713,
+        "ns_per_cell_per_iteration": 18.263629095322734,
+        "achieved_gb_s": 21.025394131462146,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|1|pcg_rbgs|128": {
+        "ns_per_iteration": 293482.28764478763,
+        "ns_per_cell_per_iteration": 17.912737283007058,
+        "achieved_gb_s": 21.437259640059704,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|1|pcg_rbgs|256": {
+        "ns_per_iteration": 1184434.7947454844,
+        "ns_per_cell_per_iteration": 18.07304069130683,
+        "achieved_gb_s": 21.24711644038431,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|1|pcg_rbgs|512": {
+        "ns_per_iteration": 4698938.781223083,
+        "ns_per_cell_per_iteration": 17.925028920070964,
+        "achieved_gb_s": 21.422559579250024,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|16|multigrid|1024": {
+        "ns_per_iteration": 4027527.2727272725,
+        "ns_per_cell_per_iteration": 3.84094931862571,
+        "achieved_gb_s": 49.98764213548579,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|16|multigrid|128": {
+        "ns_per_iteration": 135506.80555555556,
+        "ns_per_cell_per_iteration": 8.270679050021702,
+        "achieved_gb_s": 23.21453883517535,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|16|multigrid|256": {
+        "ns_per_iteration": 317050.0,
+        "ns_per_cell_per_iteration": 4.837799072265625,
+        "achieved_gb_s": 39.68746885349314,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|16|multigrid|512": {
+        "ns_per_iteration": 804945.0,
+        "ns_per_cell_per_iteration": 3.0706214904785156,
+        "achieved_gb_s": 62.52805843877531,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|16|pcg_jacobi|1024": {
+        "ns_per_iteration": 717614.0232389251,
+        "ns_per_cell_per_iteration": 0.6843700630559207,
+        "achieved_gb_s": 257.1708049503311,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|16|pcg_jacobi|128": {
+        "ns_per_iteration": 26499.603531768167,
+        "ns_per_cell_per_iteration": 1.617407442124522,
+        "achieved_gb_s": 108.81611857109904,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|16|pcg_jacobi|256": {
+        "ns_per_iteration": 61910.89207985191,
+        "ns_per_cell_per_iteration": 0.9446852429176622,
+        "achieved_gb_s": 186.30544016589445,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|16|pcg_jacobi|512": {
+        "ns_per_iteration": 191825.82530001964,
+        "ns_per_cell_per_iteration": 0.7317574512482439,
+        "achieved_gb_s": 240.5168539107819,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|16|pcg_rbgs|1024": {
+        "ns_per_iteration": 1827402.8985507246,
+        "ns_per_cell_per_iteration": 1.7427472100741621,
+        "achieved_gb_s": 220.34176717095932,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|16|pcg_rbgs|128": {
+        "ns_per_iteration": 47328.37837837838,
+        "ns_per_cell_per_iteration": 2.888694969383446,
+        "achieved_gb_s": 132.93200011421064,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|16|pcg_rbgs|256": {
+        "ns_per_iteration": 119411.49425287357,
+        "ns_per_cell_per_iteration": 1.8220748024425288,
+        "achieved_gb_s": 210.74875712305558,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|16|pcg_rbgs|512": {
+        "ns_per_iteration": 477002.64829326014,
+        "ns_per_cell_per_iteration": 1.819620698140183,
+        "achieved_gb_s": 211.03299187159317,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|32|multigrid|1024": {
+        "ns_per_iteration": 4354169.090909091,
+        "ns_per_cell_per_iteration": 4.15245923128995,
+        "achieved_gb_s": 46.23766045750092,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|32|multigrid|128": {
+        "ns_per_iteration": 128105.55555555555,
+        "ns_per_cell_per_iteration": 7.818942599826388,
+        "achieved_gb_s": 24.555750032525264,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|32|multigrid|256": {
+        "ns_per_iteration": 263954.09090909094,
+        "ns_per_cell_per_iteration": 4.0276197953657675,
+        "achieved_gb_s": 47.670835320880514,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|32|multigrid|512": {
+        "ns_per_iteration": 1081347.7777777778,
+        "ns_per_cell_per_iteration": 4.125014411078559,
+        "achieved_gb_s": 46.545291935064576,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|32|pcg_jacobi|1024": {
+        "ns_per_iteration": 878059.6272554606,
+        "ns_per_cell_per_iteration": 0.8373829147867781,
+        "achieved_gb_s": 210.17863738575883,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|32|pcg_jacobi|128": {
+        "ns_per_iteration": 27761.244124559344,
+        "ns_per_cell_per_iteration": 1.694411872836874,
+        "achieved_gb_s": 103.87084912556207,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|32|pcg_jacobi|256": {
+        "ns_per_iteration": 74539.26802421575,
+        "ns_per_cell_per_iteration": 1.1373789676546593,
+        "achieved_gb_s": 154.7417395654169,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|32|pcg_jacobi|512": {
+        "ns_per_iteration": 188567.51131221722,
+        "ns_per_cell_per_iteration": 0.7193279697884263,
+        "achieved_gb_s": 244.67281600598173,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|32|pcg_rbgs|1024": {
+        "ns_per_iteration": 2171963.260250217,
+        "ns_per_cell_per_iteration": 2.0713455774786156,
+        "achieved_gb_s": 185.3867380581811,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|32|pcg_rbgs|128": {
+        "ns_per_iteration": 43829.91854636591,
+        "ns_per_cell_per_iteration": 2.675165926902216,
+        "achieved_gb_s": 143.54249810764586,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|32|pcg_rbgs|256": {
+        "ns_per_iteration": 97116.10555050045,
+        "ns_per_cell_per_iteration": 1.4818741691665718,
+        "achieved_gb_s": 259.1313135689296,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_omp|32|pcg_rbgs|512": {
+        "ns_per_iteration": 509583.65364397154,
+        "ns_per_cell_per_iteration": 1.9439073701628553,
+        "achieved_gb_s": 197.54027681258776,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_serial|1|multigrid|1024": {
+        "ns_per_iteration": 32201693.333333332,
+        "ns_per_cell_per_iteration": 30.709927876790363,
+        "achieved_gb_s": 6.252049850794596,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_serial|1|multigrid|128": {
+        "ns_per_iteration": 457965.1388888889,
+        "ns_per_cell_per_iteration": 27.951973809136284,
+        "achieved_gb_s": 6.868924581535045,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_serial|1|multigrid|256": {
+        "ns_per_iteration": 1829372.222222222,
+        "ns_per_cell_per_iteration": 27.91400485568576,
+        "achieved_gb_s": 6.87826777249026,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_serial|1|multigrid|512": {
+        "ns_per_iteration": 7396903.333333333,
+        "ns_per_cell_per_iteration": 28.216946919759113,
+        "achieved_gb_s": 6.804421489893744,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_serial|1|pcg_jacobi|1024": {
+        "ns_per_iteration": 2663801.8394648833,
+        "ns_per_cell_per_iteration": 2.540399398293384,
+        "achieved_gb_s": 69.28044468843565,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_serial|1|pcg_jacobi|128": {
+        "ns_per_iteration": 24189.49790047351,
+        "ns_per_cell_per_iteration": 1.4764097839644477,
+        "achieved_gb_s": 119.20809649974396,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_serial|1|pcg_jacobi|256": {
+        "ns_per_iteration": 111771.97678491019,
+        "ns_per_cell_per_iteration": 1.7055050168595915,
+        "achieved_gb_s": 103.19524027204281,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_serial|1|pcg_jacobi|512": {
+        "ns_per_iteration": 404406.39386189263,
+        "ns_per_cell_per_iteration": 1.5426879648662286,
+        "achieved_gb_s": 114.08658394198434,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_serial|1|pcg_rbgs|1024": {
+        "ns_per_iteration": 11070982.629916739,
+        "ns_per_cell_per_iteration": 10.558111791531314,
+        "achieved_gb_s": 36.37013962174632,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_serial|1|pcg_rbgs|128": {
+        "ns_per_iteration": 143365.3500304816,
+        "ns_per_cell_per_iteration": 8.750326539946387,
+        "achieved_gb_s": 43.884076582398336,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_serial|1|pcg_rbgs|256": {
+        "ns_per_iteration": 593691.6338259442,
+        "ns_per_cell_per_iteration": 9.059015408721072,
+        "achieved_gb_s": 42.38871253385052,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "fortran_serial|1|pcg_rbgs|512": {
+        "ns_per_iteration": 2335823.3525379538,
+        "ns_per_cell_per_iteration": 8.910458955909553,
+        "achieved_gb_s": 43.095423243639466,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "openacc|0|multigrid|1024": {
+        "ns_per_iteration": 4031171.666666667,
+        "ns_per_cell_per_iteration": 3.844424883524577,
+        "achieved_gb_s": 49.94245064400217,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "openacc|0|multigrid|128": {
+        "ns_per_iteration": 1221195.972222222,
+        "ns_per_cell_per_iteration": 74.53588697645398,
+        "achieved_gb_s": 2.5759403662916514,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "openacc|0|multigrid|256": {
+        "ns_per_iteration": 1611940.9090909092,
+        "ns_per_cell_per_iteration": 24.59626631303267,
+        "achieved_gb_s": 7.806062820935799,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "openacc|0|multigrid|512": {
+        "ns_per_iteration": 2408005.0,
+        "ns_per_cell_per_iteration": 9.185810089111328,
+        "achieved_gb_s": 20.901803775324385,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "openacc|0|pcg_jacobi|1024": {
+        "ns_per_iteration": 144908.99782135076,
+        "ns_per_cell_per_iteration": 0.13819598943839145,
+        "achieved_gb_s": 1273.5536010504977,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "openacc|0|pcg_jacobi|128": {
+        "ns_per_iteration": 90743.8787001287,
+        "ns_per_cell_per_iteration": 5.538566815193402,
+        "achieved_gb_s": 31.777173747763886,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "openacc|0|pcg_jacobi|256": {
+        "ns_per_iteration": 94462.69714892327,
+        "ns_per_cell_per_iteration": 1.4413863700702403,
+        "achieved_gb_s": 122.1046651019902,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "openacc|0|pcg_jacobi|512": {
+        "ns_per_iteration": 106189.40271493213,
+        "ns_per_cell_per_iteration": 0.40508042417500356,
+        "achieved_gb_s": 434.4816226517136,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "openacc|0|pcg_rbgs|1024": {
+        "ns_per_iteration": 275835.4938271605,
+        "ns_per_cell_per_iteration": 0.2630572260161977,
+        "achieved_gb_s": 1459.7584176469468,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "openacc|0|pcg_rbgs|128": {
+        "ns_per_iteration": 173589.1604010025,
+        "ns_per_cell_per_iteration": 10.5950415283815,
+        "achieved_gb_s": 36.24336902987674,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "openacc|0|pcg_rbgs|256": {
+        "ns_per_iteration": 180953.95056111616,
+        "ns_per_cell_per_iteration": 2.761138161638125,
+        "achieved_gb_s": 139.07308418503072,
+        "bandwidth_fraction": null,
+        "samples": 4
+      },
+      "openacc|0|pcg_rbgs|512": {
+        "ns_per_iteration": 203970.47803617571,
+        "ns_per_cell_per_iteration": 0.7780856248328236,
+        "achieved_gb_s": 493.51894925767925,
+        "bandwidth_fraction": null,
+        "samples": 4
+      }
+    }
+  }
+}
